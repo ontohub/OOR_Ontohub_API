@@ -1,0 +1,116 @@
+// This API is concerned with roles, responsibilities and processes for developing ontologies.
+// It is based on the OOR usecases shown in http://www.ccs.neu.edu/home/kenb/ontologies/oor-usecase.xml
+
+module OOR
+{
+  // Users are individuals who access and develop ontologies.
+
+  valuetype User;
+
+  // An authority is a community that oversees artifacts developed by its members.
+  // Authorities are organized hierarchically and each has a manager (e.g., committee chair).
+
+  valuetype Authority
+  {
+    public string name;
+    public string purpose;
+    public Authority parent;
+    public User manager;
+  };
+
+  // A responsibility is a role played by a user in some authority.
+
+  valuetype Responsibility
+  {
+    public User user;
+    public string role;
+    public Authority authority;
+  };
+
+  // A user can play various roles in different authorities.
+
+  valuetype User
+  {
+    public string name;
+    public sequence<Responsibility> responsibilities;
+  };
+
+  // An item that is administered by the OOR.
+  // Items could be ontologies, ontology versions, ontology modules, etc.
+  // This is the metadata for the item, not the item iself.
+
+  valuetype Item
+  {
+    public string type;
+    public string uri;
+    public string metadata;
+  };
+
+  interface Gatekeeper
+  {
+    // Accredit Registration Authority
+    // The accreditation authority decides whether to include a registration authority.
+    oneway void requestAccredit(in Authority authority);
+
+    // Register Responsbility
+    // A user requests a responsibility within an authority.
+    // Examples of responsibilities include: registrar, steward, submitter.
+    oneway void requestResponsibility(in Authority authority, in Responsibility responsibility);
+
+    // Request Authority Information
+    // A user queries the system to obtain information on an authority.
+    Authority queryAuthorityInformation(in string authorityName);
+
+    // Upload Process or Policy Definition
+    // Upload a process or policy definition to the system.
+    oneway void uploadProcessDefinition(in string definition, in Responsibility responsibility);
+
+    // Retrieve Process or Policy Definition
+    // Retrieve a process or policy definition in the system.
+    string retrieveProcessDefinition(in string authorityName);
+
+    // Register Item
+    // A submitter registers a new administered item.
+    oneway void registerItem(in Item item, in Responsibility responsibility);
+
+    // Upload and Validate Item
+    // Validation tasks can be time-consuming so they are enqueued for asynchronous processing.
+    oneway void uploadAndValidateItem(in string uri, in string location);
+
+    // Query Administered Item
+    // This only returns the metadata for the administered item, not the item itself.
+    string requestItem(in string uri);
+
+    // Download Administered Item
+    // This returns the content of the item (if available).
+    string downloadItem(in string uri);
+
+    // Navigate Administered Item
+    // An elementary step during browsing. The result is an HTML file.
+    string navigate(in string uri);
+
+    // Use Administered Item
+    // Register that the administered item is being used.
+    void useItem(in string uri, in string usage);
+
+    // Update Administered Item
+    void requestUpdateitem();
+
+    // Upload Administered Item Version
+    // A manager creates a new version of an existing item.
+    void updateItem(in Item item, in Responsibility responsibility);
+
+    // Compose Administered Items
+    // A manager composes a number of ontology modules or contexts and registers the composition. 
+    Item composeItems(in string specification);
+
+    // Process Instance Form Completion
+    // One step in a process. For example, approval of a request to start a new authority.
+    // The details are part of the process definition.
+    void submitForm(in string form);
+
+    // Update Responsibility
+    // A role can be changed or deleted.
+    oneway void updateResponsibility(in Responsibility responsibility, in Responsibility updatedResponsibility);
+  };
+};
