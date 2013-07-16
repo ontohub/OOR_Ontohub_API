@@ -1,7 +1,7 @@
 // This API is concerned with roles, responsibilities and processes for developing ontologies.
 // It is based on the OOR usecases shown in http://www.ccs.neu.edu/home/kenb/ontologies/oor-usecase.xml
 
-module OOR
+module OOR_Gatekeeper
 {
   // Users are individuals who access and develop ontologies.
 
