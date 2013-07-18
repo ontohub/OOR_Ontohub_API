@@ -3,7 +3,7 @@ interface OntologyBase {
 
     Repository  selectRepository(in string byIri, in string byName);
     Repository  selectRepositoryByIri(in string byIri);                      // Derived
-    Repository  selectRepositoryByName(in string byName);                    // Derived
+    Repository  selectRepositoryByName(in string byName);                     // Derived
     string   insertRepository(in Repository repository);
     void     deleteRepository(in Repository repository);
 
