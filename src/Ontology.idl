@@ -1,0 +1,120 @@
+module org {
+module ontohub {
+module idl {
+
+  typedef string Text;
+  typedef sequence<string> TextList;
+
+  struct Iri {
+    Text iriText;
+  };
+  typedef sequence<Iri> IriList;
+
+  struct Symbol {
+    Iri iri;
+  };
+  typedef sequence<Symbol> SymbolList;
+
+  struct Sentence {
+    Iri iri;
+    Text form;
+  };
+  typedef sequence<Sentence> SentenceList;
+
+  struct Language {
+    Iri iri;
+    Text name;
+  };
+  typedef sequence<Language> LanguageList;
+
+  struct Logic {
+    Iri iri;
+    Text name;
+  };
+  typedef sequence<Logic> LogicList;
+
+  struct OntologyFractum {
+    Iri iri;
+    Text name;
+    Text description;
+    TextList categories;
+    TextList groups;
+    TextList prefixes;
+    Iri languageIri;
+    Iri projectIri;
+  };
+  typedef sequence<OntologyFractum> OntologyFractumList;
+
+  struct OntologyContent {
+    OntologyFractum meta;
+    SymbolList symbolList;
+    SentenceList sentenceList;
+  };
+  typedef sequence<OntologyContent> OntologyContentList;
+
+  struct RepositoryFractum {
+    Iri iri;
+    Text name;
+    OntologyFractumList ontologyFractumList;
+  };
+  typedef sequence<RepositoryFractum> RepositoryFractumList;
+
+  struct RepositoryContent {
+    Iri iri;
+    Text name;
+    OntologyContentList ontologyContentList;
+  };
+  typedef sequence<RepositoryContent> RepositoryContentList;
+
+  interface Ontology {
+    Text getName(in Iri iri);
+    Text getDescription(in Iri iri);
+    TextList getCategories(in Iri iri);
+    TextList getGroups(in Iri iri);
+    TextList getPrefixes(in Iri iri);
+    void getSymbolList(in Iri iri, out SymbolList symbolList);
+    void getSentenceList(in Iri iri, out SentenceList sentenceList);
+    void getOntologyFractum(in Iri iri, out OntologyFractum ontologyFractum);
+    void getOntologyContent(in Iri iri, out OntologyContent ontologyContent);
+  };
+
+  interface Repository {
+    Text getName(in Iri iri);
+    void getOntologyIriList(in Iri iri, out IriList ontologyIriList);
+    void getOntologyFractumList(in Iri iri, out OntologyFractumList ontologyFractumList);
+    void getOntologyContentList(in Iri iri, out OntologyContentList ontologyContentList);
+    void addOntology(in Iri iri, in Iri ontologyIri);
+    void delOntology(in Iri iri, in Iri ontologyIri);
+  };
+
+  interface OntologyBase {
+    void selectOntologyIriList(in Text name, in Text category, in Text group, in Iri languageIri, in Iri projectIri, out IriList iriList);
+    void selectOntologyIriListByName(in Text name, out IriList iriList);
+    void selectOntologyIriListByCategory(in Text category, out IriList iriList);
+    void selectOntologyIriListByGroup(in Text group, out IriList iriList);
+    void selectOntologyIriListByLanguageIri(in Iri languageIri, out IriList iriList);
+    void selectOntologyIriListByProjectIri(in Iri projectIri, out IriList iriList);
+
+    void selectOntologyFractumList(in Text name, in Text category, in Text group, in Iri languageIri, in Iri projectIri, out OntologyFractumList fractumList);
+    void selectOntologyFractumListByName(in Text name, out OntologyFractumList fractumList);
+    void selectOntologyFractumListByCategory(in Text category, out OntologyFractumList fractumList);
+    void selectOntologyFractumListByGroup(in Text group, out OntologyFractumList fractumList);
+    void selectOntologyFracutmListByLanguageIri(in Iri languageIri, out OntologyFractumList fractumList);
+    void selectOntologyFractumListByProjectIri(in Iri projectIri, out OntologyFractumList fractumList);
+
+    void selectOntologyContentList(in Text name, in Text category, in Text group, in Iri languageIri, in Iri projectIri, out OntologyContentList contentList);
+    void selectOntologyContentListByName(in Text name, out OntologyContentList contentList);
+    void selectOntologyContentListByCategory(in Text category, out OntologyContentList contentList);
+    void selectOntologyContentListByGroup(in Text group, out OntologyContentList contentList);
+    void selectOntologyContentListByLanguageIri(in Iri languageIri, out OntologyContentList contentList);
+    void selectOntologyContentListByProjectIri(in Iri projectIri, out OntologyContentList contentList);
+
+    void insertOntology(in OntologyContent ontologyContent, out Iri iri);
+    void updateOntology(in OntologyContent ontologyContent);
+    void removeOntology(in Iri iri);
+  };
+
+};
+};
+};
+
