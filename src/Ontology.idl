@@ -2,6 +2,8 @@ module org {
 module ontohub {
 module idl {
 
+  typedef sequence<char> Blob;
+
   typedef string Text;
   typedef sequence<string> TextList;
 
@@ -33,6 +35,31 @@ module idl {
   };
   typedef sequence<Logic> LogicList;
 
+  struct Metrics {
+    Iri iri;
+    Text name;
+    Text value;
+  };
+  typedef sequence<Metrics> MetricsList;
+
+  struct Note {
+    Iri iri;
+    Iri authorIri;
+    Text authorName;
+    Iri entryIri;
+    Text entryComment;
+  };
+  typedef sequence<Note> NoteList;
+
+  struct Metadatum {
+    Iri iri;
+    Iri kindIri;
+    Iri kindName;
+    Iri entryIri;
+    Text value;
+  };
+  typedef sequence<Metadatum> MetadatumList;
+
   struct OntologyFractum {
     Iri iri;
     Text name;
@@ -42,13 +69,24 @@ module idl {
     TextList prefixes;
     Iri languageIri;
     Iri projectIri;
+    Iri currentVersionIri;
   };
   typedef sequence<OntologyFractum> OntologyFractumList;
 
-  struct OntologyContent {
-    OntologyFractum meta;
+  struct OntologyVersionContent {
+    Iri iri;
+    Blob blob;
     SymbolList symbolList;
     SentenceList sentenceList;
+    MetricsList metricsList;
+    NoteList noteList;
+    MetadatumList metadatumList;
+  };
+  typedef sequence<OntologyVersionContent> OntologyVersionContentList;
+
+  struct OntologyContent {
+    OntologyFractum fractum;
+    OntologyVersionContent currentVersion;
   };
   typedef sequence<OntologyContent> OntologyContentList;
 
@@ -72,6 +110,7 @@ module idl {
     TextList getCategories(in Iri iri);
     TextList getGroups(in Iri iri);
     TextList getPrefixes(in Iri iri);
+    Iri getCurrentVersionIri(in Iri iri);
     void setName(in Iri iri, in Text name);
     void setDescription(in Iri iri, in Text description);
     void setCategories(in Iri iri, in TextList categories);
@@ -83,19 +122,44 @@ module idl {
     void setPrefixes(in Iri iri, in TextList prefixes);
     void addPrefix(in Iri iri, in Text prefix);
     void delPrefix(in Iri iri, in Text prefix);
+    void setCurrentVersionIri(in Iri iri);
 
+    void getFractum(in Iri iri, out OntologyFractum fractum);
+    void getContent(in Iri iri, out OntologyContent content);
+    void setFractum(in Iri iri, in OntologyFractum fractum);
+    void setContent(in Iri iri, in OntologyContent content);
+
+    void getVersionIriList(in Iri iri, out Iri versionIriList);
+    void setVersionIriList(in Iri iri, in Iri versionIriList);
+    void addVersionIri(in Iri iri, in Iri versionIri);
+    void delVersionIri(in Iri iri, in Iri versionIri);
+  };
+
+  interface OntologyVersion {
+    void getBlob(in Iri iri);
     void getSymbolList(in Iri iri, out SymbolList symbolList);
     void getSentenceList(in Iri iri, out SentenceList sentenceList);
-    void getOntologyFractum(in Iri iri, out OntologyFractum ontologyFractum);
-    void getOntologyContent(in Iri iri, out OntologyContent ontologyContent);
+    void getMetricsList(in Iri iri, out MetricsList metricsList);
+    void getNoteList(in Iri iri, out NoteList noteList);
+    void getMetadatumList(in Iri iri, out MetadatumList metadatumList);
     void setSymbolList(in Iri iri, in SymbolList symbolList);
     void addSymbol(in Iri iri, in Symbol symbol);
     void delSymbol(in Iri iri, in Iri symbolIri);
     void setSentenceList(in Iri iri, in SentenceList sentenceList);
     void addSentence(in Iri iri, in Sentence sentence);
     void delSentence(in Iri iri, in Iri sentenceIri);
-    void setOntologyFractum(in Iri iri, in OntologyFractum ontologyFractum);
-    void setOntologyContent(in Iri iri, in OntologyContent ontologyContent);
+    void setMetricsList(in Iri iri, in MetricsList metricsList);
+    void addMetrics(in Iri iri, in Metrics metrics);
+    void delMetrics(in Iri iri, in Iri metricsIri);
+    void setNoteList(in Iri iri, in NoteList noteList);
+    void addNote(in Iri iri, in Note note);
+    void delNote(in Iri iri, in Iri noteIri);
+    void setMetadatumList(in Iri iri, in MetadatumList metadatumList);
+    void addMetadatum(in Iri iri, in Metadatum metadatum);
+    void delMetadatum(in Iri iri, in Iri metadatumIri);
+
+    void getContent(in Iri iri, out OntologyVersionContent content);
+    void setContent(in Iri iri, in OntologyVersionContent content);
   };
 
   interface Repository {
