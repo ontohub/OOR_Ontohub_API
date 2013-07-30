@@ -1,3 +1,5 @@
+# TODO: also include the gatekeeper API
+
 module org {
 module ontohub {
 module idl {
@@ -14,6 +16,7 @@ module idl {
 
   struct Symbol {
     Iri iri;
+    Text kind;
   };
   typedef sequence<Symbol> SymbolList;
 
@@ -60,7 +63,7 @@ module idl {
   };
   typedef sequence<Metadatum> MetadatumList;
 
-  struct OntologyFractum {
+  struct OntologyFractum { # TM: synchromize this with OMV
     Iri iri;
     Text name;
     Text description;
@@ -107,7 +110,7 @@ module idl {
   interface Ontology {
     Text getName(in Iri iri);
     Text getDescription(in Iri iri);
-    TextList getCategories(in Iri iri);
+    TextList getCategories(in Iri iri); # TM: should be covered by meta ontology
     TextList getGroups(in Iri iri);
     TextList getPrefixes(in Iri iri);
     Iri getCurrentVersionIri(in Iri iri);
@@ -179,6 +182,19 @@ module idl {
   };
 
   interface OntologyBase {
+# TM: the idea was to have one very powerful method for searching for ontologies
+# we have agreed to Todd's suggestion:
+# The API for'selecting' is effectively a query mechanism, the front end to 
+# the user. The other side of this is the 'retrieving' of the requested or 
+# queried data. For the front end of selecting or querying for ontologies 
+# (or metadata about them) use of an instance of the metadata ontology should 
+# be used as the single parameter for the 'select' method. The particular 
+# parameters of interest would be represented by non-null values (in the 
+# ontology instance). This simplifies the API and overall architecture 
+# (but moves complexity to the parsing of the ontology instance). The 
+# retrieval (or return values) of the'selected' results would make use 
+# of federate identifiers. 
+
     void selectOntologyIriList(in Text name, in Text category, in Text group, in Iri languageIri, in Iri projectIri, out IriList iriList);
     void selectOntologyIriListByName(in Text name, out IriList iriList);
     void selectOntologyIriListByCategory(in Text category, out IriList iriList);
