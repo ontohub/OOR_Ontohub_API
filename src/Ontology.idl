@@ -2,8 +2,8 @@
 # TODO: if a method could take very long, make it oneway (=asynchronous)
 
 module org {
-module ontohub {
-module idl {
+module oor {
+module persistence {
 
   typedef sequence<char> Blob;
 
@@ -228,6 +228,18 @@ module idl {
     void insertOntology(in OntologyContent ontologyContent, out Iri iri);
     void updateOntology(in OntologyContent ontologyContent);
     void removeOntology(in Iri iri);
+  };
+
+  interface RepositoryBase {
+    void selectRepositoryIriList(in Text name, out IriList iriList);
+
+    void selectRepositoryFractumList(in Text name, out RepositoryFractumList repositoryFractumList);
+
+    void selectRepositoryContentList(in Text name, out RepositoryContentList repositoryContentList);
+
+    void insertRepository(in RepositoryContent repositoryContent, out Iri iri);
+    void updateRepository(in RepositoryContent repositoryContent);
+    void removeRepository(in Iri iri);
   };
 
 };
