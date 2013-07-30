@@ -72,19 +72,46 @@ module idl {
     TextList getCategories(in Iri iri);
     TextList getGroups(in Iri iri);
     TextList getPrefixes(in Iri iri);
+    void setName(in Iri iri, in Text name);
+    void setDescription(in Iri iri, in Text description);
+    void setCategories(in Iri iri, in TextList categories);
+    void addCateogry(in Iri iri, in Text category);
+    void delCategory(in Iri iri, in Text category);
+    void setGroups(in Iri iri, in TextList groups);
+    void addGroup(in Iri iri, in Text group);
+    void delGroup(in Iri iri, in Text group);
+    void setPrefixes(in Iri iri, in TextList prefixes);
+    void addPrefix(in Iri iri, in Text prefix);
+    void delPrefix(in Iri iri, in Text prefix);
+
     void getSymbolList(in Iri iri, out SymbolList symbolList);
     void getSentenceList(in Iri iri, out SentenceList sentenceList);
     void getOntologyFractum(in Iri iri, out OntologyFractum ontologyFractum);
     void getOntologyContent(in Iri iri, out OntologyContent ontologyContent);
+    void setSymbolList(in Iri iri, in SymbolList symbolList);
+    void addSymbol(in Iri iri, in Symbol symbol);
+    void delSymbol(in Iri iri, in Iri symbolIri);
+    void setSentenceList(in Iri iri, in SentenceList sentenceList);
+    void addSentence(in Iri iri, in Sentence sentence);
+    void delSentence(in Iri iri, in Iri sentenceIri);
+    void setOntologyFractum(in Iri iri, in OntologyFractum ontologyFractum);
+    void setOntologyContent(in Iri iri, in OntologyContent ontologyContent);
   };
 
   interface Repository {
     Text getName(in Iri iri);
+    void setName(in Iri iri, in Text name);
+
     void getOntologyIriList(in Iri iri, out IriList ontologyIriList);
     void getOntologyFractumList(in Iri iri, out OntologyFractumList ontologyFractumList);
     void getOntologyContentList(in Iri iri, out OntologyContentList ontologyContentList);
+    void getRepositoryFractum(in Iri iri, out RepositoryFractum repositoryFractum);
+    void getRepositoryContent(in Iri iri, out RepositoryContent repositoryContent);
+    void setOntologyIriList(in Iri iri, in IriList ontologyIriList);
     void addOntology(in Iri iri, in Iri ontologyIri);
     void delOntology(in Iri iri, in Iri ontologyIri);
+    void setRepositoryFractum(in Iri iri, in RepositoryFractum repositoryFractum);
+    void setRepositoryContent(in Iri iri, in RepositoryContent repositoryContent);
   };
 
   interface OntologyBase {
@@ -94,6 +121,7 @@ module idl {
     void selectOntologyIriListByGroup(in Text group, out IriList iriList);
     void selectOntologyIriListByLanguageIri(in Iri languageIri, out IriList iriList);
     void selectOntologyIriListByProjectIri(in Iri projectIri, out IriList iriList);
+    void getOntologyIriList();
 
     void selectOntologyFractumList(in Text name, in Text category, in Text group, in Iri languageIri, in Iri projectIri, out OntologyFractumList fractumList);
     void selectOntologyFractumListByName(in Text name, out OntologyFractumList fractumList);
@@ -101,6 +129,7 @@ module idl {
     void selectOntologyFractumListByGroup(in Text group, out OntologyFractumList fractumList);
     void selectOntologyFracutmListByLanguageIri(in Iri languageIri, out OntologyFractumList fractumList);
     void selectOntologyFractumListByProjectIri(in Iri projectIri, out OntologyFractumList fractumList);
+    void getOntologyFractumList();
 
     void selectOntologyContentList(in Text name, in Text category, in Text group, in Iri languageIri, in Iri projectIri, out OntologyContentList contentList);
     void selectOntologyContentListByName(in Text name, out OntologyContentList contentList);
@@ -108,6 +137,7 @@ module idl {
     void selectOntologyContentListByGroup(in Text group, out OntologyContentList contentList);
     void selectOntologyContentListByLanguageIri(in Iri languageIri, out OntologyContentList contentList);
     void selectOntologyContentListByProjectIri(in Iri projectIri, out OntologyContentList contentList);
+    void getOntologyContentList();
 
     void insertOntology(in OntologyContent ontologyContent, out Iri iri);
     void updateOntology(in OntologyContent ontologyContent);
