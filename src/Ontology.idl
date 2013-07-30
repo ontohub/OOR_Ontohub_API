@@ -1,8 +1,8 @@
 # TODO: also include the gatekeeper API
 
 module org {
-module ontohub {
-module idl {
+module oor {
+module persistence {
 
   typedef sequence<char> Blob;
 
@@ -225,17 +225,15 @@ module idl {
   };
 
   interface RepositoryBase {
-    void selectRepositoryIriList(in Iri iri, in Text name, out IriList iriList);
-    void selectRepositoryIriListByIri(in Iri iri, out IriList iriList);
-    void selectRepositoryIriListByName(in Text name, out IriList iriList);
+    void selectRepositoryIriList(in Text name, out IriList iriList);
 
-    void selectRepositoryFractumList(in Iri iri, in Text name, out RepositoryFractumList repositoryFractumList);
-    void selectRepositoryFractumListByIri(in Iri iri, out RepositoryFractumList repositoryFractumList);
-    void selectRepositoryFractumListByName(in Text name, out RepositoryFractumList repositoryFractumList);
+    void selectRepositoryFractumList(in Text name, out RepositoryFractumList repositoryFractumList);
 
-    void selectRepositoryContentList(in Iri iri, in Text name, out RepositoryContentList repositoryContentList);
-    void selectRepositoryContentListByIri(in Iri iri, out RepositoryContentList repositoryContentList);
-    void selectRepositoryContentListByName(in Text name, out RepositoryContentList repositoryContentList);
+    void selectRepositoryContentList(in Text name, out RepositoryContentList repositoryContentList);
+
+    void insertRepository(in RepositoryContent repositoryContent, out Iri iri);
+    void updateRepository(in RepositoryContent repositoryContent);
+    void removeRepository(in Iri iri);
   };
 
 };
