@@ -1,4 +1,5 @@
 # TODO: also include the gatekeeper API
+# TODO: if a method could take very long, make it oneway (=asynchronous)
 
 module org {
 module ontohub {
@@ -194,6 +195,11 @@ module idl {
 # (but moves complexity to the parsing of the ontology instance). The 
 # retrieval (or return values) of the'selected' results would make use 
 # of federate identifiers. 
+# the single parameter should be a struct
+#
+# the user should be able to select whether the method call should just 
+# deliver ids (compact representation) or all the metadata (say, as an XML 
+# tree), or even the whole ontology/ies (can become very large) 
 
     void selectOntologyIriList(in Text name, in Text category, in Text group, in Iri languageIri, in Iri projectIri, out IriList iriList);
     void selectOntologyIriListByName(in Text name, out IriList iriList);
