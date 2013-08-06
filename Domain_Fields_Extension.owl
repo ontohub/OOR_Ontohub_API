@@ -66,6 +66,15 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Anatomical_Structure -->
+
+    <owl:Class rdf:about="#Anatomical_Structure">
+        <owl:equivalentClass rdf:resource="#Anatomy"/>
+        <rdfs:subClassOf rdf:resource="#Biological_Space"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Anatomy -->
 
     <owl:Class rdf:about="#Anatomy">
@@ -106,6 +115,23 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Architectural_Design -->
+
+    <owl:Class rdf:about="#Architectural_Design">
+        <owl:equivalentClass rdf:resource="#Architecture_and_construction"/>
+        <rdfs:subClassOf rdf:resource="#Architectural_and_Technological_Design"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Architectural_and_Technological_Design -->
+
+    <owl:Class rdf:about="#Architectural_and_Technological_Design">
+        <rdfs:subClassOf rdf:resource="#Space"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Architecture_and_construction -->
 
     <owl:Class rdf:about="#Architecture_and_construction">
@@ -117,6 +143,7 @@
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Architecture_and_town_planning -->
 
     <owl:Class rdf:about="#Architecture_and_town_planning">
+        <owl:equivalentClass rdf:resource="#Urbanism"/>
         <rdfs:subClassOf rdf:resource="#Architecture_and_construction"/>
     </owl:Class>
     
@@ -134,6 +161,14 @@
 
     <owl:Class rdf:about="#Arts_and_humanities">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Astro_Space -->
+
+    <owl:Class rdf:about="#Astro_Space">
+        <rdfs:subClassOf rdf:resource="#Physical_Space"/>
     </owl:Class>
     
 
@@ -170,6 +205,15 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Biological_Space -->
+
+    <owl:Class rdf:about="#Biological_Space">
+        <rdfs:subClassOf rdf:resource="#Biology_broad"/>
+        <rdfs:subClassOf rdf:resource="#Physical_Space"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Biology -->
 
     <owl:Class rdf:about="#Biology">
@@ -202,6 +246,14 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Biotechnological_Design -->
+
+    <owl:Class rdf:about="#Biotechnological_Design">
+        <rdfs:subClassOf rdf:resource="#Technological_Design"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Biotechnology -->
 
     <owl:Class rdf:about="#Biotechnology">
@@ -214,6 +266,14 @@
 
     <owl:Class rdf:about="#Botany">
         <rdfs:subClassOf rdf:resource="#Biology"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Building_Architecture -->
+
+    <owl:Class rdf:about="#Building_Architecture">
+        <rdfs:subClassOf rdf:resource="#Architectural_Design"/>
     </owl:Class>
     
 
@@ -277,7 +337,34 @@
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Cellular_Anatomy -->
 
     <owl:Class rdf:about="#Cellular_Anatomy">
+        <owl:equivalentClass rdf:resource="#Cellular_Structure"/>
         <rdfs:subClassOf rdf:resource="#Anatomy"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Cellular_Structure -->
+
+    <owl:Class rdf:about="#Cellular_Structure">
+        <rdfs:subClassOf rdf:resource="#Anatomical_Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Chemical_Space -->
+
+    <owl:Class rdf:about="#Chemical_Space">
+        <rdfs:subClassOf rdf:resource="#Chemistry"/>
+        <rdfs:subClassOf rdf:resource="#Physical_Space"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Chemical_Structure -->
+
+    <owl:Class rdf:about="#Chemical_Structure">
+        <owl:equivalentClass rdf:resource="#Structural_Chemistry"/>
+        <rdfs:subClassOf rdf:resource="#Chemical_Space"/>
     </owl:Class>
     
 
@@ -330,6 +417,14 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Cognitive_Space -->
+
+    <owl:Class rdf:about="#Cognitive_Space">
+        <rdfs:subClassOf rdf:resource="#Space"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Community_sanitation -->
 
     <owl:Class rdf:about="#Community_sanitation">
@@ -346,6 +441,22 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Computer_Science -->
+
+    <owl:Class rdf:about="#Computer_Science">
+        <rdfs:subClassOf rdf:resource="#Information_and_Communication_Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Computer_System_Design -->
+
+    <owl:Class rdf:about="#Computer_System_Design">
+        <rdfs:subClassOf rdf:resource="#Technological_Design"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Computer_use -->
 
     <owl:Class rdf:about="#Computer_use">
@@ -358,6 +469,14 @@
 
     <owl:Class rdf:about="#Crop_and_livestock_production">
         <rdfs:subClassOf rdf:resource="#Agriculture"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Cultural_Heritage_Space -->
+
+    <owl:Class rdf:about="#Cultural_Heritage_Space">
+        <rdfs:subClassOf rdf:resource="#Space"/>
     </owl:Class>
     
 
@@ -398,6 +517,15 @@
 
     <owl:Class rdf:about="#Developmental_Biology">
         <rdfs:subClassOf rdf:resource="#Biology"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Disease_Distribution -->
+
+    <owl:Class rdf:about="#Disease_Distribution">
+        <rdfs:subClassOf rdf:resource="#Epidemiology"/>
+        <rdfs:subClassOf rdf:resource="#Health_Space"/>
     </owl:Class>
     
 
@@ -504,6 +632,14 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Embedded_and_cyber-physical_system_design -->
+
+    <owl:Class rdf:about="#Embedded_and_cyber-physical_system_design">
+        <rdfs:subClassOf rdf:resource="#Computer_System_Design"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Embryology -->
 
     <owl:Class rdf:about="#Embryology">
@@ -600,6 +736,14 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Euclidian_Space -->
+
+    <owl:Class rdf:about="#Euclidian_Space">
+        <rdfs:subClassOf rdf:resource="#Topological_Space"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Evolutionary_Biology -->
 
     <owl:Class rdf:about="#Evolutionary_Biology">
@@ -620,6 +764,8 @@
 
     <owl:Class rdf:about="#Fashion_interior_and_industrial_design">
         <rdfs:subClassOf rdf:resource="#Arts"/>
+        <rdfs:comment
+            >The class includes ontologies that deal with design in general, while further specification of the spatial design categories can be found under the class Space, subclass Design.</rdfs:comment>
     </owl:Class>
     
 
@@ -696,6 +842,14 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Functional_Space -->
+
+    <owl:Class rdf:about="#Functional_Space">
+        <rdfs:subClassOf rdf:resource="#Space"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Gastroenterology -->
 
     <owl:Class rdf:about="#Gastroenterology">
@@ -728,6 +882,30 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Geo_Economic_Space -->
+
+    <owl:Class rdf:about="#Geo_Economic_Space">
+        <rdfs:subClassOf rdf:resource="#Geographic_Space"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Geographic_Space -->
+
+    <owl:Class rdf:about="#Geographic_Space">
+        <rdfs:subClassOf rdf:resource="#Physical_Space"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Geopolitical_Space -->
+
+    <owl:Class rdf:about="#Geopolitical_Space">
+        <rdfs:subClassOf rdf:resource="#Geographic_Space"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Gerontology -->
 
     <owl:Class rdf:about="#Gerontology">
@@ -755,6 +933,7 @@
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Gross_Anatomy -->
 
     <owl:Class rdf:about="#Gross_Anatomy">
+        <owl:equivalentClass rdf:resource="#Organism_Structure"/>
         <rdfs:subClassOf rdf:resource="#Anatomy"/>
     </owl:Class>
     
@@ -788,6 +967,14 @@
 
     <owl:Class rdf:about="#Health">
         <rdfs:subClassOf rdf:resource="#Health_and_welfare"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Health_Space -->
+
+    <owl:Class rdf:about="#Health_Space">
+        <rdfs:subClassOf rdf:resource="#Physical_Space"/>
     </owl:Class>
     
 
@@ -888,6 +1075,14 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#ISO -->
+
+    <owl:Class rdf:about="#ISO">
+        <rdfs:subClassOf rdf:resource="#Standard"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Immunochemistry -->
 
     <owl:Class rdf:about="#Immunochemistry">
@@ -912,6 +1107,22 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Industrial_Design -->
+
+    <owl:Class rdf:about="#Industrial_Design">
+        <rdfs:subClassOf rdf:resource="#Technological_Design"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Infectology -->
+
+    <owl:Class rdf:about="#Infectology">
+        <rdfs:subClassOf rdf:resource="#Medicine"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Information_and_Communication_Technology -->
 
     <owl:Class rdf:about="#Information_and_Communication_Technology">
@@ -928,6 +1139,22 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Infrastructure_Architecture -->
+
+    <owl:Class rdf:about="#Infrastructure_Architecture">
+        <rdfs:subClassOf rdf:resource="#Architectural_Design"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Interior_Design -->
+
+    <owl:Class rdf:about="#Interior_Design">
+        <rdfs:subClassOf rdf:resource="#Building_Architecture"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Journalism_and_information -->
 
     <owl:Class rdf:about="#Journalism_and_information">
@@ -940,6 +1167,14 @@
 
     <owl:Class rdf:about="#Journalism_and_reporting">
         <rdfs:subClassOf rdf:resource="#Journalism_and_information"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Landscape_design -->
+
+    <owl:Class rdf:about="#Landscape_design">
+        <rdfs:subClassOf rdf:resource="#Architectural_Design"/>
     </owl:Class>
     
 
@@ -1024,6 +1259,14 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Mathematical_Space -->
+
+    <owl:Class rdf:about="#Mathematical_Space">
+        <rdfs:subClassOf rdf:resource="#Space"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Mathematics -->
 
     <owl:Class rdf:about="#Mathematics">
@@ -1059,6 +1302,7 @@
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Medical_Imaging -->
 
     <owl:Class rdf:about="#Medical_Imaging">
+        <rdfs:subClassOf rdf:resource="#Health_Space"/>
         <rdfs:subClassOf rdf:resource="#Medical_diagnostic_and_treatment_technology"/>
     </owl:Class>
     
@@ -1096,10 +1340,10 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Methodology_and_research_technique -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Method_and_research_technique -->
 
-    <owl:Class rdf:about="#Methodology_and_research_technique">
-        <rdfs:subClassOf rdf:resource="#Domain_Field"/>
+    <owl:Class rdf:about="#Method_and_research_technique">
+        <rdfs:subClassOf rdf:resource="#Standard_method_and_research_technique"/>
     </owl:Class>
     
 
@@ -1180,6 +1424,14 @@
 
     <owl:Class rdf:about="#Molecular_Pathology">
         <rdfs:subClassOf rdf:resource="#Molecular_Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Molecular_Structure -->
+
+    <owl:Class rdf:about="#Molecular_Structure">
+        <rdfs:subClassOf rdf:resource="#Biological_Space"/>
     </owl:Class>
     
 
@@ -1288,6 +1540,14 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Non_Euclidian_Space -->
+
+    <owl:Class rdf:about="#Non_Euclidian_Space">
+        <rdfs:subClassOf rdf:resource="#Topological_Space"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Nursing_and_midwifery -->
 
     <owl:Class rdf:about="#Nursing_and_midwifery">
@@ -1324,6 +1584,14 @@
 
     <owl:Class rdf:about="#Oncology">
         <rdfs:subClassOf rdf:resource="#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Organism_Structure -->
+
+    <owl:Class rdf:about="#Organism_Structure">
+        <rdfs:subClassOf rdf:resource="#Anatomical_Structure"/>
     </owl:Class>
     
 
@@ -1440,6 +1708,14 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Physical_Space -->
+
+    <owl:Class rdf:about="#Physical_Space">
+        <rdfs:subClassOf rdf:resource="#Space"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Physical_science -->
 
     <owl:Class rdf:about="#Physical_science">
@@ -1504,6 +1780,14 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Process -->
+
+    <owl:Class rdf:about="#Process">
+        <rdfs:subClassOf rdf:resource="#Space_Time_and_Process"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Protection_of_persons_and_property -->
 
     <owl:Class rdf:about="#Protection_of_persons_and_property">
@@ -1544,6 +1828,14 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Quantitative_Space -->
+
+    <owl:Class rdf:about="#Quantitative_Space">
+        <rdfs:subClassOf rdf:resource="#Space"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Radiobiology -->
 
     <owl:Class rdf:about="#Radiobiology">
@@ -1568,6 +1860,14 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Robotics -->
+
+    <owl:Class rdf:about="#Robotics">
+        <rdfs:subClassOf rdf:resource="#Embedded_and_cyber-physical_system_design"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Secretarial_and_office_work -->
 
     <owl:Class rdf:about="#Secretarial_and_office_work">
@@ -1580,6 +1880,14 @@
 
     <owl:Class rdf:about="#Security_services">
         <rdfs:subClassOf rdf:resource="#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Sensor_design -->
+
+    <owl:Class rdf:about="#Sensor_design">
+        <rdfs:subClassOf rdf:resource="#Embedded_and_cyber-physical_system_design"/>
     </owl:Class>
     
 
@@ -1640,6 +1948,32 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Space -->
+
+    <owl:Class rdf:about="#Space">
+        <rdfs:subClassOf rdf:resource="#Space_Time_and_Process"/>
+        <rdfs:comment
+            >Class &#39;Space&#39; includes domain ontologies that are dealing with any of space related topics, e.g. geography, architecture etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Space_Time_and_Process -->
+
+    <owl:Class rdf:about="#Space_Time_and_Process">
+        <rdfs:subClassOf rdf:resource="#Domain_Field"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Species_Distribution -->
+
+    <owl:Class rdf:about="#Species_Distribution">
+        <rdfs:subClassOf rdf:resource="#Biological_Space"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Sport -->
 
     <owl:Class rdf:about="#Sport">
@@ -1648,10 +1982,34 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Standard -->
+
+    <owl:Class rdf:about="#Standard">
+        <rdfs:subClassOf rdf:resource="#Standard_method_and_research_technique"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Standard_method_and_research_technique -->
+
+    <owl:Class rdf:about="#Standard_method_and_research_technique">
+        <rdfs:subClassOf rdf:resource="#Domain_Field"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Statistics -->
 
     <owl:Class rdf:about="#Statistics">
         <rdfs:subClassOf rdf:resource="#Mathematics_and_statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Structural_Chemistry -->
+
+    <owl:Class rdf:about="#Structural_Chemistry">
+        <rdfs:subClassOf rdf:resource="#Chemistry"/>
     </owl:Class>
     
 
@@ -1696,6 +2054,14 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Technological_Design -->
+
+    <owl:Class rdf:about="#Technological_Design">
+        <rdfs:subClassOf rdf:resource="#Architectural_and_Technological_Design"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Teratology -->
 
     <owl:Class rdf:about="#Teratology">
@@ -1716,6 +2082,22 @@
 
     <owl:Class rdf:about="#Therapy_and_rehabilitation">
         <rdfs:subClassOf rdf:resource="#Health"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Time -->
+
+    <owl:Class rdf:about="#Time">
+        <rdfs:subClassOf rdf:resource="#Space_Time_and_Process"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Topological_Space -->
+
+    <owl:Class rdf:about="#Topological_Space">
+        <rdfs:subClassOf rdf:resource="#Mathematical_Space"/>
     </owl:Class>
     
 
@@ -1760,10 +2142,34 @@
     
 
 
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Unclassified -->
+
+    <owl:Class rdf:about="#Unclassified">
+        <rdfs:subClassOf rdf:resource="#Domain_Field"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Urbanism -->
+
+    <owl:Class rdf:about="#Urbanism">
+        <rdfs:subClassOf rdf:resource="#Architectural_Design"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Urology -->
 
     <owl:Class rdf:about="#Urology">
         <rdfs:subClassOf rdf:resource="#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Vector_Space -->
+
+    <owl:Class rdf:about="#Vector_Space">
+        <rdfs:subClassOf rdf:resource="#Mathematical_Space"/>
     </owl:Class>
     
 
@@ -1780,6 +2186,14 @@
 
     <owl:Class rdf:about="#Water_Supply">
         <rdfs:subClassOf rdf:resource="#Hydrology"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Web_Space -->
+
+    <owl:Class rdf:about="#Web_Space">
+        <rdfs:subClassOf rdf:resource="#Space"/>
     </owl:Class>
     
 
