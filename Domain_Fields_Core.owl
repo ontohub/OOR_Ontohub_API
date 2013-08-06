@@ -7,14 +7,14 @@
     <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY Domain_fields "https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#" >
+    <!ENTITY Domain_fields "https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#" >
 ]>
 
 
-<rdf:RDF xmlns="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#"
-     xml:base="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl"
+<rdf:RDF xmlns="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#"
+     xml:base="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:Domain_fields="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#"
+     xmlns:Domain_fields="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -34,7 +34,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Accounting_and_taxation -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Accounting_and_taxation -->
 
     <owl:Class rdf:about="#Accounting_and_taxation">
         <rdfs:subClassOf rdf:resource="#Business_and_administration"/>
@@ -42,7 +42,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Agriculture -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Agriculture -->
 
     <owl:Class rdf:about="#Agriculture">
         <rdfs:subClassOf rdf:resource="#Agriculture_forestry_fisheries_and_veterinary"/>
@@ -50,7 +50,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Agriculture_forestry_fisheries_and_veterinary -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Agriculture_forestry_fisheries_and_veterinary -->
 
     <owl:Class rdf:about="#Agriculture_forestry_fisheries_and_veterinary">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
@@ -58,7 +58,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Architecture_and_construction -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Architecture_and_construction -->
 
     <owl:Class rdf:about="#Architecture_and_construction">
         <rdfs:subClassOf rdf:resource="#Engineering_manufacturing_and_construction"/>
@@ -66,7 +66,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Architecture_and_town_planning -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Architecture_and_town_planning -->
 
     <owl:Class rdf:about="#Architecture_and_town_planning">
         <rdfs:subClassOf rdf:resource="#Architecture_and_construction"/>
@@ -74,7 +74,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Arts -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Arts -->
 
     <owl:Class rdf:about="#Arts">
         <rdfs:subClassOf rdf:resource="#Arts_and_humanities"/>
@@ -82,7 +82,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Arts_and_humanities -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Arts_and_humanities -->
 
     <owl:Class rdf:about="#Arts_and_humanities">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
@@ -90,7 +90,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Audio-visual_and_media_production -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Audio-visual_and_media_production -->
 
     <owl:Class rdf:about="#Audio-visual_and_media_production">
         <rdfs:subClassOf rdf:resource="#Arts"/>
@@ -98,7 +98,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Biochemistry -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Biochemistry -->
 
     <owl:Class rdf:about="#Biochemistry">
         <rdfs:subClassOf rdf:resource="#Biology_broad"/>
@@ -106,7 +106,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Biology -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Biology -->
 
     <owl:Class rdf:about="#Biology">
         <rdfs:subClassOf rdf:resource="#Biology_broad"/>
@@ -114,7 +114,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Biology_broad -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Biology_broad -->
 
     <owl:Class rdf:about="#Biology_broad">
         <rdfs:subClassOf rdf:resource="#Natural_science_mathematics_and_statistics"/>
@@ -122,7 +122,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Building_and_civil_engineering -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Building_and_civil_engineering -->
 
     <owl:Class rdf:about="#Building_and_civil_engineering">
         <rdfs:subClassOf rdf:resource="#Architecture_and_construction"/>
@@ -130,7 +130,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Business_administration_and_law -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Business_administration_and_law -->
 
     <owl:Class rdf:about="#Business_administration_and_law">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
@@ -138,7 +138,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Business_and_administration -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Business_and_administration -->
 
     <owl:Class rdf:about="#Business_and_administration">
         <rdfs:subClassOf rdf:resource="#Business_administration_and_law"/>
@@ -146,7 +146,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Care_of_the_elderly_and_of_disabled_adults -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Care_of_the_elderly_and_of_disabled_adults -->
 
     <owl:Class rdf:about="#Care_of_the_elderly_and_of_disabled_adults">
         <rdfs:subClassOf rdf:resource="#Welfare"/>
@@ -154,7 +154,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Chemical_engineering_and_process -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Chemical_engineering_and_process -->
 
     <owl:Class rdf:about="#Chemical_engineering_and_process">
         <rdfs:subClassOf rdf:resource="#Engineering_and_engineering_trade"/>
@@ -162,7 +162,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Chemistry -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Chemistry -->
 
     <owl:Class rdf:about="#Chemistry">
         <rdfs:subClassOf rdf:resource="#Physical_science"/>
@@ -170,7 +170,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Child_care_and_youth_services -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Child_care_and_youth_services -->
 
     <owl:Class rdf:about="#Child_care_and_youth_services">
         <rdfs:subClassOf rdf:resource="#Welfare"/>
@@ -178,7 +178,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Community_sanitation -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Community_sanitation -->
 
     <owl:Class rdf:about="#Community_sanitation">
         <rdfs:subClassOf rdf:resource="#Hygiene_and_occupational_health_services"/>
@@ -186,7 +186,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Computer_Science -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Computer_Science -->
 
     <owl:Class rdf:about="#Computer_Science">
         <rdfs:subClassOf rdf:resource="#Information_and_Communication_Technology"/>
@@ -194,7 +194,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Computer_use -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Computer_use -->
 
     <owl:Class rdf:about="#Computer_use">
         <rdfs:subClassOf rdf:resource="#Information_and_Communication_Technology_narrow"/>
@@ -202,7 +202,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Crop_and_livestock_production -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Crop_and_livestock_production -->
 
     <owl:Class rdf:about="#Crop_and_livestock_production">
         <rdfs:subClassOf rdf:resource="#Agriculture"/>
@@ -210,7 +210,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Database_and_network_design_and_administration -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Database_and_network_design_and_administration -->
 
     <owl:Class rdf:about="#Database_and_network_design_and_administration">
         <rdfs:subClassOf rdf:resource="#Information_and_Communication_Technology_narrow"/>
@@ -218,7 +218,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Dentistry -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Dentistry -->
 
     <owl:Class rdf:about="#Dentistry">
         <rdfs:subClassOf rdf:resource="#Health"/>
@@ -226,13 +226,13 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Domain_Field -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Domain_Field -->
 
     <owl:Class rdf:about="#Domain_Field"/>
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Domestic_services -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Domestic_services -->
 
     <owl:Class rdf:about="#Domestic_services">
         <rdfs:subClassOf rdf:resource="#Personal_services"/>
@@ -240,7 +240,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Earth_science -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Earth_science -->
 
     <owl:Class rdf:about="#Earth_science">
         <rdfs:subClassOf rdf:resource="#Physical_science"/>
@@ -248,7 +248,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Economics -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Economics -->
 
     <owl:Class rdf:about="#Economics">
         <rdfs:subClassOf rdf:resource="#Social_and_behavioural_science"/>
@@ -256,7 +256,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Education -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Education -->
 
     <owl:Class rdf:about="#Education">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
@@ -264,7 +264,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Education_narrow -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Education_narrow -->
 
     <owl:Class rdf:about="#Education_narrow">
         <rdfs:subClassOf rdf:resource="#Education"/>
@@ -272,7 +272,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Education_science -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Education_science -->
 
     <owl:Class rdf:about="#Education_science">
         <rdfs:subClassOf rdf:resource="#Education_narrow"/>
@@ -280,7 +280,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Electricity_and_energy -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Electricity_and_energy -->
 
     <owl:Class rdf:about="#Electricity_and_energy">
         <rdfs:subClassOf rdf:resource="#Engineering_and_engineering_trade"/>
@@ -288,7 +288,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Electronics_and_automation -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Electronics_and_automation -->
 
     <owl:Class rdf:about="#Electronics_and_automation">
         <rdfs:subClassOf rdf:resource="#Engineering_and_engineering_trade"/>
@@ -296,7 +296,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Engineering_and_engineering_trade -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Engineering_and_engineering_trade -->
 
     <owl:Class rdf:about="#Engineering_and_engineering_trade">
         <rdfs:subClassOf rdf:resource="#Engineering_manufacturing_and_construction"/>
@@ -304,7 +304,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Engineering_manufacturing_and_construction -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Engineering_manufacturing_and_construction -->
 
     <owl:Class rdf:about="#Engineering_manufacturing_and_construction">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
@@ -312,7 +312,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Environment -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Environment -->
 
     <owl:Class rdf:about="#Environment">
         <rdfs:subClassOf rdf:resource="#Natural_science_mathematics_and_statistics"/>
@@ -320,7 +320,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Environmental_protection_technology -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Environmental_protection_technology -->
 
     <owl:Class rdf:about="#Environmental_protection_technology">
         <rdfs:subClassOf rdf:resource="#Engineering_and_engineering_trade"/>
@@ -328,7 +328,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Environmental_science -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Environmental_science -->
 
     <owl:Class rdf:about="#Environmental_science">
         <rdfs:subClassOf rdf:resource="#Environment"/>
@@ -336,7 +336,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Fashion_interior_and_industrial_design -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Fashion_interior_and_industrial_design -->
 
     <owl:Class rdf:about="#Fashion_interior_and_industrial_design">
         <rdfs:subClassOf rdf:resource="#Arts"/>
@@ -346,7 +346,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Finance_banking_and_insurance -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Finance_banking_and_insurance -->
 
     <owl:Class rdf:about="#Finance_banking_and_insurance">
         <rdfs:subClassOf rdf:resource="#Business_and_administration"/>
@@ -354,7 +354,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Fine_arts -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Fine_arts -->
 
     <owl:Class rdf:about="#Fine_arts">
         <rdfs:subClassOf rdf:resource="#Arts"/>
@@ -362,7 +362,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Fisheries -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Fisheries -->
 
     <owl:Class rdf:about="#Fisheries">
         <rdfs:subClassOf rdf:resource="#Agriculture_forestry_fisheries_and_veterinary"/>
@@ -370,7 +370,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Food_processing -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Food_processing -->
 
     <owl:Class rdf:about="#Food_processing">
         <rdfs:subClassOf rdf:resource="#Manufacturing_and_processing"/>
@@ -378,7 +378,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Forestry -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Forestry -->
 
     <owl:Class rdf:about="#Forestry">
         <rdfs:subClassOf rdf:resource="#Agriculture_forestry_fisheries_and_veterinary"/>
@@ -386,7 +386,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Glass_processing -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Glass_processing -->
 
     <owl:Class rdf:about="#Glass_processing">
         <rdfs:subClassOf rdf:resource="#Material_processing"/>
@@ -394,7 +394,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Hair_and_beauty_services -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Hair_and_beauty_services -->
 
     <owl:Class rdf:about="#Hair_and_beauty_services">
         <rdfs:subClassOf rdf:resource="#Personal_services"/>
@@ -402,7 +402,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Handicrafts -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Handicrafts -->
 
     <owl:Class rdf:about="#Handicrafts">
         <rdfs:subClassOf rdf:resource="#Arts"/>
@@ -410,7 +410,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Health -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Health -->
 
     <owl:Class rdf:about="#Health">
         <rdfs:subClassOf rdf:resource="#Health_and_welfare"/>
@@ -418,7 +418,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Health_and_welfare -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Health_and_welfare -->
 
     <owl:Class rdf:about="#Health_and_welfare">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
@@ -426,7 +426,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#History_and_archaeology -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#History_and_archaeology -->
 
     <owl:Class rdf:about="#History_and_archaeology">
         <rdfs:subClassOf rdf:resource="#Humanities"/>
@@ -434,7 +434,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Horticulture -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Horticulture -->
 
     <owl:Class rdf:about="#Horticulture">
         <rdfs:subClassOf rdf:resource="#Agriculture"/>
@@ -442,7 +442,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Hotel_restaurant_and_catering -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Hotel_restaurant_and_catering -->
 
     <owl:Class rdf:about="#Hotel_restaurant_and_catering">
         <rdfs:subClassOf rdf:resource="#Personal_services"/>
@@ -450,7 +450,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Humanities -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Humanities -->
 
     <owl:Class rdf:about="#Humanities">
         <rdfs:subClassOf rdf:resource="#Arts_and_humanities"/>
@@ -458,7 +458,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Hygiene_and_occupational_health_services -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Hygiene_and_occupational_health_services -->
 
     <owl:Class rdf:about="#Hygiene_and_occupational_health_services">
         <rdfs:subClassOf rdf:resource="#Services"/>
@@ -466,7 +466,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#ISO -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#ISO -->
 
     <owl:Class rdf:about="#ISO">
         <rdfs:subClassOf rdf:resource="#Standard"/>
@@ -474,7 +474,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Information_and_Communication_Technology -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Information_and_Communication_Technology -->
 
     <owl:Class rdf:about="#Information_and_Communication_Technology">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
@@ -482,7 +482,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Information_and_Communication_Technology_narrow -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Information_and_Communication_Technology_narrow -->
 
     <owl:Class rdf:about="#Information_and_Communication_Technology_narrow">
         <rdfs:subClassOf rdf:resource="#Information_and_Communication_Technology"/>
@@ -490,7 +490,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Journalism_and_information -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Journalism_and_information -->
 
     <owl:Class rdf:about="#Journalism_and_information">
         <rdfs:subClassOf rdf:resource="#Social_science_journalism_and_information"/>
@@ -498,7 +498,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Journalism_and_reporting -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Journalism_and_reporting -->
 
     <owl:Class rdf:about="#Journalism_and_reporting">
         <rdfs:subClassOf rdf:resource="#Journalism_and_information"/>
@@ -506,7 +506,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Language -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Language -->
 
     <owl:Class rdf:about="#Language">
         <rdfs:subClassOf rdf:resource="#Arts_and_humanities"/>
@@ -514,7 +514,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Language_acquisition -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Language_acquisition -->
 
     <owl:Class rdf:about="#Language_acquisition">
         <rdfs:subClassOf rdf:resource="#Language"/>
@@ -522,7 +522,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Law -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Law -->
 
     <owl:Class rdf:about="#Law">
         <rdfs:subClassOf rdf:resource="#Business_administration_and_law"/>
@@ -530,7 +530,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Library_information_and_archive -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Library_information_and_archive -->
 
     <owl:Class rdf:about="#Library_information_and_archive">
         <rdfs:subClassOf rdf:resource="#Journalism_and_information"/>
@@ -538,7 +538,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Literature_and_linguistics -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Literature_and_linguistics -->
 
     <owl:Class rdf:about="#Literature_and_linguistics">
         <rdfs:subClassOf rdf:resource="#Language"/>
@@ -546,7 +546,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Management_and_administration -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Management_and_administration -->
 
     <owl:Class rdf:about="#Management_and_administration">
         <rdfs:subClassOf rdf:resource="#Business_and_administration"/>
@@ -554,7 +554,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Manufacturing_and_processing -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Manufacturing_and_processing -->
 
     <owl:Class rdf:about="#Manufacturing_and_processing">
         <rdfs:subClassOf rdf:resource="#Engineering_manufacturing_and_construction"/>
@@ -562,7 +562,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Marketing_and_advertising -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Marketing_and_advertising -->
 
     <owl:Class rdf:about="#Marketing_and_advertising">
         <rdfs:subClassOf rdf:resource="#Business_and_administration"/>
@@ -570,7 +570,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Material_processing -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Material_processing -->
 
     <owl:Class rdf:about="#Material_processing">
         <rdfs:subClassOf rdf:resource="#Manufacturing_and_processing"/>
@@ -578,7 +578,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Mathematics -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Mathematics -->
 
     <owl:Class rdf:about="#Mathematics">
         <rdfs:subClassOf rdf:resource="#Mathematics_and_statistics"/>
@@ -586,7 +586,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Mathematics_and_statistics -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Mathematics_and_statistics -->
 
     <owl:Class rdf:about="#Mathematics_and_statistics">
         <rdfs:subClassOf rdf:resource="#Natural_science_mathematics_and_statistics"/>
@@ -594,7 +594,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Mechanics_and_metal_trade -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Mechanics_and_metal_trade -->
 
     <owl:Class rdf:about="#Mechanics_and_metal_trade">
         <rdfs:subClassOf rdf:resource="#Engineering_and_engineering_trade"/>
@@ -602,7 +602,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Medical_diagnostic_and_treatment_technology -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Medical_diagnostic_and_treatment_technology -->
 
     <owl:Class rdf:about="#Medical_diagnostic_and_treatment_technology">
         <rdfs:subClassOf rdf:resource="#Health"/>
@@ -610,7 +610,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Medicine -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Medicine -->
 
     <owl:Class rdf:about="#Medicine">
         <rdfs:subClassOf rdf:resource="#Health"/>
@@ -618,7 +618,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Method_and_research_technique -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Method_and_research_technique -->
 
     <owl:Class rdf:about="#Method_and_research_technique">
         <rdfs:subClassOf rdf:resource="#Standard_method_and_research_technique"/>
@@ -626,7 +626,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Military_and_defence -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Military_and_defence -->
 
     <owl:Class rdf:about="#Military_and_defence">
         <rdfs:subClassOf rdf:resource="#Security_services"/>
@@ -634,7 +634,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Mining_and_extraction -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Mining_and_extraction -->
 
     <owl:Class rdf:about="#Mining_and_extraction">
         <rdfs:subClassOf rdf:resource="#Manufacturing_and_processing"/>
@@ -642,7 +642,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Motor_vehicle_ship_and_aircraft -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Motor_vehicle_ship_and_aircraft -->
 
     <owl:Class rdf:about="#Motor_vehicle_ship_and_aircraft">
         <rdfs:subClassOf rdf:resource="#Engineering_and_engineering_trade"/>
@@ -650,7 +650,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Music_and_performing_arts -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Music_and_performing_arts -->
 
     <owl:Class rdf:about="#Music_and_performing_arts">
         <rdfs:subClassOf rdf:resource="#Arts"/>
@@ -658,7 +658,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Natural_environment_and_wildlife -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Natural_environment_and_wildlife -->
 
     <owl:Class rdf:about="#Natural_environment_and_wildlife">
         <rdfs:subClassOf rdf:resource="#Environment"/>
@@ -666,7 +666,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Natural_science_mathematics_and_statistics -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Natural_science_mathematics_and_statistics -->
 
     <owl:Class rdf:about="#Natural_science_mathematics_and_statistics">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
@@ -674,7 +674,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Nursing_and_midwifery -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Nursing_and_midwifery -->
 
     <owl:Class rdf:about="#Nursing_and_midwifery">
         <rdfs:subClassOf rdf:resource="#Health"/>
@@ -682,7 +682,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Occupational_health_and_safety -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Occupational_health_and_safety -->
 
     <owl:Class rdf:about="#Occupational_health_and_safety">
         <rdfs:subClassOf rdf:resource="#Hygiene_and_occupational_health_services"/>
@@ -690,7 +690,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Paper_processing -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Paper_processing -->
 
     <owl:Class rdf:about="#Paper_processing">
         <rdfs:subClassOf rdf:resource="#Material_processing"/>
@@ -698,7 +698,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Personal_services -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Personal_services -->
 
     <owl:Class rdf:about="#Personal_services">
         <rdfs:subClassOf rdf:resource="#Services"/>
@@ -706,7 +706,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Pharmacy -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Pharmacy -->
 
     <owl:Class rdf:about="#Pharmacy">
         <rdfs:subClassOf rdf:resource="#Health"/>
@@ -714,7 +714,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Philosophy_and_ethics -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Philosophy_and_ethics -->
 
     <owl:Class rdf:about="#Philosophy_and_ethics">
         <rdfs:subClassOf rdf:resource="#Humanities"/>
@@ -722,7 +722,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Physical_science -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Physical_science -->
 
     <owl:Class rdf:about="#Physical_science">
         <rdfs:subClassOf rdf:resource="#Natural_science_mathematics_and_statistics"/>
@@ -730,7 +730,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Physics -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Physics -->
 
     <owl:Class rdf:about="#Physics">
         <rdfs:subClassOf rdf:resource="#Physical_science"/>
@@ -738,7 +738,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Plastic_processing -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Plastic_processing -->
 
     <owl:Class rdf:about="#Plastic_processing">
         <rdfs:subClassOf rdf:resource="#Material_processing"/>
@@ -746,7 +746,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Politics_and_civics -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Politics_and_civics -->
 
     <owl:Class rdf:about="#Politics_and_civics">
         <rdfs:subClassOf rdf:resource="#Social_and_behavioural_science"/>
@@ -754,7 +754,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Process -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Process -->
 
     <owl:Class rdf:about="#Process">
         <rdfs:subClassOf rdf:resource="#Space_Time_and_Process"/>
@@ -762,7 +762,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Protection_of_persons_and_property -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Protection_of_persons_and_property -->
 
     <owl:Class rdf:about="#Protection_of_persons_and_property">
         <rdfs:subClassOf rdf:resource="#Security_services"/>
@@ -770,7 +770,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Psychology -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Psychology -->
 
     <owl:Class rdf:about="#Psychology">
         <rdfs:subClassOf rdf:resource="#Social_and_behavioural_science"/>
@@ -778,7 +778,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Religion_and_theology -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Religion_and_theology -->
 
     <owl:Class rdf:about="#Religion_and_theology">
         <rdfs:subClassOf rdf:resource="#Humanities"/>
@@ -786,7 +786,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Secretarial_and_office_work -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Secretarial_and_office_work -->
 
     <owl:Class rdf:about="#Secretarial_and_office_work">
         <rdfs:subClassOf rdf:resource="#Business_and_administration"/>
@@ -794,7 +794,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Security_services -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Security_services -->
 
     <owl:Class rdf:about="#Security_services">
         <rdfs:subClassOf rdf:resource="#Services"/>
@@ -802,7 +802,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Services -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Services -->
 
     <owl:Class rdf:about="#Services">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
@@ -810,7 +810,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Social_and_behavioural_science -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Social_and_behavioural_science -->
 
     <owl:Class rdf:about="#Social_and_behavioural_science">
         <rdfs:subClassOf rdf:resource="#Social_science_journalism_and_information"/>
@@ -818,7 +818,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Social_science_journalism_and_information -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Social_science_journalism_and_information -->
 
     <owl:Class rdf:about="#Social_science_journalism_and_information">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
@@ -826,7 +826,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Social_work_and_counselling -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Social_work_and_counselling -->
 
     <owl:Class rdf:about="#Social_work_and_counselling">
         <rdfs:subClassOf rdf:resource="#Welfare"/>
@@ -834,7 +834,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Sociology_and_culture -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Sociology_and_culture -->
 
     <owl:Class rdf:about="#Sociology_and_culture">
         <rdfs:subClassOf rdf:resource="#Social_and_behavioural_science"/>
@@ -842,7 +842,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Software_and_application_development_and_analysis -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Software_and_application_development_and_analysis -->
 
     <owl:Class rdf:about="#Software_and_application_development_and_analysis">
         <rdfs:subClassOf rdf:resource="#Information_and_Communication_Technology_narrow"/>
@@ -852,7 +852,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Space -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Space -->
 
     <owl:Class rdf:about="#Space">
         <rdfs:subClassOf rdf:resource="#Space_Time_and_Process"/>
@@ -862,7 +862,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Space_Time_and_Process -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Space_Time_and_Process -->
 
     <owl:Class rdf:about="#Space_Time_and_Process">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
@@ -870,7 +870,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Sport -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Sport -->
 
     <owl:Class rdf:about="#Sport">
         <rdfs:subClassOf rdf:resource="#Personal_services"/>
@@ -878,7 +878,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Standard -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Standard -->
 
     <owl:Class rdf:about="#Standard">
         <rdfs:subClassOf rdf:resource="#Standard_method_and_research_technique"/>
@@ -886,7 +886,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Standard_method_and_research_technique -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Standard_method_and_research_technique -->
 
     <owl:Class rdf:about="#Standard_method_and_research_technique">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
@@ -894,7 +894,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Statistics -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Statistics -->
 
     <owl:Class rdf:about="#Statistics">
         <rdfs:subClassOf rdf:resource="#Mathematics_and_statistics"/>
@@ -902,7 +902,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Teacher_training_with_subject_specialisation -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Teacher_training_with_subject_specialisation -->
 
     <owl:Class rdf:about="#Teacher_training_with_subject_specialisation">
         <rdfs:subClassOf rdf:resource="#Education_narrow"/>
@@ -910,7 +910,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Teacher_training_without_subject_specialisation -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Teacher_training_without_subject_specialisation -->
 
     <owl:Class rdf:about="#Teacher_training_without_subject_specialisation">
         <rdfs:subClassOf rdf:resource="#Education_narrow"/>
@@ -918,7 +918,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Textile_clothes_footwear_and_leather -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Textile_clothes_footwear_and_leather -->
 
     <owl:Class rdf:about="#Textile_clothes_footwear_and_leather">
         <rdfs:subClassOf rdf:resource="#Manufacturing_and_processing"/>
@@ -926,7 +926,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Therapy_and_rehabilitation -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Therapy_and_rehabilitation -->
 
     <owl:Class rdf:about="#Therapy_and_rehabilitation">
         <rdfs:subClassOf rdf:resource="#Health"/>
@@ -934,7 +934,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Time -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Time -->
 
     <owl:Class rdf:about="#Time">
         <rdfs:subClassOf rdf:resource="#Space_Time_and_Process"/>
@@ -942,7 +942,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Traditional_and_complementary_medicine_and_therapy -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Traditional_and_complementary_medicine_and_therapy -->
 
     <owl:Class rdf:about="#Traditional_and_complementary_medicine_and_therapy">
         <rdfs:subClassOf rdf:resource="#Health"/>
@@ -950,7 +950,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Training_pre-school_teachers -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Training_pre-school_teachers -->
 
     <owl:Class rdf:about="#Training_pre-school_teachers">
         <rdfs:subClassOf rdf:resource="#Education_narrow"/>
@@ -958,7 +958,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Transport_services -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Transport_services -->
 
     <owl:Class rdf:about="#Transport_services">
         <rdfs:subClassOf rdf:resource="#Services"/>
@@ -966,7 +966,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Travel_tourism_and_leisure -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Travel_tourism_and_leisure -->
 
     <owl:Class rdf:about="#Travel_tourism_and_leisure">
         <rdfs:subClassOf rdf:resource="#Personal_services"/>
@@ -974,7 +974,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Unclassified -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Unclassified -->
 
     <owl:Class rdf:about="#Unclassified">
         <rdfs:subClassOf rdf:resource="#Domain_Field"/>
@@ -982,7 +982,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Veterinary -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Veterinary -->
 
     <owl:Class rdf:about="#Veterinary">
         <rdfs:subClassOf rdf:resource="#Agriculture_forestry_fisheries_and_veterinary"/>
@@ -990,7 +990,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Welfare -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Welfare -->
 
     <owl:Class rdf:about="#Welfare">
         <rdfs:subClassOf rdf:resource="#Health_and_welfare"/>
@@ -998,7 +998,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Wholesale_and_retail_sales -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Wholesale_and_retail_sales -->
 
     <owl:Class rdf:about="#Wholesale_and_retail_sales">
         <rdfs:subClassOf rdf:resource="#Business_and_administration"/>
@@ -1006,7 +1006,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Wood_processing -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Wood_processing -->
 
     <owl:Class rdf:about="#Wood_processing">
         <rdfs:subClassOf rdf:resource="#Material_processing"/>
@@ -1014,7 +1014,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_fields.owl#Work_skill -->
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Work_skill -->
 
     <owl:Class rdf:about="#Work_skill">
         <rdfs:subClassOf rdf:resource="#Business_and_administration"/>
