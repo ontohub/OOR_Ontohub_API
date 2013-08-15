@@ -9,17 +9,17 @@
     <!ENTITY ontology "http://omv.ontoware.org/2005/05/ontology#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY BioPortalMetadata "http://protege.stanford.edu/ontologies/metadata/BioPortalMetadata.owl#" >
-    <!ENTITY OntoHubMetadataOntology "https://github.com/ontohub/OOR_Ontohub_API/blob/master/OntoHubMetadataOntology.owl#" >
-    <!ENTITY Domain_Fields_Core "https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#" >
+    <!ENTITY OntoHubMetadataOntology "https://raw.github.com/ontohub/OOR_Ontohub_API/master/OntoHubMetadataOntology.owl#" >
+    <!ENTITY Domain_Fields_Core "https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#" >
 ]>
 
 
-<rdf:RDF xmlns="https://github.com/ontohub/OOR_Ontohub_API/blob/master/OntoHubMetadataOntology.owl#"
+<rdf:RDF xmlns="https://raw.github.com/ontohub/OOR_Ontohub_API/master/OntoHubMetadataOntology.owl#"
      xml:base="https://www.ontohub.org/ontologies/2013/7/OntoHubMetadataOntology.owl"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:Domain_Fields_Core="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#"
+     xmlns:Domain_Fields_Core="https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#"
      xmlns:ontology="http://omv.ontoware.org/2005/05/ontology#"
-     xmlns:OntoHubMetadataOntology="https://github.com/ontohub/OOR_Ontohub_API/blob/master/OntoHubMetadataOntology.owl#"
+     xmlns:OntoHubMetadataOntology="https://raw.github.com/ontohub/OOR_Ontohub_API/master/OntoHubMetadataOntology.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:BioPortalMetadata="http://protege.stanford.edu/ontologies/metadata/BioPortalMetadata.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -27,7 +27,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#">
     <owl:Ontology rdf:about="">
         <owl:imports rdf:resource="http://protege.stanford.edu/ontologies/metadata/BioPortalMetadata.owl"/>
-        <owl:imports rdf:resource="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl"/>
+        <owl:imports rdf:resource="https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Extension.owl"/>
     </owl:Ontology>
     
 
@@ -115,7 +115,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Domain_Field -->
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field -->
 
     <owl:Class rdf:about="&Domain_Fields_Core;Domain_Field">
         <rdfs:comment
@@ -124,7 +124,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/OntoHubMetadataOntology.owl#OntoHubUser -->
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/OntoHubMetadataOntology.owl#OntoHubUser -->
 
     <owl:Class rdf:about="#OntoHubUser">
         <rdfs:subClassOf rdf:resource="&ontology;Person"/>
@@ -156,7 +156,7 @@
     
 
 
-    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/OntoHubMetadataOntology.owl#Team -->
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/OntoHubMetadataOntology.owl#Team -->
 
     <owl:Class rdf:about="#Team">
         <rdfs:subClassOf rdf:resource="&ontology;Party"/>
