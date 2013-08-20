@@ -8,7 +8,7 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY ontology "http://omv.ontoware.org/2005/05/ontology#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY BioPortalMetadata "http://protege.stanford.edu/ontologies/metadata/BioPortalMetadata.owl#" >
+    <!ENTITY BioPortalMetadata "https://raw.github.com/ontohub/OOR_Ontohub_API/master/BioPortalMetadata-9-3-cons.owl#" >
     <!ENTITY OntoHubMetadataOntology "https://raw.github.com/ontohub/OOR_Ontohub_API/master/OntoHubMetadataOntology.owl#" >
     <!ENTITY Domain_Fields_Core "https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#" >
 ]>
@@ -21,12 +21,12 @@
      xmlns:ontology="http://omv.ontoware.org/2005/05/ontology#"
      xmlns:OntoHubMetadataOntology="https://raw.github.com/ontohub/OOR_Ontohub_API/master/OntoHubMetadataOntology.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:BioPortalMetadata="http://protege.stanford.edu/ontologies/metadata/BioPortalMetadata.owl#"
+     xmlns:BioPortalMetadata="https://raw.github.com/ontohub/OOR_Ontohub_API/master/BioPortalMetadata-9-3-cons.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#">
     <owl:Ontology rdf:about="">
-        <owl:imports rdf:resource="http://protege.stanford.edu/ontologies/metadata/BioPortalMetadata.owl"/>
+        <owl:imports rdf:resource="https://raw.github.com/ontohub/OOR_Ontohub_API/master/BioPortalMetadata-9-3-cons.owl"/>
         <owl:imports rdf:resource="https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Extension.owl"/>
     </owl:Ontology>
     
@@ -60,25 +60,25 @@
     
 
 
-    <!-- http://protege.stanford.edu/ontologies/metadata/BioPortalMetadata.owl#id -->
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/BioPortalMetadata-9-3-cons.owl#id -->
 
     <owl:DatatypeProperty rdf:about="&BioPortalMetadata;id"/>
     
 
 
-    <!-- http://protege.stanford.edu/ontologies/metadata/BioPortalMetadata.owl#password -->
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/BioPortalMetadata-9-3-cons.owl#password -->
 
     <owl:DatatypeProperty rdf:about="&BioPortalMetadata;password"/>
     
 
 
-    <!-- http://protege.stanford.edu/ontologies/metadata/BioPortalMetadata.owl#timestampCreation -->
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/BioPortalMetadata-9-3-cons.owl#timestampCreation -->
 
     <owl:DatatypeProperty rdf:about="&BioPortalMetadata;timestampCreation"/>
     
 
 
-    <!-- http://protege.stanford.edu/ontologies/metadata/BioPortalMetadata.owl#username -->
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/BioPortalMetadata-9-3-cons.owl#username -->
 
     <owl:DatatypeProperty rdf:about="&BioPortalMetadata;username"/>
     
