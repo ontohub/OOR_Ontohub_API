@@ -1,0 +1,2007 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://raw.github.com/ontohub/OOR_Ontohub_API/master/BioPortalMetadata-9-3-cons.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="https://raw.github.com/ontohub/OOR_Ontohub_API/master/BioPortalMetadata-9-3-cons.owl">
+    <Prefix name="" IRI="https://raw.github.com/ontohub/OOR_Ontohub_API/master/BioPortalMetadata-9-3-cons.owl#"/>
+    <Prefix name="OMV" IRI="http://omv.ontoware.org/2005/05/ontology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="xsp" IRI="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="changes" IRI="http://protege.stanford.edu/ontologies/ChAO/changes.rdfs#"/>
+    <Prefix name="metrics" IRI="http://protege.stanford.edu/ontologies/metrics/metrics.rdfs#"/>
+    <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
+    <Prefix name="mappings" IRI="http://protege.stanford.edu/ontologies/mappings/mappings.rdfs#"/>
+    <Import>http://omv.ontoware.org/2005/05/ontology</Import>
+    <Import>http://protege.stanford.edu/ontologies/mappings/mappings.rdfs</Import>
+    <Import>http://protege.stanford.edu/ontologies/ChAO/changes.rdfs</Import>
+    <Declaration>
+        <Class IRI="#BioPortalUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BioPortalUserRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EvaluationDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ontology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OntologyGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OntologyView"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Review"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ViewDefinitionLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ViewGenerationEngine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualOntology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualView"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="changes:annotates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="changes:associatedAnnotations"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#administeredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#administers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsOntology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#correctnessReview"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#currentVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#degreeOfFormalityReview"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#documentationAndSupportReview"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#domainCoverageReview"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRoles"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasView"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVirtualView"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#institution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isVersionOfVirtualOntology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isViewOnOntologyVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#qualityOfContentReview"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reviewOnDimension"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportedByViewGenerationEngine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsViewDefinitionLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usabilityReview"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesOntology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#viewDefinitionLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#viewGenerationEngine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#virtualViewOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#annotatesByVirtualID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#authorProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#codingScheme"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#documentationProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fileNames"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#filePath"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasContactEmail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasContactName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#internalVersionNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isFoundry"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isManual"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isRemote"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#oboFoundryID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#oboFoundryName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#password"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#preferredNameProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#propertyWithUniqueValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#statusID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#synonymProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#targetTerminologies"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#textualReview"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#timestampCreation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#urlHomepage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#urlPublications"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#username"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#viewDefinition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#virtualURI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="metrics:averageNumberOfSiblings"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="metrics:classesWithMoreThanOnePropertyValueForPropertyWithUniqueValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="metrics:classesWithMoreThanXSubclasses"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="metrics:classesWithNoAuthor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="metrics:classesWithNoDocumentation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="metrics:classesWithSingleSubclass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="metrics:maximumDepth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="metrics:maximumNumberOfSiblings"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="metrics:preferredMaximumSubclassLimit"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#administeredBy"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isVersionOfVirtualOntology"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#filePath"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#id"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#internalVersionNumber"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#isFoundry"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#isRemote"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#statusID"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#timestampCreation"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#codingScheme"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasContactEmail"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#hasContactName"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#preferredNameProperty"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#synonymProperty"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:OntologyDomain"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#id"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="OMV:OntologyDomain"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#oboFoundryName"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioPortalUser"/>
+        <Class abbreviatedIRI="OMV:Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioPortalUser"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#id"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioPortalUser"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#timestampCreation"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioPortalUser"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#username"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioPortalUser"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#password"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioPortalUserRole"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioPortalUserRole"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="OMV:description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioPortalUserRole"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="OMV:name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioPortalUserRole"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="OMV:name"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioPortalUserRole"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#id"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BioPortalUserRole"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="OMV:description"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ontology"/>
+        <Class abbreviatedIRI="changes:AnnotatableThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OntologyGroup"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OntologyGroup"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="OMV:acronym"/>
+            <Literal datatypeIRI="&xsd;string">string</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OntologyGroup"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="OMV:description"/>
+            <Literal datatypeIRI="&xsd;string">string</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OntologyGroup"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="OMV:name"/>
+            <Literal datatypeIRI="&xsd;string">string</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OntologyGroup"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="OMV:acronym"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OntologyGroup"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="OMV:name"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OntologyGroup"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#id"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OntologyGroup"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="OMV:description"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OntologyView"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Review"/>
+        <Class abbreviatedIRI="changes:Annotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="OMV:acronym"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="OMV:description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="OMV:documentation"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="OMV:name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="OMV:name"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="OMV:acronym"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="OMV:description"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="OMV:documentation"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewGenerationEngine"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewGenerationEngine"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="OMV:acronym"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewGenerationEngine"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="OMV:description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewGenerationEngine"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="OMV:documentation"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewGenerationEngine"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="OMV:name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewGenerationEngine"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="OMV:name"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewGenerationEngine"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="OMV:acronym"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViewGenerationEngine"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="OMV:description"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualOntology"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualOntology"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#id"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualOntology"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#isManual"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualOntology"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#oboFoundryID"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualView"/>
+        <Class IRI="#VirtualOntology"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#ARQ-Language"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="OMV:KnowledgeRepresentationParadigm"/>
+        <NamedIndividual IRI="#DAG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ViewGenerationEngine"/>
+        <NamedIndividual IRI="#Jena-ARQ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="OMV:OntologyLanguage"/>
+        <NamedIndividual IRI="#LexGrid-XML"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#ManualViewDefinitionLanguage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="OMV:OntologyLanguage"/>
+        <NamedIndividual IRI="#OBO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="OMV:OntologyEngineeringTool"/>
+        <NamedIndividual IRI="#OBOEdit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="OMV:Organisation"/>
+        <NamedIndividual IRI="#OBO_Foundry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ViewGenerationEngine"/>
+        <NamedIndividual IRI="#Pellet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="OMV:OntologyEngineeringTool"/>
+        <NamedIndividual IRI="#Protege"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="OMV:OntologyLanguage"/>
+        <NamedIndividual IRI="#Protege-Frames"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#RDQL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#RQL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="OMV:OntologyLanguage"/>
+        <NamedIndividual IRI="#RRF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#RVL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ViewGenerationEngine"/>
+        <NamedIndividual IRI="#RedLand-Rasqal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#SPARQL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ViewGenerationEngine"/>
+        <NamedIndividual IRI="#Sesame-SPARQL_Engine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ViewGenerationEngine"/>
+        <NamedIndividual IRI="#Virtuoso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="OMV:Organisation"/>
+        <NamedIndividual IRI="#caBIG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#vSPARQL"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportedByViewGenerationEngine"/>
+        <NamedIndividual IRI="#ARQ-Language"/>
+        <NamedIndividual IRI="#Jena-ARQ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportsViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#Jena-ARQ"/>
+        <NamedIndividual IRI="#RDQL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportsViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#Jena-ARQ"/>
+        <NamedIndividual IRI="#SPARQL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportsViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#Jena-ARQ"/>
+        <NamedIndividual IRI="#ARQ-Language"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportsViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#Pellet"/>
+        <NamedIndividual IRI="#SPARQL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportedByViewGenerationEngine"/>
+        <NamedIndividual IRI="#RDQL"/>
+        <NamedIndividual IRI="#Jena-ARQ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportedByViewGenerationEngine"/>
+        <NamedIndividual IRI="#RDQL"/>
+        <NamedIndividual IRI="#RedLand-Rasqal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportsViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#RedLand-Rasqal"/>
+        <NamedIndividual IRI="#SPARQL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportsViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#RedLand-Rasqal"/>
+        <NamedIndividual IRI="#RDQL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportedByViewGenerationEngine"/>
+        <NamedIndividual IRI="#SPARQL"/>
+        <NamedIndividual IRI="#Virtuoso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportedByViewGenerationEngine"/>
+        <NamedIndividual IRI="#SPARQL"/>
+        <NamedIndividual IRI="#Sesame-SPARQL_Engine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportedByViewGenerationEngine"/>
+        <NamedIndividual IRI="#SPARQL"/>
+        <NamedIndividual IRI="#RedLand-Rasqal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportedByViewGenerationEngine"/>
+        <NamedIndividual IRI="#SPARQL"/>
+        <NamedIndividual IRI="#Jena-ARQ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportedByViewGenerationEngine"/>
+        <NamedIndividual IRI="#SPARQL"/>
+        <NamedIndividual IRI="#Pellet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportsViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#Sesame-SPARQL_Engine"/>
+        <NamedIndividual IRI="#SPARQL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportsViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#Virtuoso"/>
+        <NamedIndividual IRI="#vSPARQL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportsViewDefinitionLanguage"/>
+        <NamedIndividual IRI="#Virtuoso"/>
+        <NamedIndividual IRI="#SPARQL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#supportedByViewGenerationEngine"/>
+        <NamedIndividual IRI="#vSPARQL"/>
+        <NamedIndividual IRI="#Virtuoso"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual abbreviatedIRI="OMV:DAML-OIL"/>
+        <Literal datatypeIRI="&xsd;string">DAML-OIL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual abbreviatedIRI="OMV:DAML-OIL"/>
+        <Literal datatypeIRI="&xsd;string">DAML-OIL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual abbreviatedIRI="OMV:OWL"/>
+        <Literal datatypeIRI="&xsd;string">OWL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual abbreviatedIRI="OMV:OWL"/>
+        <Literal datatypeIRI="&xsd;string">OWL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual abbreviatedIRI="OMV:OWL-DL"/>
+        <Literal datatypeIRI="&xsd;string">OWL-DL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual abbreviatedIRI="OMV:OWL-DL"/>
+        <Literal datatypeIRI="&xsd;string">OWL-DL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual abbreviatedIRI="OMV:OWL-Full"/>
+        <Literal datatypeIRI="&xsd;string">OWL-FULL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual abbreviatedIRI="OMV:OWL-Full"/>
+        <Literal datatypeIRI="&xsd;string">OWL-Full</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual abbreviatedIRI="OMV:OWL-Lite"/>
+        <Literal datatypeIRI="&xsd;string">OWL-LITE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual abbreviatedIRI="OMV:OWL-Lite"/>
+        <Literal datatypeIRI="&xsd;string">OWL-Lite</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual abbreviatedIRI="OMV:RDF-S"/>
+        <Literal datatypeIRI="&xsd;string">RDF-S</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual abbreviatedIRI="OMV:RDF-S"/>
+        <Literal datatypeIRI="&xsd;string">RDF-S</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#ARQ-Language"/>
+        <Literal datatypeIRI="&xsd;string">ARQ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:description"/>
+        <NamedIndividual IRI="#ARQ-Language"/>
+        <Literal datatypeIRI="&xsd;string">The ARQ Query Engine&apos;s own query language</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#ARQ-Language"/>
+        <Literal datatypeIRI="&xsd;string">ARQ-Language</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#Jena-ARQ"/>
+        <Literal datatypeIRI="&xsd;string">ARQ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:description"/>
+        <NamedIndividual IRI="#Jena-ARQ"/>
+        <Literal datatypeIRI="&xsd;string">ARQ is a query engine for Jena that supports the SPARQL RDF Query language.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:documentation"/>
+        <NamedIndividual IRI="#Jena-ARQ"/>
+        <Literal datatypeIRI="&xsd;string">http://jena.sourceforge.net/ARQ/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#Jena-ARQ"/>
+        <Literal datatypeIRI="&xsd;string">Jena/ARQ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#LexGrid-XML"/>
+        <Literal datatypeIRI="&xsd;string">LEXGRID-XML</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#LexGrid-XML"/>
+        <Literal datatypeIRI="&xsd;string">LexGrid-XML</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:description"/>
+        <NamedIndividual IRI="#ManualViewDefinitionLanguage"/>
+        <Literal datatypeIRI="&xsd;string">View definition by manual selection</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#ManualViewDefinitionLanguage"/>
+        <Literal datatypeIRI="&xsd;string">Manual</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#OBO"/>
+        <Literal datatypeIRI="&xsd;string">OBO</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#OBO"/>
+        <Literal datatypeIRI="&xsd;string">OBO</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#OBOEdit"/>
+        <Literal datatypeIRI="&xsd;string">OBO-Edit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#OBO_Foundry"/>
+        <Literal datatypeIRI="&xsd;string">Foundry</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#OBO_Foundry"/>
+        <Literal datatypeIRI="&xsd;string">OBO Foundry</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#Pellet"/>
+        <Literal datatypeIRI="&xsd;string">Pellet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:documentation"/>
+        <NamedIndividual IRI="#Pellet"/>
+        <Literal datatypeIRI="&xsd;string">http://clarkparsia.com/pellet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#Pellet"/>
+        <Literal datatypeIRI="&xsd;string">Pellet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#Protege"/>
+        <Literal datatypeIRI="&xsd;string">Protege</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#Protege-Frames"/>
+        <Literal datatypeIRI="&xsd;string">PROTEGE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#Protege-Frames"/>
+        <Literal datatypeIRI="&xsd;string">Protege-Frames</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#RDQL"/>
+        <Literal datatypeIRI="&xsd;string">RDQL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:description"/>
+        <NamedIndividual IRI="#RDQL"/>
+        <Literal datatypeIRI="&xsd;string">RDF Data Query Language (RDQL)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:documentation"/>
+        <NamedIndividual IRI="#RDQL"/>
+        <Literal datatypeIRI="&xsd;string">http://www.w3.org/Submission/2004/SUBM-RDQL-20040109/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#RDQL"/>
+        <Literal datatypeIRI="&xsd;string">RDQL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#RQL"/>
+        <Literal datatypeIRI="&xsd;string">RQL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:description"/>
+        <NamedIndividual IRI="#RQL"/>
+        <Literal datatypeIRI="&xsd;string">The RDF Query Language (RQL)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:documentation"/>
+        <NamedIndividual IRI="#RQL"/>
+        <Literal datatypeIRI="&xsd;string">http://139.91.183.30:9090/RDF/RQL/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#RQL"/>
+        <Literal datatypeIRI="&xsd;string">RQL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#RRF"/>
+        <Literal datatypeIRI="&xsd;string">RRF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#RRF"/>
+        <Literal datatypeIRI="&xsd;string">RRF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#RVL"/>
+        <Literal datatypeIRI="&xsd;string">RVL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:description"/>
+        <NamedIndividual IRI="#RVL"/>
+        <Literal datatypeIRI="&xsd;string">A &quot;full-fledged&quot; view definition language for creating virtual RDF/S resource descriptions and schemas from (meta)classes, properties, and resource descriptions.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:documentation"/>
+        <NamedIndividual IRI="#RVL"/>
+        <Literal datatypeIRI="&xsd;string">http://www.ics.forth.gr/isl/publications/paperlink/iswc03.pdf</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#RVL"/>
+        <Literal datatypeIRI="&xsd;string">RVL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#RedLand-Rasqal"/>
+        <Literal datatypeIRI="&xsd;string">Rasqal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:description"/>
+        <NamedIndividual IRI="#RedLand-Rasqal"/>
+        <Literal datatypeIRI="&xsd;string">Redland RDF library using the Rasqal RDF Query Library</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:documentation"/>
+        <NamedIndividual IRI="#RedLand-Rasqal"/>
+        <Literal datatypeIRI="&xsd;string">http://librdf.org/rasqal/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#RedLand-Rasqal"/>
+        <Literal datatypeIRI="&xsd;string">Redland/Rasqal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#SPARQL"/>
+        <Literal datatypeIRI="&xsd;string">SPARQL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:description"/>
+        <NamedIndividual IRI="#SPARQL"/>
+        <Literal datatypeIRI="&xsd;string">SPARQL Query Language for RDF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:documentation"/>
+        <NamedIndividual IRI="#SPARQL"/>
+        <Literal datatypeIRI="&xsd;string">http://www.w3.org/TR/rdf-sparql-query/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#SPARQL"/>
+        <Literal datatypeIRI="&xsd;string">SPARQL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#Sesame-SPARQL_Engine"/>
+        <Literal datatypeIRI="&xsd;string">SPARQL Engine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#Sesame-SPARQL_Engine"/>
+        <Literal datatypeIRI="&xsd;string">Sesame/SPARQL Engine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#Virtuoso"/>
+        <Literal datatypeIRI="&xsd;string">Virtuoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:documentation"/>
+        <NamedIndividual IRI="#Virtuoso"/>
+        <Literal datatypeIRI="&xsd;string">http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSSPARQL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#Virtuoso"/>
+        <Literal datatypeIRI="&xsd;string">Virtuoso SPARQL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <NamedIndividual IRI="#caBIG"/>
+        <Literal datatypeIRI="&xsd;string">caBIG</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#caBIG"/>
+        <Literal datatypeIRI="&xsd;string">caBIG</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <NamedIndividual IRI="#vSPARQL"/>
+        <Literal datatypeIRI="&xsd;string">vSPARQL</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#correctnessReview"/>
+        <ObjectProperty IRI="#reviewOnDimension"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#degreeOfFormalityReview"/>
+        <ObjectProperty IRI="#reviewOnDimension"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#documentationAndSupportReview"/>
+        <ObjectProperty IRI="#reviewOnDimension"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#domainCoverageReview"/>
+        <ObjectProperty IRI="#reviewOnDimension"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#qualityOfContentReview"/>
+        <ObjectProperty IRI="#reviewOnDimension"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usabilityReview"/>
+        <ObjectProperty IRI="#reviewOnDimension"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="changes:annotates"/>
+        <ObjectProperty abbreviatedIRI="changes:associatedAnnotations"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#administeredBy"/>
+        <ObjectProperty IRI="#administers"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsToGroup"/>
+        <ObjectProperty IRI="#containsOntology"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isVersionOfVirtualOntology"/>
+        <ObjectProperty IRI="#hasVersion"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isViewOnOntologyVersion"/>
+        <ObjectProperty IRI="#hasView"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasVirtualView"/>
+        <ObjectProperty IRI="#virtualViewOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#supportsViewDefinitionLanguage"/>
+        <ObjectProperty IRI="#supportedByViewGenerationEngine"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isVersionOfVirtualOntology"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#viewDefinitionLanguage"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#viewGenerationEngine"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasVersion"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#administeredBy"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="OMV:Ontology"/>
+            <Class IRI="#Project"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#administers"/>
+        <Class IRI="#BioPortalUser"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToGroup"/>
+        <Class IRI="#VirtualOntology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containsOntology"/>
+        <Class IRI="#OntologyGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRoles"/>
+        <Class IRI="#BioPortalUser"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVersion"/>
+        <Class IRI="#VirtualOntology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasView"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVirtualView"/>
+        <Class IRI="#VirtualOntology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#institution"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isVersionOfVirtualOntology"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isViewOnOntologyVersion"/>
+        <Class IRI="#OntologyView"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#reviewOnDimension"/>
+        <Class IRI="#Review"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportedByViewGenerationEngine"/>
+        <Class IRI="#ViewDefinitionLanguage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsViewDefinitionLanguage"/>
+        <Class IRI="#ViewGenerationEngine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesOntology"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#viewDefinitionLanguage"/>
+        <Class IRI="#OntologyView"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#viewGenerationEngine"/>
+        <Class IRI="#OntologyView"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#virtualViewOf"/>
+        <Class IRI="#VirtualView"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mappings:source"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="changes:Ontology_Component"/>
+            <Class abbreviatedIRI="rdfs:Resource"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mappings:target"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="changes:Ontology_Component"/>
+            <Class abbreviatedIRI="rdfs:Resource"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#administeredBy"/>
+        <Class IRI="#BioPortalUser"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#administers"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="OMV:Ontology"/>
+            <Class IRI="#Project"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToGroup"/>
+        <Class IRI="#OntologyGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsOntology"/>
+        <Class IRI="#VirtualOntology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#currentVersion"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRoles"/>
+        <Class IRI="#BioPortalUserRole"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVersion"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasView"/>
+        <Class IRI="#OntologyView"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVirtualView"/>
+        <Class IRI="#VirtualView"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#institution"/>
+        <Class abbreviatedIRI="OMV:Organisation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isVersionOfVirtualOntology"/>
+        <Class IRI="#VirtualOntology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isViewOnOntologyVersion"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#reviewOnDimension"/>
+        <Class IRI="#EvaluationDimension"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportedByViewGenerationEngine"/>
+        <Class IRI="#ViewGenerationEngine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsViewDefinitionLanguage"/>
+        <Class IRI="#ViewDefinitionLanguage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesOntology"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#viewDefinitionLanguage"/>
+        <Class IRI="#ViewDefinitionLanguage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#viewGenerationEngine"/>
+        <Class IRI="#ViewGenerationEngine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#virtualViewOf"/>
+        <Class IRI="#VirtualOntology"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#authorProperty"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#codingScheme"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#documentationProperty"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#filePath"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#internalVersionNumber"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isFoundry"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isManual"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isRemote"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#oboFoundryID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#oboFoundryName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#password"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#preferredNameProperty"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#propertyWithUniqueValue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#statusID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#synonymProperty"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#timestampCreation"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#username"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#viewDefinition"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="metrics:averageNumberOfSiblings"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="metrics:maximumDepth"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="metrics:maximumNumberOfSiblings"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="metrics:preferredMaximumSubclassLimit"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="OMV:URI"/>
+        <ObjectUnionOf>
+            <Class IRI="#ViewDefinitionLanguage"/>
+            <Class IRI="#ViewGenerationEngine"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="OMV:acronym"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="OMV:KnowledgeRepresentationParadigm"/>
+            <Class abbreviatedIRI="OMV:LicenseModel"/>
+            <Class abbreviatedIRI="OMV:Ontology"/>
+            <Class abbreviatedIRI="OMV:OntologyEngineeringMethodology"/>
+            <Class abbreviatedIRI="OMV:OntologyEngineeringTool"/>
+            <Class abbreviatedIRI="OMV:OntologyLanguage"/>
+            <Class abbreviatedIRI="OMV:OntologySyntax"/>
+            <Class abbreviatedIRI="OMV:OntologyTask"/>
+            <Class abbreviatedIRI="OMV:OntologyType"/>
+            <Class abbreviatedIRI="OMV:Organisation"/>
+            <Class IRI="#ViewDefinitionLanguage"/>
+            <Class IRI="#ViewGenerationEngine"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="OMV:description"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="OMV:FormalityLevel"/>
+            <Class abbreviatedIRI="OMV:KnowledgeRepresentationParadigm"/>
+            <Class abbreviatedIRI="OMV:LicenseModel"/>
+            <Class abbreviatedIRI="OMV:Ontology"/>
+            <Class abbreviatedIRI="OMV:OntologyEngineeringMethodology"/>
+            <Class abbreviatedIRI="OMV:OntologyEngineeringTool"/>
+            <Class abbreviatedIRI="OMV:OntologyLanguage"/>
+            <Class abbreviatedIRI="OMV:OntologySyntax"/>
+            <Class abbreviatedIRI="OMV:OntologyTask"/>
+            <Class abbreviatedIRI="OMV:OntologyType"/>
+            <Class IRI="#Project"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="OMV:documentation"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="OMV:KnowledgeRepresentationParadigm"/>
+            <Class abbreviatedIRI="OMV:LicenseModel"/>
+            <Class abbreviatedIRI="OMV:Ontology"/>
+            <Class abbreviatedIRI="OMV:OntologyEngineeringMethodology"/>
+            <Class abbreviatedIRI="OMV:OntologyEngineeringTool"/>
+            <Class abbreviatedIRI="OMV:OntologyLanguage"/>
+            <Class abbreviatedIRI="OMV:OntologySyntax"/>
+            <Class abbreviatedIRI="OMV:OntologyTask"/>
+            <Class abbreviatedIRI="OMV:OntologyType"/>
+            <Class IRI="#ViewDefinitionLanguage"/>
+            <Class IRI="#ViewGenerationEngine"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="OMV:name"/>
+        <ObjectUnionOf>
+            <Class IRI="#ViewDefinitionLanguage"/>
+            <Class IRI="#ViewGenerationEngine"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="OMV:version"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="OMV:Ontology"/>
+            <Class IRI="#ViewDefinitionLanguage"/>
+            <Class IRI="#ViewGenerationEngine"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#annotatesByVirtualID"/>
+        <Class abbreviatedIRI="changes:Annotation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#authorProperty"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codingScheme"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#documentationProperty"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fileNames"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#filePath"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasContactEmail"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="OMV:Ontology"/>
+            <Class IRI="#Project"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasContactName"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="OMV:Ontology"/>
+            <Class IRI="#Project"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="OMV:Ontology"/>
+            <Class abbreviatedIRI="OMV:OntologyDomain"/>
+            <Class IRI="#BioPortalUser"/>
+            <Class IRI="#BioPortalUserRole"/>
+            <Class IRI="#OntologyGroup"/>
+            <Class IRI="#VirtualOntology"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#internalVersionNumber"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isFoundry"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isManual"/>
+        <Class IRI="#VirtualOntology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isRemote"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#oboFoundryID"/>
+        <Class IRI="#VirtualOntology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#oboFoundryName"/>
+        <Class abbreviatedIRI="OMV:OntologyDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#password"/>
+        <Class IRI="#BioPortalUser"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#preferredNameProperty"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#propertyWithUniqueValue"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rating"/>
+        <Class IRI="#EvaluationDimension"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#statusID"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#synonymProperty"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#targetTerminologies"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#textualReview"/>
+        <Class IRI="#EvaluationDimension"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#timestampCreation"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="OMV:Ontology"/>
+            <Class IRI="#BioPortalUser"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#urlHomepage"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="OMV:Ontology"/>
+            <Class IRI="#OntologyGroup"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#urlPublications"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#username"/>
+        <Class IRI="#BioPortalUser"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#viewDefinition"/>
+        <Class IRI="#OntologyView"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#virtualURI"/>
+        <Class IRI="#VirtualOntology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="metrics:averageNumberOfSiblings"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="metrics:classesWithMoreThanOnePropertyValueForPropertyWithUniqueValue"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="metrics:classesWithMoreThanXSubclasses"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="metrics:classesWithNoAuthor"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="metrics:classesWithNoDocumentation"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="metrics:classesWithSingleSubclass"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="metrics:maximumDepth"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="metrics:maximumNumberOfSiblings"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="metrics:preferredMaximumSubclassLimit"/>
+        <Class abbreviatedIRI="OMV:Ontology"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#annotatesByVirtualID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#authorProperty"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#codingScheme"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#documentationProperty"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fileNames"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#filePath"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasContactEmail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasContactName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#internalVersionNumber"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isFoundry"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isManual"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isRemote"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#oboFoundryID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#oboFoundryName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#password"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#preferredNameProperty"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#propertyWithUniqueValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rating"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#statusID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#synonymProperty"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#targetTerminologies"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#textualReview"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#timestampCreation"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#urlHomepage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#urlPublications"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#username"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#viewDefinition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#virtualURI"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="metrics:averageNumberOfSiblings"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="metrics:classesWithMoreThanOnePropertyValueForPropertyWithUniqueValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="metrics:classesWithMoreThanXSubclasses"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="metrics:classesWithNoAuthor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="metrics:classesWithNoDocumentation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="metrics:classesWithSingleSubclass"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="metrics:maximumDepth"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="metrics:maximumNumberOfSiblings"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="metrics:preferredMaximumSubclassLimit"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>OMV:hasDomain</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">domain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>OMV:hasOntologyLanguage</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;string">ontologyLanguage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ARQ-Language</IRI>
+        <Literal datatypeIRI="&xsd;string">ARQ-Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DAG</IRI>
+        <Literal datatypeIRI="&xsd;string">Directed Acyclic Graph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DAG</IRI>
+        <Literal datatypeIRI="&xsd;string">DAG</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Jena-ARQ</IRI>
+        <Literal datatypeIRI="&xsd;string">Jena / ARQ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LexGrid-XML</IRI>
+        <Literal datatypeIRI="&xsd;string">LexGrid-XML</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ManualViewDefinitionLanguage</IRI>
+        <Literal datatypeIRI="&xsd;string">Manual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OBO</IRI>
+        <Literal datatypeIRI="&xsd;string">OBO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OBOEdit</IRI>
+        <Literal datatypeIRI="&xsd;string">OBO-Edit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pellet</IRI>
+        <Literal datatypeIRI="&xsd;string">Pellet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Protege</IRI>
+        <Literal datatypeIRI="&xsd;string">Protégé</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Protege-Frames</IRI>
+        <Literal datatypeIRI="&xsd;string">Protege-Frames</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RDQL</IRI>
+        <Literal datatypeIRI="&xsd;string">RDQL - RDF Data Query Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RQL</IRI>
+        <Literal datatypeIRI="&xsd;string">RQL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RRF</IRI>
+        <Literal datatypeIRI="&xsd;string">RRF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RVL</IRI>
+        <Literal datatypeIRI="&xsd;string">RVL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RedLand-Rasqal</IRI>
+        <Literal datatypeIRI="&xsd;string">Redland / Rasqal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SPARQL</IRI>
+        <Literal datatypeIRI="&xsd;string">SPARQL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sesame-SPARQL_Engine</IRI>
+        <Literal datatypeIRI="&xsd;string">Sesame / SPARQL Engine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Virtuoso</IRI>
+        <Literal datatypeIRI="&xsd;string">Virtuoso SPARQL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#correctnessReview</IRI>
+        <Literal datatypeIRI="&xsd;string">correctness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#degreeOfFormalityReview</IRI>
+        <Literal datatypeIRI="&xsd;string">degree of formality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#documentationAndSupportReview</IRI>
+        <Literal datatypeIRI="&xsd;string">documentation and support</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#domainCoverageReview</IRI>
+        <Literal datatypeIRI="&xsd;string">domain coverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasContactEmail</IRI>
+        <Literal datatypeIRI="&xsd;string">The email address(es)of the contact person(s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasContactName</IRI>
+        <Literal datatypeIRI="&xsd;string">The name(s) of the contact person(s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#id</IRI>
+        <Literal datatypeIRI="&xsd;string">The BioPortal id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRemote</IRI>
+        <Literal datatypeIRI="&xsd;string">BioPortal internal flag. Specifies whether an ontology is stored in BioPortal or it is remote.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#oboFoundryID</IRI>
+        <Literal datatypeIRI="&xsd;string">The OBO Foundry id of an OBO ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#oboFoundryName</IRI>
+        <Literal datatypeIRI="&xsd;string">The OBO Foundry name of an ontology domain (a.k.a. category).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#password</IRI>
+        <Literal datatypeIRI="&xsd;string">BioPortal user password</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#qualityOfContentReview</IRI>
+        <Literal datatypeIRI="&xsd;string">quality of content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#statusID</IRI>
+        <Literal datatypeIRI="&xsd;string">BioPortal upload status ID.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#timestampCreation</IRI>
+        <Literal datatypeIRI="&xsd;string">The date and time when the referred element (user, ontology, etc.) was created in BioPortal.
+In case of ontology versions, this represents the date and time when it was uploaded into BioPortal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usabilityReview</IRI>
+        <Literal datatypeIRI="&xsd;string">usability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#username</IRI>
+        <Literal datatypeIRI="&xsd;string">BioPortal user name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#vSPARQL</IRI>
+        <Literal datatypeIRI="&xsd;string">vSPARQL</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+

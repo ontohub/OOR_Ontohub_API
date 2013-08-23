@@ -14,14 +14,24 @@
 
 <rdf:RDF xmlns="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl#"
      xml:base="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl"
+<<<<<<< HEAD
+=======
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:Domain_Fields_Core="https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#"
+>>>>>>> 578a2d479fdcb66a2d7371d6126a121fd85c0bcb
      xmlns:Domain_fields="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<<<<<<< HEAD
      xmlns:Domain_Fields_Core="https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#">
     <owl:Ontology rdf:about="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl">
+=======
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="">
+>>>>>>> 578a2d479fdcb66a2d7371d6126a121fd85c0bcb
         <owl:imports rdf:resource="https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl"/>
     </owl:Ontology>
     
@@ -38,7 +48,77 @@
     
 
 
+<<<<<<< HEAD
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl#Affordance -->
+=======
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biochemistry -->
+
+    <owl:Class rdf:about="&Domain_Fields_Core;Biochemistry"/>
+    
+
+
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology -->
+
+    <owl:Class rdf:about="&Domain_Fields_Core;Biology"/>
+    
+
+
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology_broad -->
+
+    <owl:Class rdf:about="&Domain_Fields_Core;Biology_broad"/>
+    
+
+
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Medical_diagnostic_and_treatment_technology -->
+
+    <owl:Class rdf:about="&Domain_Fields_Core;Medical_diagnostic_and_treatment_technology"/>
+    
+
+
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Medicine -->
+
+    <owl:Class rdf:about="&Domain_Fields_Core;Medicine"/>
+    
+
+
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_science_mathematics_and_statistics -->
+
+    <owl:Class rdf:about="&Domain_Fields_Core;Natural_science_mathematics_and_statistics"/>
+    
+
+
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space -->
+
+    <owl:Class rdf:about="&Domain_Fields_Core;Space"/>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl#Anaesthesiology_and_Critical_Care -->
+
+    <owl:Class rdf:about="#Anaesthesiology_and_Critical_Care">
+        <rdfs:subClassOf rdf:resource="#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl#Anatomy -->
+
+    <owl:Class rdf:about="#Anatomy">
+        <rdfs:subClassOf rdf:resource="&Domain_Fields_Core;Biology_broad"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl#Angiology -->
+
+    <owl:Class rdf:about="#Angiology">
+        <rdfs:subClassOf rdf:resource="#Medicine"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl#Animal_Developmental_Biology -->
+>>>>>>> 578a2d479fdcb66a2d7371d6126a121fd85c0bcb
 
     <owl:Class rdf:about="&Domain_fields;Affordance">
         <rdfs:subClassOf rdf:resource="&Domain_fields;Spatial_intentionality"/>
