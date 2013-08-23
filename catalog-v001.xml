@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl" uri="Domain_Fields_Extension.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1377214276275" name="https://www.ontohub.org/ontologies/2013/7/OntoHubMetadataOntology.owl" uri="OntohubMetadataOntology.owl"/>
+    </group>
+</catalog>
