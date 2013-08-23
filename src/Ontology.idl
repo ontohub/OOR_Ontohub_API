@@ -1,4 +1,4 @@
-# TODO: also include the gatekeeper API
+# TODO: also include the gatekeeper API, BUT: users should have access to repositories (not ontologies - they belong to repositories)
 # TODO: if a method could take very long, make it oneway (=asynchronous)
 
 module org {
@@ -64,7 +64,7 @@ module persistence {
   };
   typedef sequence<Metadatum> MetadatumList;
 
-  struct OntologyFractum { # TM: synchromize this with OMV
+  struct OntologyFractum { # TM: synchronize this with OMV
     Iri iri;
     Text name;
     Text description;
@@ -117,9 +117,9 @@ module persistence {
     Iri getCurrentVersionIri(in Iri iri);
     void setName(in Iri iri, in Text name);
     void setDescription(in Iri iri, in Text description);
-    void setCategories(in Iri iri, in TextList categories);
-    void addCateogry(in Iri iri, in Text category);
-    void delCategory(in Iri iri, in Text category);
+    void setCategories(in Iri iri, in TextList categories); # TM: should be covered by meta ontology
+    void addCateogry(in Iri iri, in Text category); # TM: should be covered by meta ontology
+    void delCategory(in Iri iri, in Text category); # TM: should be covered by meta ontology
     void setGroups(in Iri iri, in TextList groups);
     void addGroup(in Iri iri, in Text group);
     void delGroup(in Iri iri, in Text group);

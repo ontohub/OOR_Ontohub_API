@@ -15,10 +15,17 @@
 <rdf:RDF xmlns="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl#"
      xml:base="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:Domain_Fields_Core="https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#"
 >>>>>>> 578a2d479fdcb66a2d7371d6126a121fd85c0bcb
+=======
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:Domain_Fields_Core="https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#"
+=======
+>>>>>>> update
+>>>>>>> origin/temp
      xmlns:Domain_fields="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
@@ -26,12 +33,21 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 <<<<<<< HEAD
+<<<<<<< HEAD
      xmlns:Domain_Fields_Core="https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#">
     <owl:Ontology rdf:about="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl">
 =======
      xmlns:owl="http://www.w3.org/2002/07/owl#">
     <owl:Ontology rdf:about="">
 >>>>>>> 578a2d479fdcb66a2d7371d6126a121fd85c0bcb
+=======
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="">
+=======
+     xmlns:Domain_Fields_Core="https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#">
+    <owl:Ontology rdf:about="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl">
+>>>>>>> update
+>>>>>>> origin/temp
         <owl:imports rdf:resource="https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl"/>
     </owl:Ontology>
     
@@ -49,8 +65,11 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl#Affordance -->
 =======
+=======
+>>>>>>> origin/temp
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biochemistry -->
 
     <owl:Class rdf:about="&Domain_Fields_Core;Biochemistry"/>
@@ -118,7 +137,13 @@
 
 
     <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl#Animal_Developmental_Biology -->
+<<<<<<< HEAD
 >>>>>>> 578a2d479fdcb66a2d7371d6126a121fd85c0bcb
+=======
+=======
+    <!-- https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl#Affordance -->
+>>>>>>> update
+>>>>>>> origin/temp
 
     <owl:Class rdf:about="&Domain_fields;Affordance">
         <rdfs:subClassOf rdf:resource="&Domain_fields;Spatial_intentionality"/>
