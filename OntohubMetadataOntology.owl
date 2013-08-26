@@ -21,9 +21,9 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>https://raw.github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Extension.owl</Import>
+    <Import>https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Extension.owl</Import>
     <Import>http://protege.stanford.edu/ontologies/metadata/BioPortalMetadata.owl</Import>
-    <Import>https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl</Import>
+    <Import>https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl</Import>
     <Declaration>
         <Class IRI="#OntoHubUser"/>
     </Declaration>
@@ -86,7 +86,7 @@
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://omv.ontoware.org/2005/05/ontology#OntologyDomain"/>
-        <Class IRI="https://github.com/ontohub/OOR_Ontohub_API/blob/master/Domain_Fields_Core.owl#Domain_Field"/>
+        <Class IRI="https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field"/>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#OntoHubUser"/>
