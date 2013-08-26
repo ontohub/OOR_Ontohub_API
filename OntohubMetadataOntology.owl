@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.ontohub.org/ontologies/2013/8/OntoHubMetadata"
+     xml:base="http://www.raw.github.com/ontohub/OOR_Ontohub_API/master/OntohubMetadataOntology"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.ontohub.org/ontologies/2013/8/OntoHubMetadata">
+     ontologyIRI="http://www.raw.github.com/ontohub/OOR_Ontohub_API/master/OntohubMetadataOntology">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
