@@ -37,6 +37,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Accounting_and_taxation -->
 
     <owl:Class rdf:about="&Domain_fields;Accounting_and_taxation">
+        <rdfs:label rdf:datatype="&xsd;string">AccountingAndTaxation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Business_and_administration"/>
     </owl:Class>
     
@@ -45,15 +46,19 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Agriculture -->
 
     <owl:Class rdf:about="&Domain_fields;Agriculture">
-        <rdfs:subClassOf rdf:resource="&Domain_fields;Agriculture_forestry_fisheries_and_veterinary"/>
+        <rdfs:label rdf:datatype="&xsd;string">Agriculture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Domain_fields;AgricultureForestryFsheriesVeterinary"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to agriculture.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Agriculture_forestry_fisheries_and_veterinary -->
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#AgricultureForestryFsheriesVeterinary -->
 
-    <owl:Class rdf:about="&Domain_fields;Agriculture_forestry_fisheries_and_veterinary">
+    <owl:Class rdf:about="&Domain_fields;AgricultureForestryFsheriesVeterinary">
+        <rdfs:label rdf:datatype="&xsd;string">AgricultureForestryFisheriesVeterinary</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to agriculture, forestry, fisheries, and veterinary. A closer specification of an ontology domain can facilitate a more accurate ontology search, retrieval, and reuse. Thus, it is recommended to specify the domain-field as specific as possible.</rdfs:comment>
     </owl:Class>
     
 
@@ -61,6 +66,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Architecture_and_construction -->
 
     <owl:Class rdf:about="&Domain_fields;Architecture_and_construction">
+        <rdfs:label rdf:datatype="&xsd;string">ArchitectureAndConstruction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Engineering_manufacturing_and_construction"/>
     </owl:Class>
     
@@ -69,6 +75,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Architecture_and_town_planning -->
 
     <owl:Class rdf:about="&Domain_fields;Architecture_and_town_planning">
+        <rdfs:label rdf:datatype="&xsd;string">ArchitectureAndTownPlanning</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Architecture_and_construction"/>
     </owl:Class>
     
@@ -77,7 +84,9 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts -->
 
     <owl:Class rdf:about="&Domain_fields;Arts">
+        <rdfs:label rdf:datatype="&xsd;string">Arts</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Arts_and_humanities"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to arts.</rdfs:comment>
     </owl:Class>
     
 
@@ -85,7 +94,9 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts_and_humanities -->
 
     <owl:Class rdf:about="&Domain_fields;Arts_and_humanities">
+        <rdfs:label rdf:datatype="&xsd;string">ArtsAndHumanities</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to arts and humanities.</rdfs:comment>
     </owl:Class>
     
 
@@ -93,7 +104,9 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Audio-visual_and_media_production -->
 
     <owl:Class rdf:about="&Domain_fields;Audio-visual_and_media_production">
+        <rdfs:label rdf:datatype="&xsd;string">AudioVisualAndMediaProduction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Arts"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the subjects related to the audio-visual domain and media production.</rdfs:comment>
     </owl:Class>
     
 
@@ -101,6 +114,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biochemistry -->
 
     <owl:Class rdf:about="&Domain_fields;Biochemistry">
+        <rdfs:label rdf:datatype="&xsd;string">Biochemistry</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Biology_broad"/>
     </owl:Class>
     
@@ -109,6 +123,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology -->
 
     <owl:Class rdf:about="&Domain_fields;Biology">
+        <rdfs:label rdf:datatype="&xsd;string">Biology</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Biology_broad"/>
     </owl:Class>
     
@@ -117,6 +132,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology_broad -->
 
     <owl:Class rdf:about="&Domain_fields;Biology_broad">
+        <rdfs:label rdf:datatype="&xsd;string">BiologyBroad</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Natural_science_mathematics_and_statistics"/>
     </owl:Class>
     
@@ -125,6 +141,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Building_and_civil_engineering -->
 
     <owl:Class rdf:about="&Domain_fields;Building_and_civil_engineering">
+        <rdfs:label rdf:datatype="&xsd;string">BuildingAndCivilEngineering</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Architecture_and_construction"/>
     </owl:Class>
     
@@ -133,6 +150,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_administration_and_law -->
 
     <owl:Class rdf:about="&Domain_fields;Business_administration_and_law">
+        <rdfs:label rdf:datatype="&xsd;string">BusinessAdministrationAndLaw</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
     </owl:Class>
     
@@ -141,6 +159,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_and_administration -->
 
     <owl:Class rdf:about="&Domain_fields;Business_and_administration">
+        <rdfs:label rdf:datatype="&xsd;string">BusinessAndAdministration</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Business_administration_and_law"/>
     </owl:Class>
     
@@ -149,6 +168,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Care_of_the_elderly_and_of_disabled_adults -->
 
     <owl:Class rdf:about="&Domain_fields;Care_of_the_elderly_and_of_disabled_adults">
+        <rdfs:label rdf:datatype="&xsd;string">CareOfElderlyAndDisabledAdults</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Welfare"/>
     </owl:Class>
     
@@ -157,6 +177,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Chemical_engineering_and_process -->
 
     <owl:Class rdf:about="&Domain_fields;Chemical_engineering_and_process">
+        <rdfs:label rdf:datatype="&xsd;string">ChemicalEngineeringAndProcess</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Engineering_and_engineering_trade"/>
     </owl:Class>
     
@@ -165,6 +186,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Chemistry -->
 
     <owl:Class rdf:about="&Domain_fields;Chemistry">
+        <rdfs:label rdf:datatype="&xsd;string">Chemistry</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Physical_science"/>
     </owl:Class>
     
@@ -173,6 +195,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Child_care_and_youth_services -->
 
     <owl:Class rdf:about="&Domain_fields;Child_care_and_youth_services">
+        <rdfs:label rdf:datatype="&xsd;string">ChildCareAndYouthServices</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Welfare"/>
     </owl:Class>
     
@@ -181,6 +204,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Community_sanitation -->
 
     <owl:Class rdf:about="&Domain_fields;Community_sanitation">
+        <rdfs:label rdf:datatype="&xsd;string">CommunitySanitation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Hygiene_and_occupational_health_services"/>
     </owl:Class>
     
@@ -189,6 +213,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Computer_science -->
 
     <owl:Class rdf:about="&Domain_fields;Computer_science">
+        <rdfs:label rdf:datatype="&xsd;string">ComputerScience</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Information_and_Communication_Technology"/>
     </owl:Class>
     
@@ -197,6 +222,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Computer_use -->
 
     <owl:Class rdf:about="&Domain_fields;Computer_use">
+        <rdfs:label rdf:datatype="&xsd;string">ComputerUse</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Information_and_Communication_Technology_narrow"/>
     </owl:Class>
     
@@ -205,7 +231,9 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Crop_and_livestock_production -->
 
     <owl:Class rdf:about="&Domain_fields;Crop_and_livestock_production">
+        <rdfs:label rdf:datatype="&xsd;string">CropAndLivestockProduction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Agriculture"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to the crop and livestock production.</rdfs:comment>
     </owl:Class>
     
 
@@ -213,6 +241,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Database_and_network_design_and_administration -->
 
     <owl:Class rdf:about="&Domain_fields;Database_and_network_design_and_administration">
+        <rdfs:label rdf:datatype="&xsd;string">DatabaseAndNetworkDesignAndAdministration</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Information_and_Communication_Technology_narrow"/>
     </owl:Class>
     
@@ -221,6 +250,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Dentistry -->
 
     <owl:Class rdf:about="&Domain_fields;Dentistry">
+        <rdfs:label rdf:datatype="&xsd;string">Dentistry</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Health"/>
     </owl:Class>
     
@@ -229,6 +259,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field -->
 
     <owl:Class rdf:about="&Domain_fields;Domain_Field">
+        <rdfs:label rdf:datatype="&xsd;string">DomainField</rdfs:label>
         <rdfs:comment>The Domain Field consists of pre-defined domain-specific classes that cluster ontologies according to the domain-subject. As some ontologies cover several domains, an ontology can belong to more than one domain field. The OMV recommendation, to follow the DMOZ and ACM specifications of domain subject, is advised in those cases in which none of pre-defined fields captures the ontology subject, in which case such an ontology should be clustered under the field named &apos;unclassified&apos;.</rdfs:comment>
     </owl:Class>
     
@@ -237,6 +268,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domestic_services -->
 
     <owl:Class rdf:about="&Domain_fields;Domestic_services">
+        <rdfs:label rdf:datatype="&xsd;string">DomesticServices</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Personal_services"/>
     </owl:Class>
     
@@ -245,6 +277,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Earth_science -->
 
     <owl:Class rdf:about="&Domain_fields;Earth_science">
+        <rdfs:label rdf:datatype="&xsd;string">EarthScience</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Physical_science"/>
     </owl:Class>
     
@@ -253,6 +286,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Economics -->
 
     <owl:Class rdf:about="&Domain_fields;Economics">
+        <rdfs:label rdf:datatype="&xsd;string">Economics</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Social_and_behavioural_science"/>
     </owl:Class>
     
@@ -261,6 +295,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education -->
 
     <owl:Class rdf:about="&Domain_fields;Education">
+        <rdfs:label rdf:datatype="&xsd;string">Education</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
     </owl:Class>
     
@@ -269,7 +304,9 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_narrow -->
 
     <owl:Class rdf:about="&Domain_fields;Education_narrow">
+        <rdfs:label rdf:datatype="&xsd;string">EducationNarrow</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Education"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the education of teachers.</rdfs:comment>
     </owl:Class>
     
 
@@ -277,6 +314,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_science -->
 
     <owl:Class rdf:about="&Domain_fields;Education_science">
+        <rdfs:label rdf:datatype="&xsd;string">EducationScience</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Education_narrow"/>
     </owl:Class>
     
@@ -285,6 +323,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Electricity_and_energy -->
 
     <owl:Class rdf:about="&Domain_fields;Electricity_and_energy">
+        <rdfs:label rdf:datatype="&xsd;string">ElectricityAndEnergy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Engineering_and_engineering_trade"/>
     </owl:Class>
     
@@ -293,6 +332,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Electronics_and_automation -->
 
     <owl:Class rdf:about="&Domain_fields;Electronics_and_automation">
+        <rdfs:label rdf:datatype="&xsd;string">ElectronicsAndAutomation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Engineering_and_engineering_trade"/>
     </owl:Class>
     
@@ -301,6 +341,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_and_engineering_trade -->
 
     <owl:Class rdf:about="&Domain_fields;Engineering_and_engineering_trade">
+        <rdfs:label rdf:datatype="&xsd;string">EngineeringAndEngineeringTrade</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Engineering_manufacturing_and_construction"/>
     </owl:Class>
     
@@ -309,6 +350,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_manufacturing_and_construction -->
 
     <owl:Class rdf:about="&Domain_fields;Engineering_manufacturing_and_construction">
+        <rdfs:label rdf:datatype="&xsd;string">EngineeringManufacturingAndConstruction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
     </owl:Class>
     
@@ -317,6 +359,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environment -->
 
     <owl:Class rdf:about="&Domain_fields;Environment">
+        <rdfs:label rdf:datatype="&xsd;string">Environment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Natural_science_mathematics_and_statistics"/>
     </owl:Class>
     
@@ -325,6 +368,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environmental_protection_technology -->
 
     <owl:Class rdf:about="&Domain_fields;Environmental_protection_technology">
+        <rdfs:label rdf:datatype="&xsd;string">EnvironmentalProtectionTechnology</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Engineering_and_engineering_trade"/>
     </owl:Class>
     
@@ -333,6 +377,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environmental_science -->
 
     <owl:Class rdf:about="&Domain_fields;Environmental_science">
+        <rdfs:label rdf:datatype="&xsd;string">EnvironmentalScience</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Environment"/>
     </owl:Class>
     
@@ -341,8 +386,9 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fashion_interior_and_industrial_design -->
 
     <owl:Class rdf:about="&Domain_fields;Fashion_interior_and_industrial_design">
+        <rdfs:label rdf:datatype="&xsd;string">FashionAndInteriorAndIndustrialDesign</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Arts"/>
-        <rdfs:comment>The class includes ontologies that deal with design in general, while further specification of the spatial design categories can be found under the class Space, subclass Design.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">The class includes ontologies that deal with design in general, while further specification of the spatial design categories can be found under the class Space, subclass Design.</rdfs:comment>
     </owl:Class>
     
 
@@ -350,6 +396,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Finance_banking_and_insurance -->
 
     <owl:Class rdf:about="&Domain_fields;Finance_banking_and_insurance">
+        <rdfs:label rdf:datatype="&xsd;string">FinanceBankingAndInsurance</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Business_and_administration"/>
     </owl:Class>
     
@@ -358,6 +405,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fine_arts -->
 
     <owl:Class rdf:about="&Domain_fields;Fine_arts">
+        <rdfs:label rdf:datatype="&xsd;string">FineArts</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Arts"/>
     </owl:Class>
     
@@ -366,7 +414,9 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fisheries -->
 
     <owl:Class rdf:about="&Domain_fields;Fisheries">
-        <rdfs:subClassOf rdf:resource="&Domain_fields;Agriculture_forestry_fisheries_and_veterinary"/>
+        <rdfs:label rdf:datatype="&xsd;string">Fisheries</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Domain_fields;AgricultureForestryFsheriesVeterinary"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to fisheries.</rdfs:comment>
     </owl:Class>
     
 
@@ -374,7 +424,8 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Food_processing -->
 
     <owl:Class rdf:about="&Domain_fields;Food_processing">
-        <rdfs:subClassOf rdf:resource="&Domain_fields;Manufacturing_and_processing"/>
+        <rdfs:label rdf:datatype="&xsd;string">FoodProcessing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Domain_fields;ManufacturingAndProcessing"/>
     </owl:Class>
     
 
@@ -382,7 +433,9 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Forestry -->
 
     <owl:Class rdf:about="&Domain_fields;Forestry">
-        <rdfs:subClassOf rdf:resource="&Domain_fields;Agriculture_forestry_fisheries_and_veterinary"/>
+        <rdfs:label rdf:datatype="&xsd;string">Forestry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Domain_fields;AgricultureForestryFsheriesVeterinary"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to forestry.</rdfs:comment>
     </owl:Class>
     
 
@@ -390,6 +443,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Glass_processing -->
 
     <owl:Class rdf:about="&Domain_fields;Glass_processing">
+        <rdfs:label rdf:datatype="&xsd;string">GlassProcessing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Material_processing"/>
     </owl:Class>
     
@@ -398,6 +452,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hair_and_beauty_services -->
 
     <owl:Class rdf:about="&Domain_fields;Hair_and_beauty_services">
+        <rdfs:label rdf:datatype="&xsd;string">HairAndBeautyServices</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Personal_services"/>
     </owl:Class>
     
@@ -406,6 +461,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Handicrafts -->
 
     <owl:Class rdf:about="&Domain_fields;Handicrafts">
+        <rdfs:label rdf:datatype="&xsd;string">Handicrafts</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Arts"/>
     </owl:Class>
     
@@ -414,6 +470,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health -->
 
     <owl:Class rdf:about="&Domain_fields;Health">
+        <rdfs:label rdf:datatype="&xsd;string">Health</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Health_and_welfare"/>
     </owl:Class>
     
@@ -422,6 +479,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health_and_welfare -->
 
     <owl:Class rdf:about="&Domain_fields;Health_and_welfare">
+        <rdfs:label rdf:datatype="&xsd;string">HealthAndWelfare</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
     </owl:Class>
     
@@ -430,6 +488,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#History_and_archaeology -->
 
     <owl:Class rdf:about="&Domain_fields;History_and_archaeology">
+        <rdfs:label rdf:datatype="&xsd;string">HistoryAndArchaeology</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Humanities"/>
     </owl:Class>
     
@@ -438,7 +497,9 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Horticulture -->
 
     <owl:Class rdf:about="&Domain_fields;Horticulture">
+        <rdfs:label rdf:datatype="&xsd;string">Horticulture</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Agriculture"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to horticulture.</rdfs:comment>
     </owl:Class>
     
 
@@ -446,6 +507,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hotel_restaurant_and_catering -->
 
     <owl:Class rdf:about="&Domain_fields;Hotel_restaurant_and_catering">
+        <rdfs:label rdf:datatype="&xsd;string">HotelRestaurantAndCatering</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Personal_services"/>
     </owl:Class>
     
@@ -454,6 +516,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Humanities -->
 
     <owl:Class rdf:about="&Domain_fields;Humanities">
+        <rdfs:label rdf:datatype="&xsd;string">Humanities</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Arts_and_humanities"/>
     </owl:Class>
     
@@ -462,6 +525,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hygiene_and_occupational_health_services -->
 
     <owl:Class rdf:about="&Domain_fields;Hygiene_and_occupational_health_services">
+        <rdfs:label rdf:datatype="&xsd;string">HygieneAndOccupationalHealthServices</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Services"/>
     </owl:Class>
     
@@ -470,6 +534,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ISO -->
 
     <owl:Class rdf:about="&Domain_fields;ISO">
+        <rdfs:label rdf:datatype="&xsd;string">ISO</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Standard"/>
     </owl:Class>
     
@@ -478,6 +543,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology -->
 
     <owl:Class rdf:about="&Domain_fields;Information_and_Communication_Technology">
+        <rdfs:label rdf:datatype="&xsd;string">InformationAndCommunicationTechnology</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
     </owl:Class>
     
@@ -486,6 +552,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology_narrow -->
 
     <owl:Class rdf:about="&Domain_fields;Information_and_Communication_Technology_narrow">
+        <rdfs:label rdf:datatype="&xsd;string">InformationAndCommunicationTechnologyNarrow</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Information_and_Communication_Technology"/>
     </owl:Class>
     
@@ -494,6 +561,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Journalism_and_information -->
 
     <owl:Class rdf:about="&Domain_fields;Journalism_and_information">
+        <rdfs:label rdf:datatype="&xsd;string">JournalismAndInformation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Social_science_journalism_and_information"/>
     </owl:Class>
     
@@ -502,6 +570,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Journalism_and_reporting -->
 
     <owl:Class rdf:about="&Domain_fields;Journalism_and_reporting">
+        <rdfs:label rdf:datatype="&xsd;string">JournalismAndReporting</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Journalism_and_information"/>
     </owl:Class>
     
@@ -510,6 +579,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Language -->
 
     <owl:Class rdf:about="&Domain_fields;Language">
+        <rdfs:label rdf:datatype="&xsd;string">Language</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Arts_and_humanities"/>
     </owl:Class>
     
@@ -518,6 +588,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Language_acquisition -->
 
     <owl:Class rdf:about="&Domain_fields;Language_acquisition">
+        <rdfs:label rdf:datatype="&xsd;string">LanguageAcquisition</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Language"/>
     </owl:Class>
     
@@ -526,6 +597,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Law -->
 
     <owl:Class rdf:about="&Domain_fields;Law">
+        <rdfs:label rdf:datatype="&xsd;string">Law</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Business_administration_and_law"/>
     </owl:Class>
     
@@ -534,6 +606,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Library_information_and_archive -->
 
     <owl:Class rdf:about="&Domain_fields;Library_information_and_archive">
+        <rdfs:label rdf:datatype="&xsd;string">LibraryInformationAndArchive</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Journalism_and_information"/>
     </owl:Class>
     
@@ -542,6 +615,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Literature_and_linguistics -->
 
     <owl:Class rdf:about="&Domain_fields;Literature_and_linguistics">
+        <rdfs:label rdf:datatype="&xsd;string">LiteratureAndLinguistics</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Language"/>
     </owl:Class>
     
@@ -550,14 +624,15 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Management_and_administration -->
 
     <owl:Class rdf:about="&Domain_fields;Management_and_administration">
+        <rdfs:label rdf:datatype="&xsd;string">ManagementAndAdministration</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Business_and_administration"/>
     </owl:Class>
     
 
 
-    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Manufacturing_and_processing -->
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ManufacturingAndProcessing -->
 
-    <owl:Class rdf:about="&Domain_fields;Manufacturing_and_processing">
+    <owl:Class rdf:about="&Domain_fields;ManufacturingAndProcessing">
         <rdfs:subClassOf rdf:resource="&Domain_fields;Engineering_manufacturing_and_construction"/>
     </owl:Class>
     
@@ -566,6 +641,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Marketing_and_advertising -->
 
     <owl:Class rdf:about="&Domain_fields;Marketing_and_advertising">
+        <rdfs:label rdf:datatype="&xsd;string">MarketingAndAdvertising</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Business_and_administration"/>
     </owl:Class>
     
@@ -574,7 +650,8 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Material_processing -->
 
     <owl:Class rdf:about="&Domain_fields;Material_processing">
-        <rdfs:subClassOf rdf:resource="&Domain_fields;Manufacturing_and_processing"/>
+        <rdfs:label rdf:datatype="&xsd;string">MaterialProcessing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Domain_fields;ManufacturingAndProcessing"/>
     </owl:Class>
     
 
@@ -582,6 +659,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mathematics -->
 
     <owl:Class rdf:about="&Domain_fields;Mathematics">
+        <rdfs:label rdf:datatype="&xsd;string">Mathematics</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Mathematics_and_statistics"/>
     </owl:Class>
     
@@ -590,6 +668,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mathematics_and_statistics -->
 
     <owl:Class rdf:about="&Domain_fields;Mathematics_and_statistics">
+        <rdfs:label rdf:datatype="&xsd;string">MathematicsAndStatistics</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Natural_science_mathematics_and_statistics"/>
     </owl:Class>
     
@@ -598,6 +677,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mechanics_and_metal_trade -->
 
     <owl:Class rdf:about="&Domain_fields;Mechanics_and_metal_trade">
+        <rdfs:label rdf:datatype="&xsd;string">MechanicsAndMetalTrade</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Engineering_and_engineering_trade"/>
     </owl:Class>
     
@@ -606,6 +686,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Medical_diagnostic_and_treatment_technology -->
 
     <owl:Class rdf:about="&Domain_fields;Medical_diagnostic_and_treatment_technology">
+        <rdfs:label rdf:datatype="&xsd;string">MedicalDiagnosticAndTreatmentTechnology</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Health"/>
     </owl:Class>
     
@@ -614,6 +695,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Medicine -->
 
     <owl:Class rdf:about="&Domain_fields;Medicine">
+        <rdfs:label rdf:datatype="&xsd;string">Medicine</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Health"/>
     </owl:Class>
     
@@ -622,6 +704,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Method_and_research_technique -->
 
     <owl:Class rdf:about="&Domain_fields;Method_and_research_technique">
+        <rdfs:label rdf:datatype="&xsd;string">MethodAndResearchTechnique</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Standard_method_and_research_technique"/>
     </owl:Class>
     
@@ -630,6 +713,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Military_and_defence -->
 
     <owl:Class rdf:about="&Domain_fields;Military_and_defence">
+        <rdfs:label rdf:datatype="&xsd;string">MilitaryAndDefence</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Security_services"/>
     </owl:Class>
     
@@ -638,7 +722,8 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mining_and_extraction -->
 
     <owl:Class rdf:about="&Domain_fields;Mining_and_extraction">
-        <rdfs:subClassOf rdf:resource="&Domain_fields;Manufacturing_and_processing"/>
+        <rdfs:label rdf:datatype="&xsd;string">MiningAndExtraction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Domain_fields;ManufacturingAndProcessing"/>
     </owl:Class>
     
 
@@ -646,6 +731,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Motor_vehicle_ship_and_aircraft -->
 
     <owl:Class rdf:about="&Domain_fields;Motor_vehicle_ship_and_aircraft">
+        <rdfs:label rdf:datatype="&xsd;string">MotorVehicleShipAircraft</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Engineering_and_engineering_trade"/>
     </owl:Class>
     
@@ -654,6 +740,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Music_and_performing_arts -->
 
     <owl:Class rdf:about="&Domain_fields;Music_and_performing_arts">
+        <rdfs:label rdf:datatype="&xsd;string">MusicAndPerformingArts</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Arts"/>
     </owl:Class>
     
@@ -662,6 +749,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_environment_and_wildlife -->
 
     <owl:Class rdf:about="&Domain_fields;Natural_environment_and_wildlife">
+        <rdfs:label rdf:datatype="&xsd;string">NaturalEnvironmentAndWildlife</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Environment"/>
     </owl:Class>
     
@@ -670,6 +758,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_science_mathematics_and_statistics -->
 
     <owl:Class rdf:about="&Domain_fields;Natural_science_mathematics_and_statistics">
+        <rdfs:label rdf:datatype="&xsd;string">NaturalScienceMathematicsAndStatistics</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
     </owl:Class>
     
@@ -678,6 +767,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Nursing_and_midwifery -->
 
     <owl:Class rdf:about="&Domain_fields;Nursing_and_midwifery">
+        <rdfs:label rdf:datatype="&xsd;string">NursingAndMidwifery</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Health"/>
     </owl:Class>
     
@@ -686,6 +776,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Occupational_health_and_safety -->
 
     <owl:Class rdf:about="&Domain_fields;Occupational_health_and_safety">
+        <rdfs:label rdf:datatype="&xsd;string">OccupationalHealthAndSafety</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Hygiene_and_occupational_health_services"/>
     </owl:Class>
     
@@ -694,6 +785,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Paper_processing -->
 
     <owl:Class rdf:about="&Domain_fields;Paper_processing">
+        <rdfs:label rdf:datatype="&xsd;string">PaperProcessing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Material_processing"/>
     </owl:Class>
     
@@ -702,6 +794,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Personal_services -->
 
     <owl:Class rdf:about="&Domain_fields;Personal_services">
+        <rdfs:label rdf:datatype="&xsd;string">PersonalServices</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Services"/>
     </owl:Class>
     
@@ -710,6 +803,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Pharmacy -->
 
     <owl:Class rdf:about="&Domain_fields;Pharmacy">
+        <rdfs:label rdf:datatype="&xsd;string">Pharmacy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Health"/>
     </owl:Class>
     
@@ -718,6 +812,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Philosophy_and_ethics -->
 
     <owl:Class rdf:about="&Domain_fields;Philosophy_and_ethics">
+        <rdfs:label rdf:datatype="&xsd;string">PhilosophyAndEthics</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Humanities"/>
     </owl:Class>
     
@@ -726,6 +821,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Physical_science -->
 
     <owl:Class rdf:about="&Domain_fields;Physical_science">
+        <rdfs:label rdf:datatype="&xsd;string">PhysicalScience</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Natural_science_mathematics_and_statistics"/>
     </owl:Class>
     
@@ -734,6 +830,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Physics -->
 
     <owl:Class rdf:about="&Domain_fields;Physics">
+        <rdfs:label rdf:datatype="&xsd;string">Physics</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Physical_science"/>
     </owl:Class>
     
@@ -742,6 +839,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Plastic_processing -->
 
     <owl:Class rdf:about="&Domain_fields;Plastic_processing">
+        <rdfs:label rdf:datatype="&xsd;string">PlasticProcessing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Material_processing"/>
     </owl:Class>
     
@@ -750,6 +848,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Politics_and_civics -->
 
     <owl:Class rdf:about="&Domain_fields;Politics_and_civics">
+        <rdfs:label rdf:datatype="&xsd;string">PoliticsAndCivics</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Social_and_behavioural_science"/>
     </owl:Class>
     
@@ -758,6 +857,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Process -->
 
     <owl:Class rdf:about="&Domain_fields;Process">
+        <rdfs:label rdf:datatype="&xsd;string">Process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Space_Time_and_Process"/>
     </owl:Class>
     
@@ -766,6 +866,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Protection_of_persons_and_property -->
 
     <owl:Class rdf:about="&Domain_fields;Protection_of_persons_and_property">
+        <rdfs:label rdf:datatype="&xsd;string">ProtectionOfPersonsAndProperty</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Security_services"/>
     </owl:Class>
     
@@ -774,6 +875,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Psychology -->
 
     <owl:Class rdf:about="&Domain_fields;Psychology">
+        <rdfs:label rdf:datatype="&xsd;string">Psychology</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Social_and_behavioural_science"/>
     </owl:Class>
     
@@ -782,6 +884,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Religion_and_theology -->
 
     <owl:Class rdf:about="&Domain_fields;Religion_and_theology">
+        <rdfs:label rdf:datatype="&xsd;string">ReligionAndTheology</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Humanities"/>
     </owl:Class>
     
@@ -790,6 +893,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Secretarial_and_office_work -->
 
     <owl:Class rdf:about="&Domain_fields;Secretarial_and_office_work">
+        <rdfs:label rdf:datatype="&xsd;string">SecretarialAndOfficeWork</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Business_and_administration"/>
     </owl:Class>
     
@@ -798,6 +902,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Security_services -->
 
     <owl:Class rdf:about="&Domain_fields;Security_services">
+        <rdfs:label rdf:datatype="&xsd;string">SecurityServices</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Services"/>
     </owl:Class>
     
@@ -806,6 +911,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Services -->
 
     <owl:Class rdf:about="&Domain_fields;Services">
+        <rdfs:label rdf:datatype="&xsd;string">Services</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
     </owl:Class>
     
@@ -814,6 +920,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_and_behavioural_science -->
 
     <owl:Class rdf:about="&Domain_fields;Social_and_behavioural_science">
+        <rdfs:label rdf:datatype="&xsd;string">SocialAndBehaviouralScience</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Social_science_journalism_and_information"/>
     </owl:Class>
     
@@ -822,6 +929,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_science_journalism_and_information -->
 
     <owl:Class rdf:about="&Domain_fields;Social_science_journalism_and_information">
+        <rdfs:label rdf:datatype="&xsd;string">SocialScienceJournalismAndInformation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
     </owl:Class>
     
@@ -830,6 +938,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_work_and_counselling -->
 
     <owl:Class rdf:about="&Domain_fields;Social_work_and_counselling">
+        <rdfs:label rdf:datatype="&xsd;string">SocialWorkAndCounselling</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Welfare"/>
     </owl:Class>
     
@@ -838,6 +947,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Sociology_and_culture -->
 
     <owl:Class rdf:about="&Domain_fields;Sociology_and_culture">
+        <rdfs:label rdf:datatype="&xsd;string">SociologyAndCulture</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Social_and_behavioural_science"/>
     </owl:Class>
     
@@ -846,8 +956,8 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Software_and_application_development_and_analysis -->
 
     <owl:Class rdf:about="&Domain_fields;Software_and_application_development_and_analysis">
+        <rdfs:label rdf:datatype="&xsd;string">SoftwareAndApplicationDevelopmentAndAnalysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Information_and_Communication_Technology_narrow"/>
-        <rdfs:comment>Includes domain ontologies that address a topic in biology and related sciences.</rdfs:comment>
     </owl:Class>
     
 
@@ -855,8 +965,9 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space -->
 
     <owl:Class rdf:about="&Domain_fields;Space">
+        <rdfs:label rdf:datatype="&xsd;string">Space</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Space_Time_and_Process"/>
-        <rdfs:comment>Class &apos;Space&apos; includes domain ontologies that are dealing with any of space related topics, e.g. geography, architecture etc.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Class &apos;Space&apos; includes domain ontologies that are dealing with any of space related topics, e.g. geography, architecture etc.</rdfs:comment>
     </owl:Class>
     
 
@@ -864,6 +975,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space_Time_and_Process -->
 
     <owl:Class rdf:about="&Domain_fields;Space_Time_and_Process">
+        <rdfs:label rdf:datatype="&xsd;string">SpaceTimeAndProcess</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
     </owl:Class>
     
@@ -872,6 +984,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Sport -->
 
     <owl:Class rdf:about="&Domain_fields;Sport">
+        <rdfs:label rdf:datatype="&xsd;string">Sport</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Personal_services"/>
     </owl:Class>
     
@@ -880,6 +993,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Standard -->
 
     <owl:Class rdf:about="&Domain_fields;Standard">
+        <rdfs:label rdf:datatype="&xsd;string">Standard</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Standard_method_and_research_technique"/>
     </owl:Class>
     
@@ -888,6 +1002,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Standard_method_and_research_technique -->
 
     <owl:Class rdf:about="&Domain_fields;Standard_method_and_research_technique">
+        <rdfs:label rdf:datatype="&xsd;string">StandardMethodAndResearchTechnique</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
     </owl:Class>
     
@@ -896,6 +1011,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Statistics -->
 
     <owl:Class rdf:about="&Domain_fields;Statistics">
+        <rdfs:label rdf:datatype="&xsd;string">Statistics</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Mathematics_and_statistics"/>
     </owl:Class>
     
@@ -904,6 +1020,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Teacher_training_with_subject_specialisation -->
 
     <owl:Class rdf:about="&Domain_fields;Teacher_training_with_subject_specialisation">
+        <rdfs:label rdf:datatype="&xsd;string">TeacherTrainingWithSubjectSpecialisation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Education_narrow"/>
     </owl:Class>
     
@@ -912,6 +1029,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Teacher_training_without_subject_specialisation -->
 
     <owl:Class rdf:about="&Domain_fields;Teacher_training_without_subject_specialisation">
+        <rdfs:label rdf:datatype="&xsd;string">TeacherTrainingWithoutSubjectSpecialisation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Education_narrow"/>
     </owl:Class>
     
@@ -920,7 +1038,8 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Textile_clothes_footwear_and_leather -->
 
     <owl:Class rdf:about="&Domain_fields;Textile_clothes_footwear_and_leather">
-        <rdfs:subClassOf rdf:resource="&Domain_fields;Manufacturing_and_processing"/>
+        <rdfs:label rdf:datatype="&xsd;string">TextileClothesFootwearLeather</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Domain_fields;ManufacturingAndProcessing"/>
     </owl:Class>
     
 
@@ -928,6 +1047,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Therapy_and_rehabilitation -->
 
     <owl:Class rdf:about="&Domain_fields;Therapy_and_rehabilitation">
+        <rdfs:label rdf:datatype="&xsd;string">TherapyAndRehabilitation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Health"/>
     </owl:Class>
     
@@ -936,6 +1056,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Time -->
 
     <owl:Class rdf:about="&Domain_fields;Time">
+        <rdfs:label rdf:datatype="&xsd;string">Time</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Space_Time_and_Process"/>
     </owl:Class>
     
@@ -944,6 +1065,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Traditional_and_complementary_medicine_and_therapy -->
 
     <owl:Class rdf:about="&Domain_fields;Traditional_and_complementary_medicine_and_therapy">
+        <rdfs:label rdf:datatype="&xsd;string">TraditionalAndComplementaryMedicineAndTherapy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Health"/>
     </owl:Class>
     
@@ -952,6 +1074,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Training_pre-school_teachers -->
 
     <owl:Class rdf:about="&Domain_fields;Training_pre-school_teachers">
+        <rdfs:label rdf:datatype="&xsd;string">TrainingPreSchoolTeachers</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Education_narrow"/>
     </owl:Class>
     
@@ -960,6 +1083,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Transport_services -->
 
     <owl:Class rdf:about="&Domain_fields;Transport_services">
+        <rdfs:label rdf:datatype="&xsd;string">TransportServices</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Services"/>
     </owl:Class>
     
@@ -968,6 +1092,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Travel_tourism_and_leisure -->
 
     <owl:Class rdf:about="&Domain_fields;Travel_tourism_and_leisure">
+        <rdfs:label rdf:datatype="&xsd;string">TravelTourismAndLeisure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Personal_services"/>
     </owl:Class>
     
@@ -976,8 +1101,9 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Unclassified -->
 
     <owl:Class rdf:about="&Domain_fields;Unclassified">
+        <rdfs:label rdf:datatype="&xsd;string">Unclassified</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
-        <rdfs:comment>The unclassified domain includes ontologies whose domain-subject is not captured by any of pre-defined classes.  The annotation of such an ontology should include either a DMOZ or an ACM specification of domain subject, thus providing a tentative subject-field that can be included in the future revisions of the domain-field classes.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">The unclassified domain includes ontologies whose domain-subject is not captured by any of pre-defined classes.  The annotation of such an ontology should include either a DMOZ or an ACM specification of domain subject, thus providing a tentative subject-field that can be included in the future revisions of the domain-field classes.</rdfs:comment>
     </owl:Class>
     
 
@@ -985,7 +1111,9 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Veterinary -->
 
     <owl:Class rdf:about="&Domain_fields;Veterinary">
-        <rdfs:subClassOf rdf:resource="&Domain_fields;Agriculture_forestry_fisheries_and_veterinary"/>
+        <rdfs:label rdf:datatype="&xsd;string">Veterinary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Domain_fields;AgricultureForestryFsheriesVeterinary"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to veterinary.</rdfs:comment>
     </owl:Class>
     
 
@@ -993,6 +1121,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Welfare -->
 
     <owl:Class rdf:about="&Domain_fields;Welfare">
+        <rdfs:label rdf:datatype="&xsd;string">Welfare</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Health_and_welfare"/>
     </owl:Class>
     
@@ -1001,6 +1130,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Wholesale_and_retail_sales -->
 
     <owl:Class rdf:about="&Domain_fields;Wholesale_and_retail_sales">
+        <rdfs:label rdf:datatype="&xsd;string">WholesaleAndRetailSales</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Business_and_administration"/>
     </owl:Class>
     
@@ -1009,6 +1139,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Wood_processing -->
 
     <owl:Class rdf:about="&Domain_fields;Wood_processing">
+        <rdfs:label rdf:datatype="&xsd;string">WoodProcessing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Material_processing"/>
     </owl:Class>
     
@@ -1017,6 +1148,7 @@
     <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Work_skill -->
 
     <owl:Class rdf:about="&Domain_fields;Work_skill">
+        <rdfs:label rdf:datatype="&xsd;string">WorkSkill</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Business_and_administration"/>
     </owl:Class>
 </rdf:RDF>
