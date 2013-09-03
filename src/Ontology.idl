@@ -117,19 +117,16 @@ module persistence {
   interface ItemQuery : Query {
     attribute Iri itemIri;
   };
-  interface LabelQuery : Query {
-    attribute Text labelText;
-  };
-  interface PropertyQuery : Query {
-    attribute Iri propertyTypeIri;
-    attribute Iri rangeTypeIri;
-  };
-  interface PropertyAscriptionQuery : Query {
+  interface ItemPropertyQuery : Query {
     attribute Iri propertyTypeIri;
     attribute Iri rangeTypeIri;
     attribute Iri rangeIri;
   };
-
+  interface TextPropertyQuery : Query {
+    attribute Iri propertyTypeIri;
+    attribute Text text;
+  };
+ 
   interface Ontology {
     void getMetadatumList(in Iri iri, out MetadatumList metadatumList);
     void setMetadatumList(in Iri iri, in MetadatumList metadatumList);
@@ -200,6 +197,7 @@ module persistence {
   };
 
   interface OntologyBase {
+
 # TM: the idea was to have one very powerful method for searching for ontologies
 # we have agreed to Todd's suggestion:
 # The API for'selecting' is effectively a query mechanism, the front end to 
@@ -218,10 +216,41 @@ module persistence {
 # deliver ids (compact representation) or all the metadata (say, as an XML 
 # tree), or even the whole ontology/ies (can become very large) 
 
-    void selectOntologyIriList(in Query query, out IriList ontologyIriList);
+    # Query API
+    void selectOntologyList(in Query query, out IriList ontologyIriList);
     void insertOntology(in OntologyContent ontologyContent, out Iri iri);
     void updateOntology(in OntologyContent ontologyContent);
     void removeOntology(in Iri iri);
+
+    # Easier Query API (MOV ontology)
+    void selectOntologiesWithName(in Text name, out IriList ontologyIriList);
+
+    void selectOntologiesWithAcronym(in Text acronym, out IriList ontologyIriList);
+
+    void selectOntologiesWithKeyword(in Text keyword, out IriList ontologyIriList);
+    void selectOntologiesWithAllKeywords(in TextList keywordList, out IriList ontologyIriList);
+    void selectOntologiesWithAnyKeyword(in TextList keywordList, out IriList ontologyIriList);
+
+    void selectOntologiesWithAuthor(in Iri partyIri, out IriList ontologyIriList);
+    void selectOntologiesWithAllAuthors(in IriList partyIriList, out IriList ontologyIriList);
+    void selectOntologiesWithAnyAuthor(in IriList partyIriList, out IriList ontologyIriList);
+
+    void selectOntologiesWithContributor(in Iri partyIri, out IriList ontologyIriList);
+    void selectOntologiesWithAllContributors(in IriList partyIriList, out IriList ontologyIriList);
+    void selectOntologiesWithAnyContributor(in IriList partyIriList, out IriList ontologyIriList);
+
+    void selectOntologiesWithEndorser(in Iri partyIri, out IriList ontologyIriList);
+    void selectOntologiesWithAllEndorsers(in IriList partyIriList, out IriList ontologyIriList);
+    void selectOntologiesWithAnyEndorser(in IriList partyIriList, out IriList ontologyIriList);
+
+    void selectOntologiesWithFormalityLevel(in Iri formalityLevelIri, out IriList ontologyIriList);
+
+    void selectOntologiesWithLicenseModel(in Iri licenceModelIri, out IriList ontologyIriList);
+
+    void selectOntologiesInDomain(in Iri domainIri, out IriList ontologyIriList);
+    void selectOntologiesInAllDomains(in IriList domainIriList, out IriList ontologyIriList);
+    void selectOntologiesInAnyDomain(in IriList domainIriList, out IriList ontologyIriList);
+
   };
 
   interface RepositoryBase {
