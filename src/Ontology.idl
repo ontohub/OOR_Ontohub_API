@@ -216,13 +216,13 @@ module persistence {
 # deliver ids (compact representation) or all the metadata (say, as an XML 
 # tree), or even the whole ontology/ies (can become very large) 
 
-    # Query API
+    # Primary Query API
     void selectOntologyList(in Query query, out IriList ontologyIriList);
     void insertOntology(in OntologyContent ontologyContent, out Iri iri);
     void updateOntology(in OntologyContent ontologyContent);
     void removeOntology(in Iri iri);
 
-    # Easier Query API (MOV ontology)
+    # Derivate Query API
     void selectOntologiesWithName(in Text name, out IriList ontologyIriList);
 
     void selectOntologiesWithAcronym(in Text acronym, out IriList ontologyIriList);
