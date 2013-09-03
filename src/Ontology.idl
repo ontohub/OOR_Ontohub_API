@@ -56,9 +56,10 @@ module persistence {
   typedef sequence<Note> NoteList;
 
   struct Metadatum {
-    Iri iri;
-    Iri kindIri;
+    Iri propertyIri;
+    Iri propertyTypeIri;
     Iri rangeIri;
+    Iri rangeTypeIri;
   };
   typedef sequence<Metadatum> MetadatumList;
 
@@ -145,19 +146,25 @@ module persistence {
   };
 
   interface Repository {
-    Text getName(in Iri iri);
-    void setName(in Iri iri, in Text name);
+    void getMetadatumList(in Iri iri, out MetadatumList metadatumList);
+    void setMetadatumList(in Iri iri, in MetadatumList metadatumList);
+    void addMetadatum(in Iri iri, in Metadatum metadatum);
+    void addMetadatumList(in Iri iri, in MetadatumList metadatumList);
+    void delMetadatum(in Iri iri, in Iri metadatumIri);
+    void delMetadatumList(in Iri iri, in IriList metadatumIriList);
 
     void getOntologyIriList(in Iri iri, out IriList ontologyIriList);
     void getOntologyFractumList(in Iri iri, out OntologyFractumList ontologyFractumList);
     void getOntologyContentList(in Iri iri, out OntologyContentList ontologyContentList);
-    void getRepositoryFractum(in Iri iri, out RepositoryFractum repositoryFractum);
-    void getRepositoryContent(in Iri iri, out RepositoryContent repositoryContent);
-    void setOntologyIriList(in Iri iri, in IriList ontologyIriList);
+    void setOntologyList(in Iri iri, in IriList ontologyIriList);
     void addOntology(in Iri iri, in Iri ontologyIri);
     void delOntology(in Iri iri, in Iri ontologyIri);
-    void setRepositoryFractum(in Iri iri, in RepositoryFractum repositoryFractum);
-    void setRepositoryContent(in Iri iri, in RepositoryContent repositoryContent);
+
+    void getFractum(in Iri iri, out RepositoryFractum repositoryFractum);
+    void setFractum(in Iri iri, in RepositoryFractum repositoryFractum);
+    
+    void getContent(in Iri iri, out RepositoryContent repositoryContent);
+    void setContent(in Iri iri, in RepositoryContent repositoryContent);
   };
 
   interface OntologyBase {
