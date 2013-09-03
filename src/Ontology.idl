@@ -63,6 +63,8 @@ module persistence {
   };
   typedef sequence<Metadatum> MetadatumList;
 
+  # Local ontology objects
+  #
   struct OntologyFractum { # TM: synchronize this with OMV
     Iri iri;
     MetadatumList metadatumList;
@@ -84,6 +86,8 @@ module persistence {
   };
   typedef sequence<OntologyContent> OntologyContentList;
 
+  # Local repository objects
+  #
   struct RepositoryFractum {
     Iri iri;
     Text name;
@@ -126,7 +130,9 @@ module persistence {
     attribute Iri propertyTypeIri;
     attribute Text text;
   };
- 
+
+  # Remote access to a particular ontology
+  #
   interface Ontology {
     void getMetadatumList(in Iri iri, out MetadatumList metadatumList);
     void setMetadatumList(in Iri iri, in MetadatumList metadatumList);
@@ -149,6 +155,8 @@ module persistence {
     void setContent(in Iri iri, in OntologyContent content);
   };
 
+  # Remote access to a particular ontology version
+  #
   interface OntologyVersion {
     void getMetadatumList(in Iri iri, out MetadatumList metadatumList);
     void setMetadatumList(in Iri iri, in MetadatumList metadatumList);
@@ -174,6 +182,8 @@ module persistence {
     void setContent(in Iri iri, in OntologyVersionContent content);
   };
 
+  # Remote access to a particular repository
+  #
   interface Repository {
     void getMetadatumList(in Iri iri, out MetadatumList metadatumList);
     void setMetadatumList(in Iri iri, in MetadatumList metadatumList);
@@ -196,6 +206,10 @@ module persistence {
     void setContent(in Iri iri, in RepositoryContent repositoryContent);
   };
 
+  # Remote ontology base
+  #
+  # • a database populated with particular ontologies
+  #
   interface OntologyBase {
 
 # TM: the idea was to have one very powerful method for searching for ontologies
@@ -253,6 +267,10 @@ module persistence {
 
   };
 
+  # Remote repository base
+  #
+  # • a database populated with particular repositories
+  #
   interface RepositoryBase {
     void selectRepositoryIriList(in Query query, out IriList repositoryIriList);
     void insertRepository(in RepositoryContent repositoryContent, out Iri iri);
