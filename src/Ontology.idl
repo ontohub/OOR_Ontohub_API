@@ -98,6 +98,38 @@ module persistence {
   };
   typedef sequence<RepositoryContent> RepositoryContentList;
 
+  interface Query {
+  };
+  interface OrQuery : Query {
+    attribute Query operandA;
+    attribute Query operandB;
+  };
+  interface AndQuery : Query {
+    attribute Query operandA;
+    attribute Query operandB;
+  };
+  interface NotQuery : Query {
+    attribute Query operand;
+  };
+  interface TypeQuery : Query {
+    attribute Iri typeIri;
+  };
+  interface ItemQuery : Query {
+    attribute Iri itemIri;
+  };
+  interface LabelQuery : Query {
+    attribute Text labelText;
+  };
+  interface PropertyQuery : Query {
+    attribute Iri propertyTypeIri;
+    attribute Iri rangeTypeIri;
+  };
+  interface PropertyAscriptionQuery : Query {
+    attribute Iri propertyTypeIri;
+    attribute Iri rangeTypeIri;
+    attribute Iri rangeIri;
+  };
+
   interface Ontology {
     void getMetadatumList(in Iri iri, out MetadatumList metadatumList);
     void setMetadatumList(in Iri iri, in MetadatumList metadatumList);
@@ -186,42 +218,14 @@ module persistence {
 # deliver ids (compact representation) or all the metadata (say, as an XML 
 # tree), or even the whole ontology/ies (can become very large) 
 
-    void selectOntologyIriList(in Text name, in Text category, in Text group, in Iri languageIri, in Iri projectIri, out IriList iriList);
-    void selectOntologyIriListByName(in Text name, out IriList iriList);
-    void selectOntologyIriListByCategory(in Text category, out IriList iriList);
-    void selectOntologyIriListByGroup(in Text group, out IriList iriList);
-    void selectOntologyIriListByLanguageIri(in Iri languageIri, out IriList iriList);
-    void selectOntologyIriListByProjectIri(in Iri projectIri, out IriList iriList);
-    void getOntologyIriList();
-
-    void selectOntologyFractumList(in Text name, in Text category, in Text group, in Iri languageIri, in Iri projectIri, out OntologyFractumList fractumList);
-    void selectOntologyFractumListByName(in Text name, out OntologyFractumList fractumList);
-    void selectOntologyFractumListByCategory(in Text category, out OntologyFractumList fractumList);
-    void selectOntologyFractumListByGroup(in Text group, out OntologyFractumList fractumList);
-    void selectOntologyFracutmListByLanguageIri(in Iri languageIri, out OntologyFractumList fractumList);
-    void selectOntologyFractumListByProjectIri(in Iri projectIri, out OntologyFractumList fractumList);
-    void getOntologyFractumList();
-
-    void selectOntologyContentList(in Text name, in Text category, in Text group, in Iri languageIri, in Iri projectIri, out OntologyContentList contentList);
-    void selectOntologyContentListByName(in Text name, out OntologyContentList contentList);
-    void selectOntologyContentListByCategory(in Text category, out OntologyContentList contentList);
-    void selectOntologyContentListByGroup(in Text group, out OntologyContentList contentList);
-    void selectOntologyContentListByLanguageIri(in Iri languageIri, out OntologyContentList contentList);
-    void selectOntologyContentListByProjectIri(in Iri projectIri, out OntologyContentList contentList);
-    void getOntologyContentList();
-
+    void selectOntologyIriList(in Query query, out IriList ontologyIriList);
     void insertOntology(in OntologyContent ontologyContent, out Iri iri);
     void updateOntology(in OntologyContent ontologyContent);
     void removeOntology(in Iri iri);
   };
 
   interface RepositoryBase {
-    void selectRepositoryIriList(in Text name, out IriList iriList);
-
-    void selectRepositoryFractumList(in Text name, out RepositoryFractumList repositoryFractumList);
-
-    void selectRepositoryContentList(in Text name, out RepositoryContentList repositoryContentList);
-
+    void selectRepositoryIriList(in Query query, out IriList repositoryIriList);
     void insertRepository(in RepositoryContent repositoryContent, out Iri iri);
     void updateRepository(in RepositoryContent repositoryContent);
     void removeRepository(in Iri iri);
