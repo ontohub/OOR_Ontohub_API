@@ -1,0 +1,714 @@
+_:li2     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.net/dol/1.0/rdf#sourceOfMapping> .
+_:li2     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li1 .
+_:li1     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.net/dol/1.0/rdf#mapsTo> .
+_:li1     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:li5     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L624C12 .
+_:li5     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li4 .
+_:li4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.net/dol/1.0/rdf#subLanguageOf> .
+_:li4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li3 .
+_:li3     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.net/dol/1.0/rdf#exactLogicalExpressivity> .
+_:li3     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:li7     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L641C12 .
+_:li7     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li6 .
+_:li6     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.net/dol/1.0/rdf#supportsLogic> .
+_:li6     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:li9     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.net/dol/1.0/rdf#supportsLogic> .
+_:li9     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li8 .
+_:li8     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L648C12 .
+_:li8     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:li10     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L664C20 .
+_:li10     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li6 .
+_:li12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L873C20 .
+_:li12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li11 .
+_:li11     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L877C20 .
+_:li11     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:li14     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L914C20 .
+_:li14     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li13 .
+_:li13     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L918C20 .
+_:li13     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:li16     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L935C20 .
+_:li16     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li15 .
+_:li15     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L939C20 .
+_:li15     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:li20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L985C20 .
+_:li20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li19 .
+_:li19     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L989C20 .
+_:li19     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li18 .
+_:li18     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L993C20 .
+_:li18     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li17 .
+_:li17     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L997C20 .
+_:li17     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:li22     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.net/dol/1.0/rdf#Mapping> .
+_:li22     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li21 .
+_:li21     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:L1070C20 .
+_:li21     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:li28     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.net/dol/1.0/rdf#Alignment> .
+_:li28     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li27 .
+_:li27     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.net/dol/1.0/rdf#Logic> .
+_:li27     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li26 .
+_:li26     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.net/dol/1.0/rdf#Mapping> .
+_:li26     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li25 .
+_:li25     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.net/dol/1.0/rdf#Ontology> .
+_:li25     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li24 .
+_:li24     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.net/dol/1.0/rdf#OntologyLanguage> .
+_:li24     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li23 .
+_:li23     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.net/dol/1.0/rdf#Serialization> .
+_:li23     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:li30     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "foo" .
+_:li30     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:li29 .
+_:li29     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "bar" .
+_:li29     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g92 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g93 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g94 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g95 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g96 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g97 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g98 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g99 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g100 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g101 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g102 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g103 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g104 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g105 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g106 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g107 .
+_:li30     <http://www.w3.org/2000/10/swap/string#concatenation> _:g108 .
+<http://purl.net/dol/1.0/rdf#>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.net/dol/1.0/rdf#>     <http://example.org/todo#task> "When scaling this ontology implementation up to DOL, look below for annotations marked as 'beyond OWL'.  These things can be modeled in FOL." .
+<http://purl.net/dol/1.0/rdf#>     <http://www.w3.org/2000/01/rdf-schema#comment> "RDF serialization of DOL, implemented as an OWL ontology.  Actually some axioms that we would like to have go beyond OWL." .
+<http://purl.net/dol/1.0/rdf#>     <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://purl.net/dol/1.0/rdf#Alignment>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#Alignment>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#Alignment>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#Alignment>     <http://www.w3.org/2000/01/rdf-schema#comment> "an alignment between two heterogeneous ontologies in a distributed ontology" .
+<http://purl.net/dol/1.0/rdf#Alignment>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Link> .
+<http://purl.net/dol/1.0/rdf#Alignment>     <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.net/dol/1.0/rdf#Interpretation> .
+<http://purl.net/dol/1.0/rdf#BasicOntology>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#BasicOntology>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#BasicOntology>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#BasicOntology>     <http://www.w3.org/2000/01/rdf-schema#comment> "a basic ontology (in a single language, logic, and serialization)" .
+<http://purl.net/dol/1.0/rdf#BasicOntology>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Ontology> .
+<http://purl.net/dol/1.0/rdf#DefaultMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#DefaultMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#DefaultMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#DefaultMapping>     <http://purl.net/dol/1.0/rdf#propagatesToAdjoint> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.net/dol/1.0/rdf#DefaultMapping>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Mapping> .
+<http://purl.net/dol/1.0/rdf#DistributedOntology>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#DistributedOntology>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#DistributedOntology>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#DistributedOntology>     <http://www.w3.org/2000/01/rdf-schema#comment> "a distributed ontology" .
+<http://purl.net/dol/1.0/rdf#DistributedOntology>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Ontology> .
+<http://purl.net/dol/1.0/rdf#Embedding>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#Embedding>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#Embedding>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#Embedding>     <http://purl.net/dol/1.0/rdf#reifies> <http://purl.net/dol/1.0/rdf#embeddableInto> .
+<http://purl.net/dol/1.0/rdf#Embedding>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#ExactMapping> .
+<http://purl.net/dol/1.0/rdf#Embedding>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#LogicMapping> .
+<http://purl.net/dol/1.0/rdf#Embedding>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#ModelBijectiveMapping> .
+<http://purl.net/dol/1.0/rdf#Embedding>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Translation> .
+<http://purl.net/dol/1.0/rdf#ExactMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#ExactMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#ExactMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#ExactMapping>     <http://purl.net/dol/1.0/rdf#propagatesToAdjoint> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.net/dol/1.0/rdf#ExactMapping>     <http://purl.net/dol/1.0/rdf#reifies> <http://purl.net/dol/1.0/rdf#exactlyMappableTo> .
+<http://purl.net/dol/1.0/rdf#ExactMapping>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#WeaklyExactMapping> .
+<http://purl.net/dol/1.0/rdf#FaithfulMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#FaithfulMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#FaithfulMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#FaithfulMapping>     <http://purl.net/dol/1.0/rdf#propagatesToAdjoint> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.net/dol/1.0/rdf#FaithfulMapping>     <http://purl.net/dol/1.0/rdf#reifies> <http://purl.net/dol/1.0/rdf#faithfullyMappableTo> .
+<http://purl.net/dol/1.0/rdf#FaithfulMapping>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Mapping> .
+<http://purl.net/dol/1.0/rdf#Interpretation>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#Interpretation>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#Interpretation>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#Interpretation>     <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.net/dol/1.0/rdf#View> .
+<http://purl.net/dol/1.0/rdf#Link>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#Link>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#Link>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#Link>     <http://www.w3.org/2000/01/rdf-schema#comment> "a link between two heterogeneous ontologies in a distributed ontology" .
+<http://purl.net/dol/1.0/rdf#Link>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:L871C12 .
+<http://purl.net/dol/1.0/rdf#Logic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#Logic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#Logic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#Logic>     <http://www.w3.org/2000/01/rdf-schema#comment> "a logic that defines the semantics of an ontology language" .
+<http://purl.net/dol/1.0/rdf#LogicMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#LogicMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#LogicMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#LogicMapping>     <http://purl.net/dol/1.0/rdf#propagatesToAdjoint> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.net/dol/1.0/rdf#LogicMapping>     <http://www.w3.org/2000/01/rdf-schema#comment> "a mapping (translation or projection) between two logics" .
+<http://purl.net/dol/1.0/rdf#LogicMapping>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Mapping> .
+<http://purl.net/dol/1.0/rdf#LogicMapping>     <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.net/dol/1.0/rdf#OntologyLanguageMapping> .
+<http://purl.net/dol/1.0/rdf#Mapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#Mapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#Mapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#Mapping>     <http://purl.net/dol/1.0/rdf#reifies> <http://purl.net/dol/1.0/rdf#mappableTo> .
+<http://purl.net/dol/1.0/rdf#Mapping>     <http://www.w3.org/2000/01/rdf-schema#comment> "a generic mapping (translation or projection)" .
+<http://purl.net/dol/1.0/rdf#Mapping>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:L912C12 .
+<http://purl.net/dol/1.0/rdf#ModelBijectiveMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#ModelBijectiveMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#ModelBijectiveMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#ModelBijectiveMapping>     <http://purl.net/dol/1.0/rdf#propagatesToAdjoint> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.net/dol/1.0/rdf#ModelBijectiveMapping>     <http://purl.net/dol/1.0/rdf#reifies> <http://purl.net/dol/1.0/rdf#modelBijectivelyMappableTo> .
+<http://purl.net/dol/1.0/rdf#ModelBijectiveMapping>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#ModelExpansiveMapping> .
+<http://purl.net/dol/1.0/rdf#ModelBijectiveMapping>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#WeaklyExactMapping> .
+<http://purl.net/dol/1.0/rdf#ModelExpansiveMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#ModelExpansiveMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#ModelExpansiveMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#ModelExpansiveMapping>     <http://purl.net/dol/1.0/rdf#propagatesToAdjoint> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.net/dol/1.0/rdf#ModelExpansiveMapping>     <http://purl.net/dol/1.0/rdf#reifies> <http://purl.net/dol/1.0/rdf#modelExpansivelyMappableTo> .
+<http://purl.net/dol/1.0/rdf#ModelExpansiveMapping>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#FaithfulMapping> .
+<http://purl.net/dol/1.0/rdf#Ontology>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#Ontology>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#Ontology>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#Ontology>     <http://www.w3.org/2000/01/rdf-schema#comment> "an ontology, distributed or basic" .
+<http://purl.net/dol/1.0/rdf#OntologyLanguage>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#OntologyLanguage>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#OntologyLanguage>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#OntologyLanguage>     <http://www.w3.org/2000/01/rdf-schema#comment> "an ontology language" .
+<http://purl.net/dol/1.0/rdf#OntologyLanguage>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:L983C12 .
+<http://purl.net/dol/1.0/rdf#OntologyLanguageMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#OntologyLanguageMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#OntologyLanguageMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#OntologyLanguageMapping>     <http://purl.net/dol/1.0/rdf#propagatesToAdjoint> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.net/dol/1.0/rdf#OntologyLanguageMapping>     <http://www.w3.org/2000/01/rdf-schema#comment> "a mapping (translation or projection) between two ontology languages" .
+<http://purl.net/dol/1.0/rdf#OntologyLanguageMapping>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Mapping> .
+<http://purl.net/dol/1.0/rdf#PlainMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#PlainMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#PlainMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#PlainMapping>     <http://purl.net/dol/1.0/rdf#propagatesToAdjoint> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.net/dol/1.0/rdf#PlainMapping>     <http://purl.net/dol/1.0/rdf#reifies> <http://purl.net/dol/1.0/rdf#plainlyMappableTo> .
+<http://purl.net/dol/1.0/rdf#PlainMapping>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Mapping> .
+<http://purl.net/dol/1.0/rdf#PlainMapping>     <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.net/dol/1.0/rdf#SimpleTheoroidalMapping> .
+<http://purl.net/dol/1.0/rdf#Projection>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#Projection>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#Projection>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#Projection>     <http://purl.net/dol/1.0/rdf#reifies> <http://purl.net/dol/1.0/rdf#projectableTo> .
+<http://purl.net/dol/1.0/rdf#Projection>     <http://www.w3.org/2000/01/rdf-schema#comment> "a generic projection" .
+<http://purl.net/dol/1.0/rdf#Projection>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Mapping> .
+<http://purl.net/dol/1.0/rdf#Projection>     <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.net/dol/1.0/rdf#Translation> .
+<http://purl.net/dol/1.0/rdf#Sentence>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#Sentence>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#Sentence>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#Sentence>     <http://www.w3.org/2000/01/rdf-schema#comment> "a sentence in an ontology" .
+<http://purl.net/dol/1.0/rdf#Serialization>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#Serialization>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#Serialization>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#Serialization>     <http://www.w3.org/2000/01/rdf-schema#comment> "a serialization of an ontology language" .
+<http://purl.net/dol/1.0/rdf#SimpleTheoroidalMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#SimpleTheoroidalMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#SimpleTheoroidalMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#SimpleTheoroidalMapping>     <http://purl.net/dol/1.0/rdf#propagatesToAdjoint> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.net/dol/1.0/rdf#SimpleTheoroidalMapping>     <http://purl.net/dol/1.0/rdf#reifies> <http://purl.net/dol/1.0/rdf#simplyTheoroidallyMappableTo> .
+<http://purl.net/dol/1.0/rdf#SimpleTheoroidalMapping>     <http://www.w3.org/2000/01/rdf-schema#comment> "orthogonal to WeaklyExactMapping and FaithfulMapping" .
+<http://purl.net/dol/1.0/rdf#SimpleTheoroidalMapping>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Mapping> .
+<http://purl.net/dol/1.0/rdf#SimpleTheoroidalMapping>     <http://www.w3.org/2002/07/owl#equivalentClass> _:L1067C12 .
+<http://purl.net/dol/1.0/rdf#SubLogic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#SubLogic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#SubLogic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#SubLogic>     <http://purl.net/dol/1.0/rdf#reifies> <http://purl.net/dol/1.0/rdf#subLogicOf> .
+<http://purl.net/dol/1.0/rdf#SubLogic>     <http://www.w3.org/2000/01/rdf-schema#comment> "'syntactic' embedding" .
+<http://purl.net/dol/1.0/rdf#SubLogic>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Embedding> .
+<http://purl.net/dol/1.0/rdf#Symbol>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#Symbol>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#Symbol>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#Symbol>     <http://www.w3.org/2000/01/rdf-schema#comment> "a symbol in an ontology" .
+<http://purl.net/dol/1.0/rdf#Translation>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#Translation>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#Translation>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#Translation>     <http://purl.net/dol/1.0/rdf#reifies> <http://purl.net/dol/1.0/rdf#translatableTo> .
+<http://purl.net/dol/1.0/rdf#Translation>     <http://www.w3.org/2000/01/rdf-schema#comment> "a generic translation" .
+<http://purl.net/dol/1.0/rdf#Translation>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Mapping> .
+<http://purl.net/dol/1.0/rdf#View>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#View>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#View>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#View>     <http://www.w3.org/2000/01/rdf-schema#comment> "a view (also called interpretation) between two heterogeneous ontologies in a distributed ontology" .
+<http://purl.net/dol/1.0/rdf#View>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Link> .
+<http://purl.net/dol/1.0/rdf#WeaklyExactMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.net/dol/1.0/rdf#WeaklyExactMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://purl.net/dol/1.0/rdf#WeaklyExactMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.net/dol/1.0/rdf#WeaklyExactMapping>     <http://purl.net/dol/1.0/rdf#propagatesToAdjoint> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.net/dol/1.0/rdf#WeaklyExactMapping>     <http://purl.net/dol/1.0/rdf#reifies> <http://purl.net/dol/1.0/rdf#weaklyExactlyMappableTo> .
+<http://purl.net/dol/1.0/rdf#WeaklyExactMapping>     <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.net/dol/1.0/rdf#Mapping> .
+<http://purl.net/dol/1.0/rdf#adjoint>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#adjoint>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#adjoint>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Translation> .
+<http://purl.net/dol/1.0/rdf#adjoint>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#Projection> .
+<http://purl.net/dol/1.0/rdf#alignmentIn>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#alignmentIn>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#alignmentIn>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Alignment> .
+<http://purl.net/dol/1.0/rdf#altFilenameExtension>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#altFilenameExtension>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.net/dol/1.0/rdf#altFilenameExtension>     <http://www.w3.org/2000/01/rdf-schema#comment> "an alternative filename extension for a serialization" .
+<http://purl.net/dol/1.0/rdf#altFilenameExtension>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Serialization> .
+<http://purl.net/dol/1.0/rdf#altFilenameExtension>     <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.net/dol/1.0/rdf#compositionOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#compositionOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#compositionOf>     <http://example.org/todo#question> "I don't think we need subclasses for specific types of mappings, do we?" .
+<http://purl.net/dol/1.0/rdf#compositionOf>     <http://www.w3.org/2000/01/rdf-schema#comment> "Range can't be specified in OWL DL" .
+<http://purl.net/dol/1.0/rdf#compositionOf>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject mapping is the composition of the object list of mappings (list item 1 \u2218 list item 2 \u2218 \u2026 \u2218 list item n).  All elements of the latter list must be instances of the same class as the subject.  (Enforcing the latter constraint goes beyond OWL.)" .
+<http://purl.net/dol/1.0/rdf#compositionOf>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Mapping> .
+<http://purl.net/dol/1.0/rdf#consequenceTheoreticallyConservativelyExtends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#consequenceTheoreticallyConservativelyExtends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#consequenceTheoreticallyConservativelyExtends>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#extends> .
+<http://purl.net/dol/1.0/rdf#conservativelyExtends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#conservativelyExtends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#conservativelyExtends>     <http://purl.org/dc/terms/source> "This synonym is inspired by CASL." .
+<http://purl.net/dol/1.0/rdf#conservativelyExtends>     <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.net/dol/1.0/rdf#modelTheoreticallyConservativelyExtends> .
+<http://purl.net/dol/1.0/rdf#definitionallyExtends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#definitionallyExtends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#definitionallyExtends>     <http://example.org/todo#task> "We need FOL, or the same reification approach as chosen for the different kinds of translations, for capturing that an extension is definitional if and only if it is weakly definitional and model-theoretically conservative." .
+<http://purl.net/dol/1.0/rdf#definitionallyExtends>     <http://purl.net/dol/1.0/rdf#strictlyStrongerThan> <http://purl.net/dol/1.0/rdf#monomorphicallyExtends> .
+<http://purl.net/dol/1.0/rdf#definitionallyExtends>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#modelTheoreticallyConservativelyExtends> .
+<http://purl.net/dol/1.0/rdf#definitionallyExtends>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#monomorphicallyExtends> .
+<http://purl.net/dol/1.0/rdf#definitionallyExtends>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#weaklyDefinitionallyExtends> .
+<http://purl.net/dol/1.0/rdf#embeddableInto>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#embeddableInto>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#embeddableInto>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#embeddableInto>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject is embeddable into the object logic." .
+<http://purl.net/dol/1.0/rdf#embeddableInto>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#exactlyMappableTo> .
+<http://purl.net/dol/1.0/rdf#embeddableInto>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#mappableToLogic> .
+<http://purl.net/dol/1.0/rdf#embeddableInto>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#modelBijectivelyMappableTo> .
+<http://purl.net/dol/1.0/rdf#embeddableInto>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#translatableTo> .
+<http://purl.net/dol/1.0/rdf#exactLogicalExpressivity>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#exactLogicalExpressivity>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#exactLogicalExpressivity>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject ontology language has exactly the expressivity of the object logic." .
+<http://purl.net/dol/1.0/rdf#exactLogicalExpressivity>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#supportsLogic> .
+<http://purl.net/dol/1.0/rdf#exactlyCorrespondingMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#exactlyCorrespondingMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#exactlyCorrespondingMapping>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject ontology language mapping exactly corresponds to the object logic mapping." .
+<http://purl.net/dol/1.0/rdf#exactlyCorrespondingMapping>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#OntologyLanguageMapping> .
+<http://purl.net/dol/1.0/rdf#exactlyCorrespondingMapping>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#LogicMapping> .
+<http://purl.net/dol/1.0/rdf#exactlyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#exactlyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#exactlyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#exactlyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is an exact mapping from the subject to the object logic." .
+<http://purl.net/dol/1.0/rdf#exactlyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#weaklyExactlyMappableTo> .
+<http://purl.net/dol/1.0/rdf#extends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#extends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#extends>     <http://example.org/todo#question> "While the abstract and text syntaxes of DOL attach the 'kind of extension' to _one_ ontology, the semantics (CASL reference section 5.2.5) rather suggests that this is a relation between _two_ ontologies (which may or may not be given explicitly in the syntax).  Is it, therefore, OK, to model it like this in RDF?  Maybe we should also provide a semantically equivalent alternative that is more intuitive wrt. the syntax?" .
+<http://purl.net/dol/1.0/rdf#extends>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Ontology> .
+<http://purl.net/dol/1.0/rdf#extends>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#Ontology> .
+<http://purl.net/dol/1.0/rdf#faithfullyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#faithfullyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#faithfullyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#faithfullyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a faithful mapping from the subject to the object logic." .
+<http://purl.net/dol/1.0/rdf#faithfullyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#mappableToLogic> .
+<http://purl.net/dol/1.0/rdf#hasAlignment>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#hasAlignment>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#hasAlignment>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject is a distributed ontology, in which the object is an alignment between two participating ontologies." .
+<http://purl.net/dol/1.0/rdf#hasAlignment>     <http://www.w3.org/2000/01/rdf-schema#comment> _:g108 .
+<http://purl.net/dol/1.0/rdf#hasAlignment>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#Alignment> .
+<http://purl.net/dol/1.0/rdf#hasAlignment>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#hasLink> .
+<http://purl.net/dol/1.0/rdf#hasAlignment>     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#alignmentIn> .
+<http://purl.net/dol/1.0/rdf#hasInterpretation>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#hasInterpretation>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#hasInterpretation>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject is a distributed ontology, in which the object is an interpretation between two participating ontologies." .
+<http://purl.net/dol/1.0/rdf#hasInterpretation>     <http://www.w3.org/2000/01/rdf-schema#comment> _:g107 .
+<http://purl.net/dol/1.0/rdf#hasInterpretation>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#Interpretation> .
+<http://purl.net/dol/1.0/rdf#hasInterpretation>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#hasLink> .
+<http://purl.net/dol/1.0/rdf#hasInterpretation>     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#interpretationIn> .
+<http://purl.net/dol/1.0/rdf#hasLink>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#hasLink>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#hasLink>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject is a distributed ontology, in which the object is a link between two participating ontologies." .
+<http://purl.net/dol/1.0/rdf#hasLink>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#Link> .
+<http://purl.net/dol/1.0/rdf#hasLink>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#hasMember> .
+<http://purl.net/dol/1.0/rdf#hasMember>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#hasMember>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#hasMember>     <http://www.w3.org/2000/01/rdf-schema#comment> _:g106 .
+<http://purl.net/dol/1.0/rdf#hasMember>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#DistributedOntology> .
+<http://purl.net/dol/1.0/rdf#hasMember>     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#memberOf> .
+<http://purl.net/dol/1.0/rdf#hasOntology>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#hasOntology>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#hasOntology>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject is a distributed ontology, in which the object is a participating heterogeneous ontology." .
+<http://purl.net/dol/1.0/rdf#hasOntology>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#Ontology> .
+<http://purl.net/dol/1.0/rdf#hasOntology>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#hasMember> .
+<http://purl.net/dol/1.0/rdf#impliedExtensionOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#impliedExtensionOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#impliedExtensionOf>     <http://purl.net/dol/1.0/rdf#strictlyStrongerThan> <http://purl.net/dol/1.0/rdf#definitionallyExtends> .
+<http://purl.net/dol/1.0/rdf#impliedExtensionOf>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#definitionallyExtends> .
+<http://purl.net/dol/1.0/rdf#interpretationIn>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#interpretationIn>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#interpretationIn>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Interpretation> .
+<http://purl.net/dol/1.0/rdf#language>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#language>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.net/dol/1.0/rdf#language>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#language>     <http://www.w3.org/2000/01/rdf-schema#comment> "The reasoners in Prot\u00E9g\u00E9 don't like us to say the following.  Together with the SubPropertyChain specified for supportsSerialization it would go beyond OWL DL anyway.\nSubPropertyChain: serialization o serializes" .
+<http://purl.net/dol/1.0/rdf#language>     <http://www.w3.org/2000/01/rdf-schema#comment> "the language of an ontology" .
+<http://purl.net/dol/1.0/rdf#language>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Ontology> .
+<http://purl.net/dol/1.0/rdf#language>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#OntologyLanguage> .
+<http://purl.net/dol/1.0/rdf#linkIn>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#linkIn>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#linkIn>     <http://www.w3.org/2000/01/rdf-schema#comment> _:g105 .
+<http://purl.net/dol/1.0/rdf#linkIn>     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#hasLink> .
+<http://purl.net/dol/1.0/rdf#logic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#logic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.net/dol/1.0/rdf#logic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#logic>     <http://example.org/todo#question> "Inside a 'logic section' in the abstract syntax, there are also views.  Therefore, do we need another, analogous RDF property for 'the logic of a view'?" .
+<http://purl.net/dol/1.0/rdf#logic>     <http://www.w3.org/2000/01/rdf-schema#comment> "the logic in which an ontology is formalized" .
+<http://purl.net/dol/1.0/rdf#logic>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Ontology> .
+<http://purl.net/dol/1.0/rdf#logic>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#Logic> .
+<http://purl.net/dol/1.0/rdf#mappableFrom>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#mappableFrom>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#mappableFrom>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a mapping from the object to the subject." .
+<http://purl.net/dol/1.0/rdf#mappableFrom>     <http://www.w3.org/2000/01/rdf-schema#comment> _:g104 .
+<http://purl.net/dol/1.0/rdf#mappableFrom>     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#mappableTo> .
+<http://purl.net/dol/1.0/rdf#mappableFromLanguage>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#mappableFromLanguage>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#mappableFromLanguage>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a mapping from the object ontology language to the subject ontology language." .
+<http://purl.net/dol/1.0/rdf#mappableFromLogic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#mappableFromLogic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#mappableFromLogic>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a mapping from the object logic to the subject logic." .
+<http://purl.net/dol/1.0/rdf#mappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#mappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#mappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#mappableTo>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a mapping from the subject to the object." .
+<http://purl.net/dol/1.0/rdf#mappableTo>     <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:li2 .
+<http://purl.net/dol/1.0/rdf#mappableToLanguage>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#mappableToLanguage>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#mappableToLanguage>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#mappableToLanguage>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a mapping from the subject ontology language to the object ontology language." .
+<http://purl.net/dol/1.0/rdf#mappableToLanguage>     <http://www.w3.org/2000/01/rdf-schema#comment> _:g103 .
+<http://purl.net/dol/1.0/rdf#mappableToLanguage>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#mappableTo> .
+<http://purl.net/dol/1.0/rdf#mappableToLanguage>     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#mappableFromLanguage> .
+<http://purl.net/dol/1.0/rdf#mappableToLogic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#mappableToLogic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#mappableToLogic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#mappableToLogic>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a mapping from the subject logic to the object logic." .
+<http://purl.net/dol/1.0/rdf#mappableToLogic>     <http://www.w3.org/2000/01/rdf-schema#comment> _:g102 .
+<http://purl.net/dol/1.0/rdf#mappableToLogic>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#mappableTo> .
+<http://purl.net/dol/1.0/rdf#mappableToLogic>     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#mappableFromLogic> .
+<http://purl.net/dol/1.0/rdf#mapsFrom>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#mapsFrom>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.net/dol/1.0/rdf#mapsFrom>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#mapsFrom>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject mapping maps from the object into something of the same type as the object.  (Enforcing the latter constraint goes beyond OWL.)" .
+<http://purl.net/dol/1.0/rdf#mapsFrom>     <http://www.w3.org/2000/01/rdf-schema#comment> _:g101 .
+<http://purl.net/dol/1.0/rdf#mapsFrom>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Mapping> .
+<http://purl.net/dol/1.0/rdf#mapsFrom>     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#sourceOfMapping> .
+<http://purl.net/dol/1.0/rdf#mapsTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#mapsTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.net/dol/1.0/rdf#mapsTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#mapsTo>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject mapping maps from something into the object (which is of the same type).  Enforcing the latter constraint goes beyond OWL." .
+<http://purl.net/dol/1.0/rdf#mapsTo>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Mapping> .
+<http://purl.net/dol/1.0/rdf#mediaType>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#mediaType>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.net/dol/1.0/rdf#mediaType>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.net/dol/1.0/rdf#mediaType>     <http://www.w3.org/2000/01/rdf-schema#comment> "the media type (MIME type) of a serialization" .
+<http://purl.net/dol/1.0/rdf#mediaType>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Serialization> .
+<http://purl.net/dol/1.0/rdf#mediaType>     <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.net/dol/1.0/rdf#memberOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#memberOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#memberOf>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#DistributedOntology> .
+<http://purl.net/dol/1.0/rdf#modelBijectivelyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#modelBijectivelyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#modelBijectivelyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#modelBijectivelyMappableTo>     <http://example.org/todo#question> "Do we have a better idea for naming this?  Maybe mappableToWithBijectiveModels?" .
+<http://purl.net/dol/1.0/rdf#modelBijectivelyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a model-bijective mapping from the subject to the object logic." .
+<http://purl.net/dol/1.0/rdf#modelBijectivelyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#modelExpansivelyMappableTo> .
+<http://purl.net/dol/1.0/rdf#modelBijectivelyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#weaklyExactlyMappableTo> .
+<http://purl.net/dol/1.0/rdf#modelExpansivelyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#modelExpansivelyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#modelExpansivelyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#modelExpansivelyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a model-expansive mapping from the subject to the object logic." .
+<http://purl.net/dol/1.0/rdf#modelExpansivelyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#faithfullyMappableTo> .
+<http://purl.net/dol/1.0/rdf#modelTheoreticallyConservativelyExtends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#modelTheoreticallyConservativelyExtends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#modelTheoreticallyConservativelyExtends>     <http://purl.net/dol/1.0/rdf#strictlyStrongerThan> <http://purl.net/dol/1.0/rdf#consequenceTheoreticallyConservativelyExtends> .
+<http://purl.net/dol/1.0/rdf#modelTheoreticallyConservativelyExtends>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#consequenceTheoreticallyConservativelyExtends> .
+<http://purl.net/dol/1.0/rdf#monomorphicallyExtends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#monomorphicallyExtends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#monomorphicallyExtends>     <http://purl.net/dol/1.0/rdf#strictlyStrongerThan> <http://purl.net/dol/1.0/rdf#modelTheoreticallyConservativelyExtends> .
+<http://purl.net/dol/1.0/rdf#monomorphicallyExtends>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#modelTheoreticallyConservativelyExtends> .
+<http://purl.net/dol/1.0/rdf#ontologyIn>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#ontologyIn>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#ontologyIn>     <http://www.w3.org/2000/01/rdf-schema#comment> _:g100 .
+<http://purl.net/dol/1.0/rdf#ontologyIn>     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#hasOntology> .
+<http://purl.net/dol/1.0/rdf#plainlyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#plainlyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#plainlyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#plainlyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a plain mapping from the subject to the object logic." .
+<http://purl.net/dol/1.0/rdf#plainlyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#simplyTheoroidallyMappableTo> .
+<http://purl.net/dol/1.0/rdf#prefFilenameExtension>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#prefFilenameExtension>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.net/dol/1.0/rdf#prefFilenameExtension>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.net/dol/1.0/rdf#prefFilenameExtension>     <http://www.w3.org/2000/01/rdf-schema#comment> "the preferred filename extension for a serialization" .
+<http://purl.net/dol/1.0/rdf#prefFilenameExtension>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Serialization> .
+<http://purl.net/dol/1.0/rdf#prefFilenameExtension>     <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.net/dol/1.0/rdf#profileOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#profileOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#profileOf>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject is a profile of the object ontology language.  This is a stronger notion than just being a sublanguage.  Supported serializations are shared along this property." .
+<http://purl.net/dol/1.0/rdf#profileOf>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#subLanguageOf> .
+<http://purl.net/dol/1.0/rdf#projectableFrom>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#projectableFrom>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#projectableFrom>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a projection from the object to the subject." .
+<http://purl.net/dol/1.0/rdf#projectableFrom>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#mappableFrom> .
+<http://purl.net/dol/1.0/rdf#projectableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#projectableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#projectableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#projectableTo>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a projection from the subject to the object." .
+<http://purl.net/dol/1.0/rdf#projectableTo>     <http://www.w3.org/2000/01/rdf-schema#comment> _:g99 .
+<http://purl.net/dol/1.0/rdf#projectableTo>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#mappableTo> .
+<http://purl.net/dol/1.0/rdf#projectableTo>     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#projectableFrom> .
+<http://purl.net/dol/1.0/rdf#propagatesToAdjoint>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#propagatesToAdjoint>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.net/dol/1.0/rdf#propagatesToAdjoint>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject class denotes a kind of mapping that, if it holds for a translation, also holds for the adjoint projection." .
+<http://purl.net/dol/1.0/rdf#propagatesToAdjoint>     <http://www.w3.org/2000/01/rdf-schema#comment> "This is just for informative purposes: Even though it probably does not go beyond OWL, it doesn't work for annotation properties in Prot\u00E9g\u00E9\nDomain: owl:Class\nRange: xsd:boolean" .
+<http://purl.net/dol/1.0/rdf#reifiedBy>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#reifiedBy>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.net/dol/1.0/rdf#reifiedBy>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject property is reified by the object class." .
+<http://purl.net/dol/1.0/rdf#reifiedBy>     <http://www.w3.org/2000/01/rdf-schema#comment> "This is just for informative purposes: It doesn't work for annotation properties\nInverseOf: reifies" .
+<http://purl.net/dol/1.0/rdf#reifies>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#reifies>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.net/dol/1.0/rdf#reifies>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject class reifies the object property." .
+<http://purl.net/dol/1.0/rdf#reifies>     <http://www.w3.org/2000/01/rdf-schema#comment> "This is just for informative purposes: Even though it probably does not go beyond OWL, it doesn't work for annotation properties in Prot\u00E9g\u00E9\nDomain: owl:Class\nRange: owl:ObjectProperty" .
+<http://purl.net/dol/1.0/rdf#serialization>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#serialization>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.net/dol/1.0/rdf#serialization>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#serialization>     <http://www.w3.org/2000/01/rdf-schema#comment> "the serialization in which an ontology is written" .
+<http://purl.net/dol/1.0/rdf#serialization>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Ontology> .
+<http://purl.net/dol/1.0/rdf#serialization>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#Serialization> .
+<http://purl.net/dol/1.0/rdf#serializes>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#serializes>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#serializes>     <http://www.w3.org/2000/01/rdf-schema#comment> _:g98 .
+<http://purl.net/dol/1.0/rdf#serializes>     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#supportsSerialization> .
+<http://purl.net/dol/1.0/rdf#simplyTheoroidallyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#simplyTheoroidallyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#simplyTheoroidallyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#simplyTheoroidallyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a simple theoroidal mapping from the subject to the object logic." .
+<http://purl.net/dol/1.0/rdf#simplyTheoroidallyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#mappableToLogic> .
+<http://purl.net/dol/1.0/rdf#source>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#source>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.net/dol/1.0/rdf#source>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#source>     <http://www.w3.org/2000/01/rdf-schema#comment> "the source ontology of a link" .
+<http://purl.net/dol/1.0/rdf#source>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Link> .
+<http://purl.net/dol/1.0/rdf#source>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#Ontology> .
+<http://purl.net/dol/1.0/rdf#sourceOfMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#sourceOfMapping>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#sourceOfMapping>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#Mapping> .
+<http://purl.net/dol/1.0/rdf#specifiesSemanticsOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#specifiesSemanticsOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#specifiesSemanticsOf>     <http://www.w3.org/2000/01/rdf-schema#comment> _:g97 .
+<http://purl.net/dol/1.0/rdf#specifiesSemanticsOf>     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#supportsLogic> .
+<http://purl.net/dol/1.0/rdf#strictlyStrongerThan>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#strictlyStrongerThan>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.net/dol/1.0/rdf#subLanguageOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#subLanguageOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#subLanguageOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#subLanguageOf>     <http://example.org/todo#question> "Do we need both subLanguageOf and profileOf?  Intuitively I do think so, and I think it's reasonable to distinguish them via their properties wrt. logic/serialization propagation." .
+<http://purl.net/dol/1.0/rdf#subLanguageOf>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject is a sublanguage of the object ontology language.  Supported logics are shared along the inverse of this property." .
+<http://purl.net/dol/1.0/rdf#subLanguageOf>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#mappableToLanguage> .
+<http://purl.net/dol/1.0/rdf#subLanguageOf>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#translatableTo> .
+<http://purl.net/dol/1.0/rdf#subLogicOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#subLogicOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#subLogicOf>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#subLogicOf>     <http://www.w3.org/2000/01/rdf-schema#comment> "The subject is a sublogic of the object." .
+<http://purl.net/dol/1.0/rdf#subLogicOf>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#embeddableInto> .
+<http://purl.net/dol/1.0/rdf#subLogicOf>     <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:li5 .
+<http://purl.net/dol/1.0/rdf#supportsLogic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#supportsLogic>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#supportsLogic>     <http://www.w3.org/2000/01/rdf-schema#comment> "The semantics of [a subset of] the subject ontology language can be specified in terms of the object logic." .
+<http://purl.net/dol/1.0/rdf#supportsLogic>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#OntologyLanguage> .
+<http://purl.net/dol/1.0/rdf#supportsLogic>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#Logic> .
+<http://purl.net/dol/1.0/rdf#supportsLogic>     <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:li9 .
+<http://purl.net/dol/1.0/rdf#supportsLogic>     <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:li7 .
+<http://purl.net/dol/1.0/rdf#supportsSerialization>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#supportsSerialization>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://purl.net/dol/1.0/rdf#supportsSerialization>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#supportsSerialization>     <http://www.w3.org/2000/01/rdf-schema#comment> "Note that the serialization should be as specific as possible, i.e. one should not say that ``OWL can be serialized in XML'' and ``Common Logic can be serialized in XML'', but instead ``OWL can be serialized in OWL XML'' and ``Common Logic can be serialized in XCL'', taking into account that OWL XML and XCL are two different XML languages." .
+<http://purl.net/dol/1.0/rdf#supportsSerialization>     <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologies in the subject ontology language can be serialized in the object serialization." .
+<http://purl.net/dol/1.0/rdf#supportsSerialization>     <http://www.w3.org/2000/01/rdf-schema#comment> "The reasoners in Prot\u00E9g\u00E9 don't like us to say the following.  Together with the SubPropertyChain specified for language it would go beyond OWL DL anyway.\nSubPropertyChain: profileOf o supportsSerialization" .
+<http://purl.net/dol/1.0/rdf#supportsSerialization>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#OntologyLanguage> .
+<http://purl.net/dol/1.0/rdf#supportsSerialization>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#Serialization> .
+<http://purl.net/dol/1.0/rdf#supportsSymbolKind>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#supportsSymbolKind>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.net/dol/1.0/rdf#supportsSymbolKind>     <http://www.w3.org/2000/01/rdf-schema#comment> "This is just for informative purposes: Even though it probably does not go beyond OWL, it doesn't work for annotation properties in Prot\u00E9g\u00E9\nDomain: OntologyLanguage\nRange: owl:Class that rdfs:subClassOf value Symbol" .
+<http://purl.net/dol/1.0/rdf#symbolKindIn>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#symbolKindIn>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.net/dol/1.0/rdf#symbolKindIn>     <http://www.w3.org/2000/01/rdf-schema#comment> "This is just for informative purposes: It doesn't work for annotation properties\nInverseOf: supportsSymbolKind" .
+<http://purl.net/dol/1.0/rdf#target>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#target>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.net/dol/1.0/rdf#target>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#target>     <http://www.w3.org/2000/01/rdf-schema#comment> "the target ontology of a link" .
+<http://purl.net/dol/1.0/rdf#target>     <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.net/dol/1.0/rdf#Link> .
+<http://purl.net/dol/1.0/rdf#target>     <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.net/dol/1.0/rdf#Ontology> .
+<http://purl.net/dol/1.0/rdf#translatableFrom>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#translatableFrom>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#translatableFrom>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a translation from the object to the subject." .
+<http://purl.net/dol/1.0/rdf#translatableFrom>     <http://www.w3.org/2000/01/rdf-schema#comment> _:g92 .
+<http://purl.net/dol/1.0/rdf#translatableFrom>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#mappableFrom> .
+<http://purl.net/dol/1.0/rdf#translatableFrom>     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#translatableTo> .
+<http://purl.net/dol/1.0/rdf#translatableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#translatableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#translatableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#translatableTo>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a translation from the subject to the object." .
+<http://purl.net/dol/1.0/rdf#translatableTo>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#mappableTo> .
+<http://purl.net/dol/1.0/rdf#weaklyDefinitionallyExtends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#weaklyDefinitionallyExtends>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#weaklyExactlyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.net/dol/1.0/rdf#weaklyExactlyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.net/dol/1.0/rdf#weaklyExactlyMappableTo>     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.net/dol/1.0/rdf#weaklyExactlyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#comment> "There is a weakly exact mapping from the subject to the object logic." .
+<http://purl.net/dol/1.0/rdf#weaklyExactlyMappableTo>     <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.net/dol/1.0/rdf#mappableToLogic> .
+_:L149C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L149C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:L149C4     <http://purl.org/dc/terms/creator> "Christoph Lange" .
+_:L149C4     <http://purl.org/dc/terms/date> "2012-04-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:L149C4     <http://www.w3.org/2002/07/owl#annotatedProperty> <http://example.org/todo#question> .
+_:L149C4     <http://www.w3.org/2002/07/owl#annotatedSource> <http://purl.net/dol/1.0/rdf#compositionOf> .
+_:L149C4     <http://www.w3.org/2002/07/owl#annotatedTarget> "I don't think we need subclasses for specific types of mappings, do we?" .
+_:L237C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L237C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:L237C4     <http://purl.org/dc/terms/creator> "Christoph Lange" .
+_:L237C4     <http://purl.org/dc/terms/date> "2011-12-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:L237C4     <http://www.w3.org/2002/07/owl#annotatedProperty> <http://example.org/todo#question> .
+_:L237C4     <http://www.w3.org/2002/07/owl#annotatedSource> <http://purl.net/dol/1.0/rdf#extends> .
+_:L237C4     <http://www.w3.org/2002/07/owl#annotatedTarget> "While the abstract and text syntaxes of DOL attach the 'kind of extension' to _one_ ontology, the semantics (CASL reference section 5.2.5) rather suggests that this is a relation between _two_ ontologies (which may or may not be given explicitly in the syntax).  Is it, therefore, OK, to model it like this in RDF?  Maybe we should also provide a semantically equivalent alternative that is more intuitive wrt. the syntax?" .
+_:L353C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L353C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:L353C4     <http://purl.org/dc/terms/creator> "Christoph Lange" .
+_:L353C4     <http://purl.org/dc/terms/date> "2011-12-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:L353C4     <http://www.w3.org/2002/07/owl#annotatedProperty> <http://example.org/todo#question> .
+_:L353C4     <http://www.w3.org/2002/07/owl#annotatedSource> <http://purl.net/dol/1.0/rdf#logic> .
+_:L353C4     <http://www.w3.org/2002/07/owl#annotatedTarget> "Inside a 'logic section' in the abstract syntax, there are also views.  Therefore, do we need another, analogous RDF property for 'the logic of a view'?" .
+_:L459C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L459C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:L459C4     <http://purl.org/dc/terms/creator> "Christoph Lange" .
+_:L459C4     <http://purl.org/dc/terms/date> "2012-04-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:L459C4     <http://www.w3.org/2002/07/owl#annotatedProperty> <http://example.org/todo#question> .
+_:L459C4     <http://www.w3.org/2002/07/owl#annotatedSource> <http://purl.net/dol/1.0/rdf#modelBijectivelyMappableTo> .
+_:L459C4     <http://www.w3.org/2002/07/owl#annotatedTarget> "Do we have a better idea for naming this?  Maybe mappableToWithBijectiveModels?" .
+_:L607C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L607C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:L607C4     <http://purl.org/dc/terms/creator> "Christoph Lange" .
+_:L607C4     <http://purl.org/dc/terms/date> "2012-04-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:L607C4     <http://www.w3.org/2002/07/owl#annotatedProperty> <http://example.org/todo#question> .
+_:L607C4     <http://www.w3.org/2002/07/owl#annotatedSource> <http://purl.net/dol/1.0/rdf#subLanguageOf> .
+_:L607C4     <http://www.w3.org/2002/07/owl#annotatedTarget> "Do we need both subLanguageOf and profileOf?  Intuitively I do think so, and I think it's reasonable to distinguish them via their properties wrt. logic/serialization propagation." .
+_:L624C12     <http://www.w3.org/2000/01/rdf-schema#comment> _:g96 .
+_:L624C12     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#exactLogicalExpressivity> .
+_:L641C12     <http://www.w3.org/2000/01/rdf-schema#comment> _:g95 .
+_:L641C12     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#subLanguageOf> .
+_:L648C12     <http://www.w3.org/2000/01/rdf-schema#comment> _:g94 .
+_:L648C12     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#subLogicOf> .
+_:L653C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L653C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Annotation> .
+_:L653C4     <http://purl.org/dc/terms/creator> "Christoph Lange" .
+_:L653C4     <http://purl.org/dc/terms/date> "2012-04-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:L653C4     <http://www.w3.org/2002/07/owl#annotatedProperty> <http://example.org/todo#question> .
+_:L653C4     <http://www.w3.org/2002/07/owl#annotatedSource> _:L659C12 .
+_:L653C4     <http://www.w3.org/2002/07/owl#annotatedTarget> "On the board we had 'inverse subLanguageOf o exactLogicalExpressivity', but I think we can be more general." .
+_:L659C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L659C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:L659C12     <http://example.org/todo#question> "On the board we had 'inverse subLanguageOf o exactLogicalExpressivity', but I think we can be more general." .
+_:L659C12     <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2002/07/owl#propertyChainAxiom> .
+_:L659C12     <http://www.w3.org/2002/07/owl#annotatedSource> <http://purl.net/dol/1.0/rdf#supportsLogic> .
+_:L659C12     <http://www.w3.org/2002/07/owl#annotatedTarget> _:li10 .
+_:L664C20     <http://www.w3.org/2000/01/rdf-schema#comment> _:g93 .
+_:L664C20     <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.net/dol/1.0/rdf#subLanguageOf> .
+_:L871C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L871C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L871C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L871C12     <http://www.w3.org/2002/07/owl#intersectionOf> _:li12 .
+_:L873C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L873C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L873C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L873C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:L873C20     <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:L873C20     <http://www.w3.org/2002/07/owl#onProperty> <http://purl.net/dol/1.0/rdf#source> .
+_:L877C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L877C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L877C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L877C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:L877C20     <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:L877C20     <http://www.w3.org/2002/07/owl#onProperty> <http://purl.net/dol/1.0/rdf#target> .
+_:L912C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L912C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L912C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L912C12     <http://www.w3.org/2002/07/owl#intersectionOf> _:li14 .
+_:L914C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L914C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L914C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L914C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:L914C20     <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:L914C20     <http://www.w3.org/2002/07/owl#onProperty> <http://purl.net/dol/1.0/rdf#mapsFrom> .
+_:L918C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L918C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L918C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L918C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:L918C20     <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:L918C20     <http://www.w3.org/2002/07/owl#onProperty> <http://purl.net/dol/1.0/rdf#mapsTo> .
+_:L928C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L928C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:L928C4     <http://www.w3.org/2000/01/rdf-schema#comment> "Apparently one has to say 'owl:Thing' here; omitting it is legal by http://www.w3.org/TR/2009/NOTE-owl2-manchester-syntax-20091027/#Descriptions, but Prot\u00E9g\u00E9 doesn't like it" .
+_:L928C4     <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:L928C4     <http://www.w3.org/2002/07/owl#annotatedSource> <http://purl.net/dol/1.0/rdf#Mapping> .
+_:L928C4     <http://www.w3.org/2002/07/owl#annotatedTarget> _:L933C12 .
+_:L933C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L933C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L933C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L933C12     <http://www.w3.org/2002/07/owl#intersectionOf> _:li16 .
+_:L935C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L935C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L935C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L935C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:L935C20     <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:L935C20     <http://www.w3.org/2002/07/owl#onProperty> <http://purl.net/dol/1.0/rdf#mapsFrom> .
+_:L939C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L939C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L939C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L939C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:L939C20     <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:L939C20     <http://www.w3.org/2002/07/owl#onProperty> <http://purl.net/dol/1.0/rdf#mapsTo> .
+_:L983C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L983C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L983C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L983C12     <http://www.w3.org/2002/07/owl#intersectionOf> _:li20 .
+_:L985C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L985C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L985C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L985C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:L985C20     <http://www.w3.org/2002/07/owl#onProperty> <http://purl.net/dol/1.0/rdf#supportsLogic> .
+_:L985C20     <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.net/dol/1.0/rdf#Logic> .
+_:L989C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L989C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L989C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L989C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:L989C20     <http://www.w3.org/2002/07/owl#onProperty> <http://purl.net/dol/1.0/rdf#supportsSerialization> .
+_:L989C20     <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.net/dol/1.0/rdf#Serialization> .
+_:L993C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L993C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L993C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L993C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:L993C20     <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.net/dol/1.0/rdf#Logic> .
+_:L993C20     <http://www.w3.org/2002/07/owl#onProperty> <http://purl.net/dol/1.0/rdf#supportsLogic> .
+_:L997C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L997C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L997C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L997C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:L997C20     <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.net/dol/1.0/rdf#Serialization> .
+_:L997C20     <http://www.w3.org/2002/07/owl#onProperty> <http://purl.net/dol/1.0/rdf#supportsSerialization> .
+_:L1027C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L1027C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:L1027C4     <http://www.w3.org/2000/01/rdf-schema#comment> "Prot\u00E9g\u00E9 4.2 doesn't like 'Class: Mapping DisjointUnionOf: PlainMapping, SimpleTheoroidalMapping', so we do it this way:" .
+_:L1027C4     <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2002/07/owl#disjointWith> .
+_:L1027C4     <http://www.w3.org/2002/07/owl#annotatedSource> <http://purl.net/dol/1.0/rdf#PlainMapping> .
+_:L1027C4     <http://www.w3.org/2002/07/owl#annotatedTarget> <http://purl.net/dol/1.0/rdf#SimpleTheoroidalMapping> .
+_:L1067C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L1067C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L1067C12     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L1067C12     <http://www.w3.org/2002/07/owl#intersectionOf> _:li22 .
+_:L1070C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:L1070C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L1070C20     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:L1070C20     <http://www.w3.org/2002/07/owl#complementOf> <http://purl.net/dol/1.0/rdf#PlainMapping> .
+_:L1081C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L1081C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:L1081C4     <http://www.w3.org/2000/01/rdf-schema#comment> "Prot\u00E9g\u00E9 4.2 doesn't like 'Class: Mapping DisjointUnionOf: PlainMapping, SimpleTheoroidalMapping', so we do it this way:" .
+_:L1081C4     <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2002/07/owl#disjointWith> .
+_:L1081C4     <http://www.w3.org/2002/07/owl#annotatedSource> <http://purl.net/dol/1.0/rdf#PlainMapping> .
+_:L1081C4     <http://www.w3.org/2002/07/owl#annotatedTarget> <http://purl.net/dol/1.0/rdf#SimpleTheoroidalMapping> .
+_:L1151C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:L1151C4     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:L1151C4     <http://www.w3.org/2002/07/owl#members> _:li28 .

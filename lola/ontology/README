@@ -1,0 +1,8 @@
+This directory holds the implementations of the concrete syntaxes of DOL.  If you are reading this file in the public OntoIOp WebDAV repository, and not in the OntoIOp development Subversion repository, some files may be missing.
+
+DOL RDF:
+* dol-rdf.omn: primary implementation of the RDF vocabulary, as an OWL ontology (Manchester syntax)
+* dol-rdf.owl: the same, exported to RDF/XML
+
+Ontology language description vocabulary (subset of DOL RDF; generated automatically):
+* onto-vocab.rdf: all terms needed for describing ontology languages, their logics, and their serializations, exported to RDF/XML

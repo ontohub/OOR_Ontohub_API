@@ -1,0 +1,144 @@
+
+
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+    <rdf:Description>
+    </rdf:Description>
+
+    <rdf:Description rdf:about=".run-1381155799.636667p20544#li30">
+        <rdf:li>foo</rdf:li>
+        <rdf:li>bar</rdf:li>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b1"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b2"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b3"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b4"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b5"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b6"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b7"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b8"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b9"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b10"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b11"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b12"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b13"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b14"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b15"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b16"/>
+        <concatenation xmlns="http://www.w3.org/2000/10/swap/string#"
+            rdf:nodeID="b17"/>
+    </rdf:Description>
+
+    <Resource xmlns="http://www.w3.org/2000/01/rdf-schema#"
+        rdf:about="http://purl.net/dol/1.0/rdf#">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+        <task xmlns="http://example.org/todo#">When scaling this ontology implementation up to DOL, look below for annotations marked as 'beyond OWL'.  These things can be modeled in FOL.</task>
+        <comment>RDF serialization of DOL, implemented as an OWL ontology.  Actually some axioms that we would like to have go beyond OWL.</comment>
+        <versionInfo xmlns="http://www.w3.org/2002/07/owl#">1.0</versionInfo>
+    </Resource>
+
+    <Class xmlns="http://www.w3.org/2000/01/rdf-schema#"
+        rdf:about="http://purl.net/dol/1.0/rdf#Alignment">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <comment>an alignment between two heterogeneous ontologies in a distributed ontology</comment>
+        <subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Link"/>
+        <disjointWith xmlns="http://www.w3.org/2002/07/owl#"
+            rdf:resource="http://purl.net/dol/1.0/rdf#Interpretation"/>
+    </Class>
+
+    <Class xmlns="http://www.w3.org/2000/01/rdf-schema#"
+        rdf:about="http://purl.net/dol/1.0/rdf#BasicOntology">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <comment>a basic ontology (in a single language, logic, and serialization)</comment>
+        <subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Ontology"/>
+    </Class>
+
+    <Class xmlns="http://www.w3.org/2000/01/rdf-schema#"
+        rdf:about="http://purl.net/dol/1.0/rdf#DefaultMapping">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <propagatesToAdjoint xmlns="http://purl.net/dol/1.0/rdf#"
+            rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</propagatesToAdjoint>
+        <subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Mapping"/>
+    </Class>
+
+    <Class xmlns="http://www.w3.org/2000/01/rdf-schema#"
+        rdf:about="http://purl.net/dol/1.0/rdf#DistributedOntology">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <comment>a distributed ontology</comment>
+        <subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Ontology"/>
+    </Class>
+
+    <Class xmlns="http://www.w3.org/2000/01/rdf-schema#"
+        rdf:about="http://purl.net/dol/1.0/rdf#Embedding">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <reifies xmlns="http://purl.net/dol/1.0/rdf#"
+            rdf:resource="http://purl.net/dol/1.0/rdf#embeddableInto"/>
+        <subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#ExactMapping"/>
+        <subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#LogicMapping"/>
+        <subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#ModelBijectiveMapping"/>
+        <subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Translation"/>
+    </Class>
+
+    <Class xmlns="http://www.w3.org/2000/01/rdf-schema#"
+        rdf:about="http://purl.net/dol/1.0/rdf#ExactMapping">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <propagatesToAdjoint xmlns="http://purl.net/dol/1.0/rdf#"
+            rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</propagatesToAdjoint>
+        <reifies xmlns="http://purl.net/dol/1.0/rdf#"
+            rdf:resource="http://purl.net/dol/1.0/rdf#exactlyMappableTo"/>
+        <subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#WeaklyExactMapping"/>
+    </Class>
+
+    <Class xmlns="http://www.w3.org/2000/01/rdf-schema#"
+        rdf:about="http://purl.net/dol/1.0/rdf#FaithfulMapping">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <propagatesToAdjoint xmlns="http://purl.net/dol/1.0/rdf#"
+            rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</propagatesToAdjoint>
+        <reifies xmlns="http://purl.net/dol/1.0/rdf#"
+            rdf:resource="http://purl.net/dol/1.0/rdf#faithfullyMappableTo"/>
+        <subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Mapping"/>
+    </Class>
+
+    <Class xmlns="http://www.w3.org/2000/01/rdf-schema#"
+        rdf:about="http://purl.net/dol/1.0/rdf#Interpretation">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <equivalentClass xmlns="http://www.w3.org/2002/07/owl#"
+            rdf:resource="http://purl.net/dol/1.0/rdf#View"/>
+    </Class>
+
+    <Class xmlns="http://www.w3.org/2000/01/rdf-schema#"
+        rdf:about="http://purl.net/dol/1.0/rdf#Link">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <comment>a link between two heterogeneous ontologies in a distributed ontology</comment>
+        <subClassOf rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+            <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <intersectionOf xmlns="http://www.w3.org/2002/07/owl#"
+                rdf:parseType="Collection">
+                <rdf:li rdf:parseType="Resource">

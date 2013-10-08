@@ -1,0 +1,5 @@
+This directory holds tools related to the syntax of DOL or the OntoIOp registry.
+
+* some-owl-inferences.n3: some OWL inference rules relevant here, implemented in N3
+* dol-inferences-beyond-owl.n3: some inference rules going beyond OWL
+* abox.n3: for testing the OWL inference rules

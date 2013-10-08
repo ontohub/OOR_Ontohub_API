@@ -1,0 +1,74 @@
+# Expand the stripped-down OntoIOp registry into a full version (suitable for linked data publishing)
+# by applying some inference rules that go beyond those of OWL
+#
+# For convenience of authoring, we include some OWL property chain axioms here as well, as they are more intuitive to capture in FOL, and as some of them would take the OWL ontology beyond DL (as they involve non-simple properties).
+#
+# How to invoke:
+# cwm --n3 INPUT.turtle --rdf ../syntax/dol-rdf.owl --n3 dol-inferences-beyond.n3 some-owl-inferences.n3 --think
+# 
+# Requirements:
+# cwm from http://www.w3.org/2000/10/swap/doc/cwm.html
+
+@prefix dol:  <http://purl.net/dol/1.0/rdf#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema-datatypes#> .
+
+# from mappings (translation or projection, mapping logics or languages) that have been reified into resources, generate mapping properties
+{ ?mapping a ?mappingClass ;
+             dol:mapsFrom ?source;
+             dol:mapsTo ?target .
+  ?mappingClass dol:reifies ?mappingProperty }
+=> { ?source ?mappingProperty ?target } .
+
+# sublanguage → sublogic
+{ ?subLanguage dol:exactLogicalExpressivity ?subLogic ;
+               dol:subLanguageOf [ dol:exactLogicalExpressivity ?superLogic ] }
+=> { ?subLogic dol:subLogicOf ?superLogic } .
+
+# supported logics propagate along language translatability
+{ ?subLanguage dol:translatableTo ?superLanguage ;
+               dol:mappableToLanguage ?superLanguage ;
+               dol:supportsLogic ?logic }
+=> { ?superLanguage dol:supportsLogic ?logic } .
+
+# supported serializations propagate to profiles
+{ ?profile dol:profileOf [ dol:supportsSerialization ?serialization ] }
+=> { ?profile dol:supportsSerialization ?serialization } .
+
+# supported entity kinds propagate to profiles
+{ ?profile dol:profileOf [ dol:supportsEntityKind ?entityKind ] }
+=> { ?profile dol:supportsEntityKind ?entityKind } .
+
+# supporting a logic entails supporting its sublogics
+{ ?language dol:supportsLogic ?logic .
+  ?subLogic dol:subLogicOf ?logic }
+=> { ?language dol:supportsLogic ?subLogic } .
+
+# if there is a logic translation, there is also a language translation between the corresponding languages
+{ ?sourceLanguage dol:exactLogicalExpressivity
+    [ dol:translatableTo ?targetLogic ;
+      dol:mappableToLogic ?targetLogic ] .
+  ?targetLanguage dol:exactLogicalExpressivity ?targetLogic }
+=> { ?sourceLanguage dol:translatableTo ?targetLanguage ;
+                     dol:mappableToLanguage ?targetLanguage } .
+
+# if there is a logic projection, there is also a language projection between the corresponding languages
+{ ?sourceLanguage dol:exactLogicalExpressivity
+    [ dol:projectableTo ?targetLogic ;
+      dol:mappableToLogic ?targetLogic ] .
+  ?targetLanguage dol:exactLogicalExpressivity ?targetLogic }
+=> { ?sourceLanguage dol:projectableTo ?targetLanguage ;
+                     dol:mappableToLanguage ?targetLanguage } .
+
+# transfer properties of a translation to its adjoint projection
+{ ?translation a ?translationKind ;
+               dol:adjoint ?projection ;
+               dol:mapsFrom ?translationSource ;
+               dol:mapsTo ?translationTarget .
+  ?translationKind dol:propagatesToAdjoint true . }
+=> { ?projection a ?translationKind ;
+                 dol:mapsFrom ?translationTarget ;
+                 dol:mapsTo ?translationSource } .
+
+# inverse properties for entity kinds supported in a language (needs to be an annotation property to prevent OWL Full, and annotation properties don't have inverses)
+{ ?language dol:supportsEntityKind ?entityKind }
+=> { ?entityKind dol:entityKindIn ?language } .
