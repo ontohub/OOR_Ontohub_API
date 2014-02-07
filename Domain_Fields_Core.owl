@@ -531,10 +531,10 @@
     
 
 
-    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ISO -->
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ISOStandard -->
 
-    <owl:Class rdf:about="&Domain_fields;ISO">
-        <rdfs:label rdf:datatype="&xsd;string">ISO</rdfs:label>
+    <owl:Class rdf:about="&Domain_fields;ISOStandard">
+        <rdfs:label rdf:datatype="&xsd;string">ISOStandard</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Standard"/>
     </owl:Class>
     
