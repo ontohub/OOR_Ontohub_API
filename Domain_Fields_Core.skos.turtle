@@ -1,0 +1,45 @@
+# I'm starting to write this in Turtle, as that's most convenient for me.  I can export it to RDF/XML if you wish.
+# Christoph Lange <math.semantic.web@gmail.com>
+
+# I'm trying to make up a nicer namespace URI than a GitHub file path
+@prefix df: <http://ontohub.org/classification/domain_fields_core/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix msc: <http://msc2010.org/resources/MSC/2010/> .
+
+df: a skos:ConceptScheme ; # skos's counterpart to owl:Ontology
+  dct:title "Ontology domain fields (core)" .
+
+# I chose not to model DomainField as a concept, as SKOS has a notion of a concept scheme (see above), and as SKOS is capable of saying which concepts are top-level concepts within such a scheme.
+
+# As an example, I modelled one hierarchy from a top concept (AgricultureForestryFisheriesVeterinary) to a bottom concept (CropAndLivestockProduction).  About the transitivity semantics of skos:narrower (or its inverse skos:broader) please note http://www.w3.org/TR/2009/NOTE-skos-primer-20090818/#sectransitivebroader.
+
+df:AgricultureForestryFisheriesVeterinary a skos:Concept ;
+  skos:topConceptOf df: ;
+  skos:inScheme df: ; # It is not strictly necessary to explicitly express such back-links.  They are nice to have for publishing this as linked data, but you can easily implement some custom inference rules that would make all skos:Concepts declared in this file to be in this scheme.  There is no such rule built into the SKOS semantics (see http://www.w3.org/TR/skos-reference/#L1101).
+  skos:prefLabel "Agriculture, forestry, fisheries, veterinary"@en ;
+  # Given that a SKOS classification scheme is universally usable and could therefore be used in any digital library, I would remove "ontologies" from the definition below (which is so far copied from the OWL ontology).
+  skos:definition "It includes ontologies that are dealing with the domain subjects related to agriculture, forestry, fisheries, and veterinary. A closer specification of an ontology domain can facilitate a more accurate ontology search, retrieval, and reuse. Thus, it is recommended to specify the domain-field as specific as possible." ;
+  skos:narrower df:Agriculture .
+
+df:Agriculture a skos:Concept ;
+  skos:inScheme df: ;
+  skos:prefLabel "Agriculture"@en, "Landwirtschaft"@de ;
+  skos:definition "It includes ontologies that are dealing with the domain subjects related to agriculture." ;
+  skos:narrower df:CropAndLivestockProduction .
+
+df:CropAndLivestockProduction a skos:Concept ;
+  skos:inScheme df: ;
+  skos:prefLabel "Crop and livestock production"@en ;
+  skos:definition "It includes ontologies that are dealing with the domain subjects related to the crop and livestock production." .
+
+# And now an example for aligning with other SKOS classification schemes:
+
+df:Statistics a skos:Concept ;
+  skos:inScheme df: ;
+  skos:prefLabel "Statistics"@en, "Statistik"@de ;
+  skos:definition "Statistics" ;
+  skos:exactMatch msc:62-XX ;
+  skos:narrowMatch msc:62F03 . # skos:narrowMatch is a subproperty of skos:narrower, where the target of such a link is in a different classification scheme.  I.e. msc:62F03 (Hypothesis testing) is narrower than df:Statistics.
