@@ -47,15 +47,15 @@
 
     <owl:Class rdf:about="&Domain_fields;Agriculture">
         <rdfs:label rdf:datatype="&xsd;string">Agriculture</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&Domain_fields;AgricultureForestryFsheriesVeterinary"/>
+        <rdfs:subClassOf rdf:resource="&Domain_fields;AgricultureForestryFisheriesVeterinary"/>
         <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to agriculture.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#AgricultureForestryFsheriesVeterinary -->
+    <!-- https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#AgricultureForestryFisheriesVeterinary -->
 
-    <owl:Class rdf:about="&Domain_fields;AgricultureForestryFsheriesVeterinary">
+    <owl:Class rdf:about="&Domain_fields;AgricultureForestryFisheriesVeterinary">
         <rdfs:label rdf:datatype="&xsd;string">AgricultureForestryFisheriesVeterinary</rdfs:label>
         <rdfs:subClassOf rdf:resource="&Domain_fields;Domain_Field"/>
         <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to agriculture, forestry, fisheries, and veterinary. A closer specification of an ontology domain can facilitate a more accurate ontology search, retrieval, and reuse. Thus, it is recommended to specify the domain-field as specific as possible.</rdfs:comment>
@@ -415,7 +415,7 @@
 
     <owl:Class rdf:about="&Domain_fields;Fisheries">
         <rdfs:label rdf:datatype="&xsd;string">Fisheries</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&Domain_fields;AgricultureForestryFsheriesVeterinary"/>
+        <rdfs:subClassOf rdf:resource="&Domain_fields;AgricultureForestryFisheriesVeterinary"/>
         <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to fisheries.</rdfs:comment>
     </owl:Class>
     
@@ -434,7 +434,7 @@
 
     <owl:Class rdf:about="&Domain_fields;Forestry">
         <rdfs:label rdf:datatype="&xsd;string">Forestry</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&Domain_fields;AgricultureForestryFsheriesVeterinary"/>
+        <rdfs:subClassOf rdf:resource="&Domain_fields;AgricultureForestryFisheriesVeterinary"/>
         <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to forestry.</rdfs:comment>
     </owl:Class>
     
@@ -1110,7 +1110,7 @@
 
     <owl:Class rdf:about="&Domain_fields;Veterinary">
         <rdfs:label rdf:datatype="&xsd;string">Veterinary</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&Domain_fields;AgricultureForestryFsheriesVeterinary"/>
+        <rdfs:subClassOf rdf:resource="&Domain_fields;AgricultureForestryFisheriesVeterinary"/>
         <rdfs:comment rdf:datatype="&xsd;string">It includes ontologies that are dealing with the domain subjects related to veterinary.</rdfs:comment>
     </owl:Class>
     
