@@ -45,7 +45,7 @@ registry-with-tbox.rdf: registry-expanded.ntriples
 # 4. filter out triples containing blank nodes in any component.  Many blank nodes are not relevant for the dataset (e.g. artifacts from the RDF serialization of the OWL ontology, editorial comments, etc.), and those, that are, are not supported by our approach.
 # 5. filter out triples with certain annotation properties (here: editorial comments)
 %-expanded.ntriples: %.turtle $(DOL_INFERENCES) $(OWL_INFERENCES)
-	cwm --n3 $< --rdf $(BASE)/syntax/dol-rdf.owl --n3 $(DOL_INFERENCES) $(OWL_INFERENCES) --think --ntriples $(CWM_DEFAULT_ARGS) \
+	cwm --n3 $< --rdf $(BASE)/syntax/dol-rdf.owl $(SKOS) --n3 $(DOL_INFERENCES) $(OWL_INFERENCES) --think --ntriples $(CWM_DEFAULT_ARGS) \
 	| perl -pe 's/^[[:space:]]*//' \
         | grep '^<http://purl\.net/dol/' \
         | grep -v '^<http://purl\.net/dol/1\.0/rdf#' \
