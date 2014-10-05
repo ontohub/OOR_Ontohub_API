@@ -65,7 +65,7 @@
                dol:mapsFrom ?translationSource ;
                dol:mapsTo ?translationTarget .
   ?translationKind dol:propagatesToAdjoint true . }
-=> { ?projection a ?translationKind ;
+=> { ?projection a dol:Projection, ?translationKind ;
                  dol:mapsFrom ?translationTarget ;
                  dol:mapsTo ?translationSource } .
 
