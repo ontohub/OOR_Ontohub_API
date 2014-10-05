@@ -37,6 +37,7 @@
 
 # Annotations and comments
 @prefix dct:  <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix todo: <http://example.org/todo#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema-datatypes#> .
@@ -46,6 +47,38 @@
 reg: a void:Dataset ;
   skos:prefLabel "OntoIOp registry"@en ;
   rdfs:comment "the registry of logics, ontology/model/specification languages, serializations and mappings that conform with the Distributed Ontology, Modeling and Specification Language (DOL) specified as a response to the OMG RFP “Ontology, Model and Specification Integration and Interoperability (OntoIOp)” (OMG document ad/2013-12-02)" ;
+  dct:publisher "OntoIOp working group" ;
+  dct:contributor
+    [ foaf:name "Till Mossakowski" ] ,
+    [ foaf:name "Christoph Lange" ] ,
+    [ foaf:name "Oliver Kutz" ] ;
+  dct:modified "2014-10-05"^^xsd:date ;
+  dct:subject <http://dbpedia.org/resurce/Ontology_language> ;
+  todo:task [
+    dct:creator "Christoph Lange" ;
+    dct:date "2014-10-05"^^xsd:date ;
+    rdf:value "add license" ] ;
+  todo:task [
+    dct:creator "Christoph Lange" ;
+    dct:date "2014-10-05"^^xsd:date ;
+    rdf:value "consider adding void:feature" ] ;
+  void:dataDump
+    <https://raw.githubusercontent.com/ontohub/OOR_Ontohub_API/master/lola/registry/registry-expanded.ntriples> ,
+    <https://raw.githubusercontent.com/ontohub/OOR_Ontohub_API/master/lola/registry/registry-expanded.rdf> ,
+    <https://raw.githubusercontent.com/ontohub/OOR_Ontohub_API/master/lola/registry/registry-expanded.turtle> ;
+  void:exampleResource log:SROIQ ;
+  void:uriSpace "http://purl.net/dol/" ;
+  todo:task [
+    dct:creator "Christoph Lange" ;
+    dct:date "2014-10-05"^^xsd:date ;
+    rdf:value "consider making this more specific (void:uriRegexPattern that restricts to the namespaces actually allowed)" ] ;
+  void:vocabulary dol: ;
+  void:classPartition
+    [ void:class dol:Logic ] ,
+    [ void:class dol:Translation ] ,
+    [ void:class dol:Projection ] ,
+    [ void:class dol:OntologyLanguage ] ,
+    [ void:class dol:Serialization ] ;
   rdfs:seeAlso <http://ontoiop.org> .
 
 ## Logics
