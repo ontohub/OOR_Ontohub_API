@@ -17,6 +17,7 @@ Annotations:
     owl:versionInfo "1.0",
     rdfs:comment "RDF serialization of DOL, implemented as an OWL ontology.  Actually some axioms that we would like to have go beyond OWL.",
     todo:task "When scaling this ontology implementation up to DOL, look below for annotations marked as 'beyond OWL'.  These things can be modeled in FOL."
+    rdfs:seeAlso <http://www.informatik.uni-bremen.de/~till/papers/womo2012.pdf>
 
 AnnotationProperty: dct:creator
 
