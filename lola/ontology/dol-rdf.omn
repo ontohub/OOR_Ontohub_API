@@ -27,13 +27,13 @@ AnnotationProperty: strictlyStrongerThan
 AnnotationProperty: propagatesToAdjoint
 
     Annotations: 
-        rdfs:comment "The subject class denotes a kind of mapping that, if it holds for a translation, also holds for the adjoint projection.",
+        rdfs:comment "The subject class denotes a kind of mapping that, if it holds for a translation, also holds for the adjoint reduction.",
         rdfs:comment "This is just for informative purposes: Even though it probably does not go beyond OWL, it doesn't work for annotation properties in Protégé
 Domain: owl:Class
 Range: xsd:boolean"
     
     Annotations: 
-        rdfs:comment "The subject class denotes a kind of mapping that, if it holds for a translation, also holds for the adjoint projection.",
+        rdfs:comment "The subject class denotes a kind of mapping that, if it holds for a translation, also holds for the adjoint reduction.",
         rdfs:comment "This is just for informative purposes: Even though it probably does not go beyond OWL, it doesn't work for annotation properties in Protégé
 Domain: owl:Class
 Range: xsd:boolean"
@@ -55,12 +55,12 @@ AnnotationProperty: supportsSymbolKind
 
     Annotations: 
         rdfs:comment "This is just for informative purposes: Even though it probably does not go beyond OWL, it doesn't work for annotation properties in Protégé
-Domain: OntologyLanguage
+Domain: Language
 Range: owl:Class that rdfs:subClassOf value Symbol"
     
     Annotations: 
         rdfs:comment "This is just for informative purposes: Even though it probably does not go beyond OWL, it doesn't work for annotation properties in Protégé
-Domain: OntologyLanguage
+Domain: Language
 Range: owl:Class that rdfs:subClassOf value Symbol"
     
     
@@ -144,10 +144,10 @@ ObjectProperty: impliedExtensionOf
         definitionallyExtends
     
     
-ObjectProperty: ontologyIn
+ObjectProperty: omsIn
 
     InverseOf: 
-        hasOntology
+        hasOMS
     
     
 ObjectProperty: conservativelyExtends
@@ -162,10 +162,10 @@ ObjectProperty: conservativelyExtends
 ObjectProperty: exactlyCorrespondingMapping
 
     Annotations: 
-        rdfs:comment "The subject ontology language mapping exactly corresponds to the object logic mapping."
+        rdfs:comment "The subject language mapping exactly corresponds to the object logic mapping."
     
     Domain: 
-        OntologyLanguageMapping
+        LanguageMapping
     
     Range: 
         LogicMapping
@@ -186,7 +186,7 @@ ObjectProperty: translatableFrom
 ObjectProperty: hasMember
 
     Domain: 
-        DistributedOntology
+        OMSLibrary
     
     InverseOf: 
         memberOf
@@ -228,10 +228,10 @@ ObjectProperty: extends
         todo:question "While the abstract and text syntaxes of DOL attach the 'kind of extension' to _one_ ontology, the semantics (CASL reference section 5.2.5) rather suggests that this is a relation between _two_ ontologies (which may or may not be given explicitly in the syntax).  Is it, therefore, OK, to model it like this in RDF?  Maybe we should also provide a semantically equivalent alternative that is more intuitive wrt. the syntax?"
     
     Domain: 
-        Ontology
+        OMS
     
     Range: 
-        Ontology
+        OMS
     
     
 ObjectProperty: weaklyExactlyMappableTo
@@ -249,7 +249,7 @@ ObjectProperty: weaklyExactlyMappableTo
 ObjectProperty: subLanguageOf
 
     Annotations: 
-        rdfs:comment "The subject is a sublanguage of the object ontology language.  Supported logics are shared along the inverse of this property.",
+        rdfs:comment "The subject is a sublanguage of the object language.  Supported logics are shared along the inverse of this property.",
         
             Annotations: dct:creator "Christoph Lange", 
                          dct:date "2012-04-17"^^xsd:date
@@ -316,16 +316,16 @@ ObjectProperty: language
     Annotations: 
         rdfs:comment "The reasoners in Protégé don't like us to say the following.  Together with the SubPropertyChain specified for supportsSerialization it would go beyond OWL DL anyway.
 SubPropertyChain: serialization o serializes",
-        rdfs:comment "the language of an ontology"
+        rdfs:comment "the language of an OMS"
     
     Characteristics: 
         Functional
     
     Domain: 
-        Ontology
+        OMS
     
     Range: 
-        OntologyLanguage
+        Language
     
     
 ObjectProperty: modelBijectivelyMappableTo
@@ -351,25 +351,25 @@ ObjectProperty: linkIn
         hasLink
     
     
-ObjectProperty: hasOntology
+ObjectProperty: hasOMS
 
     Annotations: 
-        rdfs:comment "The subject is a distributed ontology, in which the object is a participating heterogeneous ontology."
+        rdfs:comment "The subject is an OMS library, in which the object is a participating heterogeneous OMS."
     
     SubPropertyOf: 
         hasMember
     
     Range: 
-        Ontology
+        OMS
     
     InverseOf: 
-        ontologyIn
+        omsIn
     
     
-ObjectProperty: projectableTo
+ObjectProperty: reducibleTo
 
     Annotations: 
-        rdfs:comment "There is a projection from the subject to the object."
+        rdfs:comment "There is a reduction from the subject to the object."
     
     SubPropertyOf: 
         mappableTo
@@ -378,13 +378,13 @@ ObjectProperty: projectableTo
         Transitive
     
     InverseOf: 
-        projectableFrom
+        reducibleFrom
     
     
 ObjectProperty: target
 
     Annotations: 
-        rdfs:comment "the target ontology of a link"
+        rdfs:comment "the target OMS of a link"
     
     Characteristics: 
         Functional
@@ -393,13 +393,13 @@ ObjectProperty: target
         Link
     
     Range: 
-        Ontology
+        OMS
     
     
 ObjectProperty: source
 
     Annotations: 
-        rdfs:comment "the source ontology of a link"
+        rdfs:comment "the source OMS of a link"
     
     Characteristics: 
         Functional
@@ -408,13 +408,13 @@ ObjectProperty: source
         Link
     
     Range: 
-        Ontology
+        OMS
     
     
 ObjectProperty: exactLogicalExpressivity
 
     Annotations: 
-        rdfs:comment "The subject ontology language has exactly the expressivity of the object logic."
+        rdfs:comment "The subject language has exactly the expressivity of the object logic."
     
     SubPropertyOf: 
         supportsLogic
@@ -438,7 +438,7 @@ ObjectProperty: monomorphicallyExtends
 ObjectProperty: hasInterpretation
 
     Annotations: 
-        rdfs:comment "The subject is a distributed ontology, in which the object is an interpretation between two participating ontologies."
+        rdfs:comment "The subject is an OMS library, in which the object is an interpretation between two participating OMS."
     
     SubPropertyOf: 
         hasLink
@@ -453,7 +453,7 @@ ObjectProperty: hasInterpretation
 ObjectProperty: hasAlignment
 
     Annotations: 
-        rdfs:comment "The subject is a distributed ontology, in which the object is an alignment between two participating ontologies."
+        rdfs:comment "The subject is an OMS library, in which the object is an alignment between two participating OMS."
     
     SubPropertyOf: 
         hasLink
@@ -486,7 +486,7 @@ ObjectProperty: modelTheoreticallyConservativelyExtends
 ObjectProperty: supportsLogic
 
     Annotations: 
-        rdfs:comment "The semantics of [a subset of] the subject ontology language can be specified in terms of the object logic."
+        rdfs:comment "The semantics of [a subset of] the subject language can be specified in terms of the object logic."
     
     SubPropertyChain: 
         
@@ -501,7 +501,7 @@ ObjectProperty: supportsLogic
         supportsLogic o  inverse (subLogicOf)
     
     Domain: 
-        OntologyLanguage
+        Language
     
     Range: 
         Logic
@@ -513,7 +513,7 @@ ObjectProperty: supportsLogic
 ObjectProperty: mappableToLanguage
 
     Annotations: 
-        rdfs:comment "There is a mapping from the subject ontology language to the object ontology language."
+        rdfs:comment "There is a mapping from the subject language to the object language."
     
     SubPropertyOf: 
         mappableTo
@@ -612,13 +612,13 @@ ObjectProperty: logic
             Annotations: dct:creator "Christoph Lange", 
                          dct:date "2011-12-04"^^xsd:date
         todo:question "Inside a 'logic section' in the abstract syntax, there are also views.  Therefore, do we need another, analogous RDF property for 'the logic of a view'?",
-        rdfs:comment "the logic in which an ontology is formalized"
+        rdfs:comment "the logic in which an OMS is formalized"
     
     Characteristics: 
         Functional
     
     Domain: 
-        Ontology
+        OMS
     
     Range: 
         Logic
@@ -654,7 +654,7 @@ ObjectProperty: consequenceTheoreticallyConservativelyExtends
 ObjectProperty: profileOf
 
     Annotations: 
-        rdfs:comment "The subject is a profile of the object ontology language.  This is a stronger notion than just being a sublanguage.  Supported serializations are shared along this property."
+        rdfs:comment "The subject is a profile of the object language.  This is a stronger notion than just being a sublanguage.  Supported serializations are shared along this property."
     
     SubPropertyOf: 
         subLanguageOf
@@ -663,7 +663,7 @@ ObjectProperty: profileOf
 ObjectProperty: mappableFromLanguage
 
     Annotations: 
-        rdfs:comment "There is a mapping from the object ontology language to the subject ontology language."
+        rdfs:comment "There is a mapping from the object language to the subject language."
     
     InverseOf: 
         mappableToLanguage
@@ -672,13 +672,13 @@ ObjectProperty: mappableFromLanguage
 ObjectProperty: serialization
 
     Annotations: 
-        rdfs:comment "the serialization in which an ontology is written"
+        rdfs:comment "the serialization in which an OMS is written"
     
     Characteristics: 
         Functional
     
     Domain: 
-        Ontology
+        OMS
     
     Range: 
         Serialization
@@ -702,7 +702,7 @@ ObjectProperty: mappableTo
 ObjectProperty: hasLink
 
     Annotations: 
-        rdfs:comment "The subject is a distributed ontology, in which the object is a link between two participating ontologies."
+        rdfs:comment "The subject is a distributed OMS, in which the object is a link between two participating OMS."
     
     SubPropertyOf: 
         hasMember
@@ -733,7 +733,7 @@ ObjectProperty: adjoint
         Translation
     
     Range: 
-        Projection
+        Reduction
     
     
 ObjectProperty: plainlyMappableTo
@@ -754,13 +754,13 @@ ObjectProperty: supportsSerialization
         rdfs:comment "The reasoners in Protégé don't like us to say the following.  Together with the SubPropertyChain specified for language it would go beyond OWL DL anyway.
 SubPropertyChain: profileOf o supportsSerialization",
         rdfs:comment "Note that the serialization should be as specific as possible, i.e. one should not say that ``OWL can be serialized in XML'' and ``Common Logic can be serialized in XML'', but instead ``OWL can be serialized in OWL XML'' and ``Common Logic can be serialized in XCL'', taking into account that OWL XML and XCL are two different XML languages.",
-        rdfs:comment "Ontologies in the subject ontology language can be serialized in the object serialization."
+        rdfs:comment "OMS in the subject language can be serialized in the object serialization."
     
     Characteristics: 
         InverseFunctional
     
     Domain: 
-        OntologyLanguage
+        Language
     
     Range: 
         Serialization
@@ -769,16 +769,16 @@ SubPropertyChain: profileOf o supportsSerialization",
         serializes
     
     
-ObjectProperty: projectableFrom
+ObjectProperty: reducibleFrom
 
     Annotations: 
-        rdfs:comment "There is a projection from the object to the subject."
+        rdfs:comment "There is a reduction from the object to the subject."
     
     SubPropertyOf: 
         mappableFrom
     
     InverseOf: 
-        projectableTo
+        reducibleTo
     
     
 DataProperty: mediaType
@@ -846,13 +846,13 @@ Class: ExactMapping
         WeaklyExactMapping
     
     
-Class: DistributedOntology
+Class: OMSLibrary
 
     Annotations: 
-        rdfs:comment "a distributed ontology"
+        rdfs:comment "an OMS library"
     
     SubClassOf: 
-        Ontology
+        OMS
     
     
 Class: ModelExpansiveMapping
@@ -875,7 +875,7 @@ Class: Translation
         Mapping
     
     DisjointWith: 
-        Projection
+        Reduction
     
     
 Class: SubLogic
@@ -891,13 +891,13 @@ Class: SubLogic
 Class: Sentence
 
     Annotations: 
-        rdfs:comment "a sentence in an ontology"
+        rdfs:comment "a sentence in an OMS"
     
     
 Class: View
 
     Annotations: 
-        rdfs:comment "a view (also called interpretation) between two heterogeneous ontologies in a distributed ontology"
+        rdfs:comment "a view (also called interpretation) between two heterogeneous ontologies in an OMS library"
     
     EquivalentTo: 
         Interpretation
@@ -918,11 +918,35 @@ Class: Embedding
         ModelBijectiveMapping
     
     
+Class: OMS
+
+    Annotations: 
+        rdfs:comment "a basic OMS or an OMS library"
+    
 Class: Ontology
 
     Annotations: 
-        rdfs:comment "an ontology, distributed or basic"
+        rdfs:comment "an ontology"
+
+    SubClassOf:
+        OMS
     
+Class: Model
+
+    Annotations: 
+        rdfs:comment "a model (in the sense of “formal modelling”)"
+
+    SubClassOf:
+        OMS
+
+    
+Class: Specification
+
+    Annotations: 
+        rdfs:comment "a formal specification"
+
+    SubClassOf:
+        OMS
     
 Class: Interpretation
 
@@ -933,10 +957,10 @@ Class: Interpretation
         Alignment
     
     
-Class: OntologyLanguageMapping
+Class: LanguageMapping
 
     Annotations: 
-        rdfs:comment "a mapping (translation or projection) between two ontology languages",
+        rdfs:comment "a mapping (translation or reduction) between two languages",
         propagatesToAdjoint "true"^^xsd:boolean
     
     SubClassOf: 
@@ -949,7 +973,7 @@ Class: OntologyLanguageMapping
 Class: Logic
 
     Annotations: 
-        rdfs:comment "a logic that defines the semantics of an ontology language"
+        rdfs:comment "a logic that defines the semantics of an language"
     
     
 Class: SimpleTheoroidalMapping
@@ -976,27 +1000,27 @@ Class: SimpleTheoroidalMapping
 Class: LogicMapping
 
     Annotations: 
-        rdfs:comment "a mapping (translation or projection) between two logics",
+        rdfs:comment "a mapping (translation or reduction) between two logics",
         propagatesToAdjoint "true"^^xsd:boolean
     
     SubClassOf: 
         Mapping
     
     DisjointWith: 
-        OntologyLanguageMapping
+        LanguageMapping
     
     
 Class: Symbol
 
     Annotations: 
-        rdfs:comment "a symbol in an ontology"
+        rdfs:comment "a symbol in an OMS"
     
     
-Class: Projection
+Class: Reduction
 
     Annotations: 
-        reifies <http://purl.net/dol/1.0/rdf#projectableTo>,
-        rdfs:comment "a generic projection"
+        reifies <http://purl.net/dol/1.0/rdf#reducibleTo>,
+        rdfs:comment "a generic reduction"
     
     SubClassOf: 
         Mapping
@@ -1005,13 +1029,13 @@ Class: Projection
         Translation
     
     
-Class: BasicOntology
+Class: BasicOMS
 
     Annotations: 
-        rdfs:comment "a basic ontology (in a single language, logic, and serialization)"
+        rdfs:comment "a basic OMS (in a single language, logic, and serialization)"
     
     SubClassOf: 
-        Ontology
+        OMS
     
     
 Class: FaithfulMapping
@@ -1028,7 +1052,7 @@ Class: Mapping
 
     Annotations: 
         reifies <http://purl.net/dol/1.0/rdf#mappableTo>,
-        rdfs:comment "a generic mapping (translation or projection)"
+        rdfs:comment "a generic mapping (translation or reduction)"
     
     SubClassOf: 
         
@@ -1064,13 +1088,13 @@ Class: PlainMapping
 Class: Serialization
 
     Annotations: 
-        rdfs:comment "a serialization of an ontology language"
+        rdfs:comment "a serialization of an language"
     
     
-Class: OntologyLanguage
+Class: Language
 
     Annotations: 
-        rdfs:comment "an ontology language"
+        rdfs:comment "a language for OMS (ontologies, models or specifications)"
     
     SubClassOf: 
         (supportsLogic some Logic)
@@ -1082,7 +1106,7 @@ Class: OntologyLanguage
 Class: Link
 
     Annotations: 
-        rdfs:comment "a link between two heterogeneous ontologies in a distributed ontology"
+        rdfs:comment "a link between two heterogeneous OMSs in an OMS library"
     
     SubClassOf: 
         (source exactly 1 owl:Thing)
@@ -1103,7 +1127,7 @@ Class: ModelBijectiveMapping
 Class: Alignment
 
     Annotations: 
-        rdfs:comment "an alignment between two heterogeneous ontologies in a distributed ontology"
+        rdfs:comment "an alignment between two heterogeneous ontologies in an OMS library"
     
     SubClassOf: 
         Link
@@ -1113,5 +1137,5 @@ Class: Alignment
     
     
 DisjointClasses: 
-    Alignment,Logic,Mapping,Ontology,OntologyLanguage,Serialization
+    Alignment,Logic,Mapping,OMS,Language,Serialization
 
