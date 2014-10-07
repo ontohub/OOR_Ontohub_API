@@ -12,7 +12,7 @@
 @prefix dol:  <http://purl.net/dol/1.0/rdf#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema-datatypes#> .
 
-# from mappings (translation or projection, mapping logics or languages) that have been reified into resources, generate mapping properties
+# from mappings (translation or reduction, mapping logics or languages) that have been reified into resources, generate mapping properties
 { ?mapping a ?mappingClass ;
              dol:mapsFrom ?source;
              dol:mapsTo ?target .
@@ -51,21 +51,21 @@
 => { ?sourceLanguage dol:translatableTo ?targetLanguage ;
                      dol:mappableToLanguage ?targetLanguage } .
 
-# if there is a logic projection, there is also a language projection between the corresponding languages
+# if there is a logic reduction, there is also a language reduction between the corresponding languages
 { ?sourceLanguage dol:exactLogicalExpressivity
-    [ dol:projectableTo ?targetLogic ;
+    [ dol:reducibleTo ?targetLogic ;
       dol:mappableToLogic ?targetLogic ] .
   ?targetLanguage dol:exactLogicalExpressivity ?targetLogic }
-=> { ?sourceLanguage dol:projectableTo ?targetLanguage ;
+=> { ?sourceLanguage dol:reducibleTo ?targetLanguage ;
                      dol:mappableToLanguage ?targetLanguage } .
 
-# transfer properties of a translation to its adjoint projection
+# transfer properties of a translation to its adjoint reduction
 { ?translation a ?translationKind ;
-               dol:adjoint ?projection ;
+               dol:adjoint ?reduction ;
                dol:mapsFrom ?translationSource ;
                dol:mapsTo ?translationTarget .
   ?translationKind dol:propagatesToAdjoint true . }
-=> { ?projection a dol:Projection, ?translationKind ;
+=> { ?reduction a dol:Reduction, ?translationKind ;
                  dol:mapsFrom ?translationTarget ;
                  dol:mapsTo ?translationSource } .
 
