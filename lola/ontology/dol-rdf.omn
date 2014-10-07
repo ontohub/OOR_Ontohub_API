@@ -6,6 +6,7 @@ Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema-datatypes#>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: omv: <http://omv.ontoware.org/2005/05/ontology#>
 Prefix: todo: <http://example.org/todo#>
 
 
@@ -18,6 +19,9 @@ Annotations:
     rdfs:comment "RDF serialization of DOL, implemented as an OWL ontology.  Actually some axioms that we would like to have go beyond OWL.",
     todo:task "When scaling this ontology implementation up to DOL, look below for annotations marked as 'beyond OWL'.  These things can be modeled in FOL."
     rdfs:seeAlso <http://www.informatik.uni-bremen.de/~till/papers/womo2012.pdf>
+    omv:hasFormalityLevel omv:Vocabulary
+    omv:conformsToKnowledgeRepresentationParadigm omv:DescriptionLogics 
+    omv:isOfType omv:DomainOntology
 
 AnnotationProperty: dct:creator
 
