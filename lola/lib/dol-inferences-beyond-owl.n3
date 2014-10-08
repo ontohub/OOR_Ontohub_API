@@ -12,7 +12,7 @@
 @prefix dol:  <http://purl.net/dol/1.0/rdf#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema-datatypes#> .
 
-# from mappings (translation or reduction, mapping logics or languages) that have been reified into resources, generate mapping properties
+# from OMS mappings (translation or reduction, mapping logics or languages) that have been reified into resources, generate mapping properties
 { ?mapping a ?mappingClass ;
              dol:mapsFrom ?source;
              dol:mapsTo ?target .
