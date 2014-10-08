@@ -298,7 +298,7 @@ ObjectProperty: mapsFrom
         Functional
     
     Domain: 
-        Mapping
+        OMSMapping
     
     InverseOf: 
         sourceOfMapping
@@ -350,10 +350,10 @@ ObjectProperty: modelBijectivelyMappableTo
         Transitive
     
     
-ObjectProperty: linkIn
+ObjectProperty: mappingIn
 
     InverseOf: 
-        hasLink
+        hasMapping
     
     
 ObjectProperty: hasOMS
@@ -389,13 +389,13 @@ ObjectProperty: reducibleTo
 ObjectProperty: target
 
     Annotations: 
-        rdfs:comment "the target OMS of a link"
+        rdfs:comment "the target OMS of a mapping"
     
     Characteristics: 
         Functional
     
     Domain: 
-        Link
+        Mapping
     
     Range: 
         OMS
@@ -404,13 +404,13 @@ ObjectProperty: target
 ObjectProperty: source
 
     Annotations: 
-        rdfs:comment "the source OMS of a link"
+        rdfs:comment "the source OMS of a mapping"
     
     Characteristics: 
         Functional
     
     Domain: 
-        Link
+        Mapping
     
     Range: 
         OMS
@@ -446,7 +446,7 @@ ObjectProperty: hasInterpretation
         rdfs:comment "The subject is an OMS library, in which the object is an interpretation between two participating OMS."
     
     SubPropertyOf: 
-        hasLink
+        hasMapping
     
     Range: 
         Interpretation
@@ -461,7 +461,7 @@ ObjectProperty: hasAlignment
         rdfs:comment "The subject is an OMS library, in which the object is an alignment between two participating OMS."
     
     SubPropertyOf: 
-        hasLink
+        hasMapping
     
     Range: 
         Alignment
@@ -551,7 +551,7 @@ ObjectProperty: mapsTo
         Functional
     
     Domain: 
-        Mapping
+        OMSMapping
     
     
 ObjectProperty: subLogicOf
@@ -595,7 +595,7 @@ ObjectProperty: compositionOf
         rdfs:comment "The subject mapping is the composition of the object list of mappings (list item 1 ∘ list item 2 ∘ … ∘ list item n).  All elements of the latter list must be instances of the same class as the subject.  (Enforcing the latter constraint goes beyond OWL.)"
     
     Domain: 
-        Mapping
+        OMSMapping
     
     
 ObjectProperty: simplyTheoroidallyMappableTo
@@ -704,19 +704,19 @@ ObjectProperty: mappableTo
         mappableFrom
     
     
-ObjectProperty: hasLink
+ObjectProperty: hasMapping
 
     Annotations: 
-        rdfs:comment "The subject is a distributed OMS, in which the object is a link between two participating OMS."
+        rdfs:comment "The subject is a distributed OMS, in which the object is a mapping between two participating OMS."
     
     SubPropertyOf: 
         hasMember
     
     Range: 
-        Link
+        Mapping
     
     InverseOf: 
-        linkIn
+        mappingIn
     
     
 ObjectProperty: definitionallyExtends
@@ -838,7 +838,7 @@ Class: WeaklyExactMapping
         reifies <http://purl.net/dol/1.0/rdf#weaklyExactlyMappableTo>
     
     SubClassOf: 
-        Mapping
+        OMSMapping
     
     
 Class: ExactMapping
@@ -877,7 +877,7 @@ Class: Translation
         reifies <http://purl.net/dol/1.0/rdf#translatableTo>
     
     SubClassOf: 
-        Mapping
+        OMSMapping
     
     DisjointWith: 
         Reduction
@@ -908,7 +908,7 @@ Class: View
         Interpretation
     
     SubClassOf: 
-        Link
+        Mapping
     
     
 Class: Embedding
@@ -969,7 +969,7 @@ Class: LanguageMapping
         propagatesToAdjoint "true"^^xsd:boolean
     
     SubClassOf: 
-        Mapping
+        OMSMapping
     
     DisjointWith: 
         LogicMapping
@@ -989,16 +989,16 @@ Class: SimpleTheoroidalMapping
         rdfs:comment "orthogonal to WeaklyExactMapping and FaithfulMapping"
     
     EquivalentTo: 
-        Mapping
+        OMSMapping
          and (not (PlainMapping))
     
     SubClassOf: 
-        Mapping
+        OMSMapping
     
     DisjointWith: 
         PlainMapping,
         
-            Annotations: rdfs:comment "Protégé 4.2 doesn't like 'Class: Mapping DisjointUnionOf: PlainMapping, SimpleTheoroidalMapping', so we do it this way:"
+            Annotations: rdfs:comment "Protégé 4.2 doesn't like 'Class: OMSMapping DisjointUnionOf: PlainMapping, SimpleTheoroidalMapping', so we do it this way:"
         PlainMapping
     
     
@@ -1009,7 +1009,7 @@ Class: LogicMapping
         propagatesToAdjoint "true"^^xsd:boolean
     
     SubClassOf: 
-        Mapping
+        OMSMapping
     
     DisjointWith: 
         LanguageMapping
@@ -1028,7 +1028,7 @@ Class: Reduction
         rdfs:comment "a generic reduction"
     
     SubClassOf: 
-        Mapping
+        OMSMapping
     
     DisjointWith: 
         Translation
@@ -1050,10 +1050,10 @@ Class: FaithfulMapping
         reifies <http://purl.net/dol/1.0/rdf#faithfullyMappableTo>
     
     SubClassOf: 
-        Mapping
+        OMSMapping
     
     
-Class: Mapping
+Class: OMSMapping
 
     Annotations: 
         reifies <http://purl.net/dol/1.0/rdf#mappableTo>,
@@ -1071,7 +1071,7 @@ Class: DefaultMapping
         propagatesToAdjoint "true"^^xsd:boolean
 
     SubClassOf: 
-        Mapping
+        OMSMapping
     
     
 Class: PlainMapping
@@ -1081,12 +1081,12 @@ Class: PlainMapping
         propagatesToAdjoint "true"^^xsd:boolean
     
     SubClassOf: 
-        Mapping
+        OMSMapping
     
     DisjointWith: 
         SimpleTheoroidalMapping,
         
-            Annotations: rdfs:comment "Protégé 4.2 doesn't like 'Class: Mapping DisjointUnionOf: PlainMapping, SimpleTheoroidalMapping', so we do it this way:"
+            Annotations: rdfs:comment "Protégé 4.2 doesn't like 'Class: OMSMapping DisjointUnionOf: PlainMapping, SimpleTheoroidalMapping', so we do it this way:"
         SimpleTheoroidalMapping
     
     
@@ -1108,10 +1108,10 @@ Class: Language
          and (supportsSerialization only Serialization)
     
     
-Class: Link
+Class: Mapping
 
     Annotations: 
-        rdfs:comment "a link between two heterogeneous OMSs in an OMS library"
+        rdfs:comment "a mapping between two heterogeneous OMSs in an OMS library"
     
     SubClassOf: 
         (source exactly 1 owl:Thing)
@@ -1135,12 +1135,12 @@ Class: Alignment
         rdfs:comment "an alignment between two heterogeneous ontologies in an OMS library"
     
     SubClassOf: 
-        Link
+        Mapping
     
     DisjointWith: 
         Interpretation
     
     
 DisjointClasses: 
-    Alignment,Logic,Mapping,OMS,Language,Serialization
+    Alignment,Logic,OMSMapping,OMS,Language,Serialization
 
