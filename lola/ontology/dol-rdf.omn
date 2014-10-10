@@ -41,12 +41,6 @@ AnnotationProperty: propagatesToAdjoint
 Domain: owl:Class
 Range: xsd:boolean"
     
-    Annotations: 
-        rdfs:comment "The subject class denotes a kind of mapping that, if it holds for a translation, also holds for the adjoint reduction.",
-        rdfs:comment "This is just for informative purposes: Even though it probably does not go beyond OWL, it doesn't work for annotation properties in Protégé
-Domain: owl:Class
-Range: xsd:boolean"
-    
     
 AnnotationProperty: todo:task
 
@@ -67,17 +61,8 @@ AnnotationProperty: supportsSymbolKind
 Domain: Language
 Range: owl:Class that rdfs:subClassOf value Symbol"
     
-    Annotations: 
-        rdfs:comment "This is just for informative purposes: Even though it probably does not go beyond OWL, it doesn't work for annotation properties in Protégé
-Domain: Language
-Range: owl:Class that rdfs:subClassOf value Symbol"
-    
     
 AnnotationProperty: symbolKindIn
-
-    Annotations: 
-        rdfs:comment "This is just for informative purposes: It doesn't work for annotation properties
-InverseOf: supportsSymbolKind"
     
     Annotations: 
         rdfs:comment "This is just for informative purposes: It doesn't work for annotation properties
@@ -85,11 +70,6 @@ InverseOf: supportsSymbolKind"
     
     
 AnnotationProperty: reifiedBy
-
-    Annotations: 
-        rdfs:comment "The subject property is reified by the object class.",
-        rdfs:comment "This is just for informative purposes: It doesn't work for annotation properties
-InverseOf: reifies"
     
     Annotations: 
         rdfs:comment "The subject property is reified by the object class.",
@@ -102,12 +82,6 @@ AnnotationProperty: dct:source
     
 AnnotationProperty: reifies
 
-    Annotations: 
-        rdfs:comment "The subject class reifies the object property.",
-        rdfs:comment "This is just for informative purposes: Even though it probably does not go beyond OWL, it doesn't work for annotation properties in Protégé
-Domain: owl:Class
-Range: owl:ObjectProperty"
-    
     Annotations: 
         rdfs:comment "The subject class reifies the object property.",
         rdfs:comment "This is just for informative purposes: Even though it probably does not go beyond OWL, it doesn't work for annotation properties in Protégé
