@@ -18,14 +18,14 @@ Ontology: <http://purl.net/dol/1.0/rdf#>
         # source: https://github.com/API4KBs/api4kbs/raw/master/ontologies/OntoIOpTerminology.rdf
         ontoiop-trm:
 
-Annotations: 
-    owl:versionInfo "1.0",
-    rdfs:comment "RDF serialization of DOL, implemented as an OWL ontology.  Actually some axioms that we would like to have go beyond OWL.",
-    todo:task "When scaling this ontology implementation up to DOL, look below for annotations marked as 'beyond OWL'.  These things can be modeled in FOL."
-    rdfs:seeAlso <http://www.informatik.uni-bremen.de/~till/papers/womo2012.pdf>
-    omv:hasFormalityLevel omv:Vocabulary
-    omv:conformsToKnowledgeRepresentationParadigm omv:DescriptionLogics 
-    omv:isOfType omv:DomainOntology
+    Annotations: 
+        owl:versionInfo "1.0",
+        rdfs:comment "RDF serialization of DOL, implemented as an OWL ontology.  Actually some axioms that we would like to have go beyond OWL.",
+        todo:task "When scaling this ontology implementation up to DOL, look below for annotations marked as 'beyond OWL'.  These things can be modeled in FOL."
+        rdfs:seeAlso <http://www.informatik.uni-bremen.de/~till/papers/womo2012.pdf>
+        omv:hasFormalityLevel omv:Vocabulary
+        omv:conformsToKnowledgeRepresentationParadigm omv:DescriptionLogics 
+        omv:isOfType omv:DomainOntology
 
 AnnotationProperty: dct:creator
 
