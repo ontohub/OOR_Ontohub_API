@@ -903,7 +903,7 @@ Class: Sentence
 Class: View
 
     Annotations: 
-        rdfs:comment "a view (also called interpretation) between two heterogeneous ontologies in an OMS library"
+        rdfs:comment "a view (also called interpretation) between two heterogeneous OMS in an OMS library"
     
     EquivalentTo: 
         Interpretation
@@ -1168,7 +1168,7 @@ Class: ModelBijectiveMapping
 Class: Alignment
 
     Annotations: 
-        rdfs:comment "an alignment between two heterogeneous ontologies in an OMS library"
+        rdfs:comment "an alignment between two heterogeneous OMS in an OMS library"
     
     SubClassOf: 
         Mapping
