@@ -976,7 +976,9 @@ Class: LanguageMapping
         propagatesToAdjoint "true"^^xsd:boolean
     
     SubClassOf: 
-        OMSMapping
+        OMSMapping,
+        (mapsFrom exactly 1 Language)
+         and (mapsTo exactly 1 Language)
     
     DisjointWith: 
         LogicMapping
@@ -1016,7 +1018,9 @@ Class: LogicMapping
         propagatesToAdjoint "true"^^xsd:boolean
     
     SubClassOf: 
-        OMSMapping
+        OMSMapping,
+        (mapsFrom exactly 1 Logic)
+         and (mapsTo exactly 1 Logic)
     
     DisjointWith: 
         LanguageMapping
