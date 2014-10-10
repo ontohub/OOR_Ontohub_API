@@ -14,18 +14,26 @@ Prefix: todo: <http://example.org/todo#>
 
 Ontology: <http://purl.net/dol/1.0/rdf#>
 
-    Import:
-        # source: https://github.com/API4KBs/api4kbs/raw/master/ontologies/OntoIOpTerminology.rdf
-        ontoiop-trm:
+    # Protégé can't process this import, as some of the ontologies imported by that ontology are not available.  Therefore I temporarily resorted to locally defining those ontoiop-trm:* symbols that we need here.
+    # 
+    # Import:
+    #     # source: https://github.com/API4KBs/api4kbs/raw/master/ontologies/OntoIOpTerminology.rdf
+    #     # Protégé doesn't accept the syntax ontoiop-trm:
+    #     <http://www.omg.org/spec/OntoIOp/OntoIOpTerminology/>
 
     Annotations: 
         owl:versionInfo "1.0",
         rdfs:comment "RDF serialization of DOL, implemented as an OWL ontology.  Actually some axioms that we would like to have go beyond OWL.",
-        todo:task "When scaling this ontology implementation up to DOL, look below for annotations marked as 'beyond OWL'.  These things can be modeled in FOL."
-        rdfs:seeAlso <http://www.informatik.uni-bremen.de/~till/papers/womo2012.pdf>
-        omv:hasFormalityLevel omv:Vocabulary
-        omv:conformsToKnowledgeRepresentationParadigm omv:DescriptionLogics 
-        omv:isOfType omv:DomainOntology
+        todo:task "When scaling this ontology implementation up to DOL, look below for annotations marked as 'beyond OWL'.  These things can be modeled in FOL.",
+        rdfs:seeAlso <http://www.informatik.uni-bremen.de/~till/papers/womo2012.pdf>,
+        omv:hasFormalityLevel <http://omv.ontoware.org/2005/05/ontology#Vocabulary>,
+        omv:conformsToKnowledgeRepresentationParadigm <http://omv.ontoware.org/2005/05/ontology#DescriptionLogics>,
+        omv:isOfType <http://omv.ontoware.org/2005/05/ontology#DomainOntology>
+
+AnnotationProperty: omv:hasFormalityLevel
+
+AnnotationProperty: omv:conformsToKnowledgeRepresentationParadigm
+AnnotationProperty: omv:isOfType
 
 AnnotationProperty: dct:creator
 
@@ -49,6 +57,8 @@ AnnotationProperty: dct:date
 
     
 AnnotationProperty: rdfs:comment
+
+AnnotationProperty: rdfs:seeAlso
 
     
 AnnotationProperty: owl:versionInfo
@@ -201,6 +211,7 @@ ObjectProperty: mappableToLogic
     InverseOf: 
         mappableFromLogic
     
+ObjectProperty: ontoiop-trm:extends
     
 ObjectProperty: extends
 
@@ -231,6 +242,7 @@ ObjectProperty: weaklyExactlyMappableTo
     Characteristics: 
         Transitive
     
+ObjectProperty: ontoiop-trm:isSubLanguageOf
     
 ObjectProperty: subLanguageOf
 
@@ -407,14 +419,12 @@ ObjectProperty: exactLogicalExpressivity
     SubPropertyOf: 
         supportsLogic
     
+ObjectProperty: ontoiop-trm:serializes
     
 ObjectProperty: serializes
 
     InverseOf: 
         supportsSerialization
-
-    EquivalentTo:
-        ontoiop-trm:serializes
     
     
 ObjectProperty: monomorphicallyExtends
@@ -473,6 +483,7 @@ ObjectProperty: modelTheoreticallyConservativelyExtends
     EquivalentTo: 
         conservativelyExtends
     
+ObjectProperty: ontoiop-trm:supportsLogic
     
 ObjectProperty: supportsLogic
 
@@ -541,6 +552,7 @@ ObjectProperty: mapsTo
     Domain: 
         OMSMapping
     
+ObjectProperty: ontoiop-trm:isSubLogicOf
     
 ObjectProperty: subLogicOf
 
@@ -646,6 +658,7 @@ ObjectProperty: consequenceTheoreticallyConservativelyExtends
     SubPropertyOf: 
         extends
     
+ObjectProperty: ontoiop-trm:profileOf
     
 ObjectProperty: profileOf
 
@@ -659,7 +672,7 @@ ObjectProperty: profileOf
         Annotations:
             Annotations: dct:creator "Christoph Lange", 
                          dct:date "2014-10-10"^^xsd:date
-            todo:task "Might change to ontoiop-trm:isProfileOf" .
+            todo:task "Might change to ontoiop-trm:isProfileOf"
         ontoiop-trm:profileOf
     
 ObjectProperty: mappableFromLanguage
@@ -919,6 +932,7 @@ Class: Embedding
         Translation,
         ModelBijectiveMapping
     
+Class: ontoiop-trm:OMS
     
 Class: OMS
 
@@ -976,6 +990,7 @@ Class: LanguageMapping
     DisjointWith: 
         LogicMapping
     
+Class: ontoiop-trm:Logic
     
 Class: Logic
 
@@ -1006,7 +1021,8 @@ Class: SimpleTheoroidalMapping
             Annotations: rdfs:comment "Protégé 4.2 doesn't like 'Class: OMSMapping DisjointUnionOf: PlainMapping, SimpleTheoroidalMapping', so we do it this way:"
         PlainMapping
     
-    
+Class: ontoiop-trm:LogicMapping
+
 Class: LogicMapping
 
     Annotations: 
@@ -1024,6 +1040,7 @@ Class: LogicMapping
     EquivalentTo:
         ontoiop-trm:LogicMapping
     
+Class: ontoiop-trm:Symbol
     
 Class: Symbol
 
@@ -1046,6 +1063,7 @@ Class: Reduction
     DisjointWith: 
         Translation
     
+Class: ontoiop-trm:BasicOMS
     
 Class: BasicOMS
 
@@ -1105,6 +1123,7 @@ Class: PlainMapping
             Annotations: rdfs:comment "Protégé 4.2 doesn't like 'Class: OMSMapping DisjointUnionOf: PlainMapping, SimpleTheoroidalMapping', so we do it this way:"
         SimpleTheoroidalMapping
     
+Class: ontoiop-trm:OMSSerialization
     
 Class: Serialization
 
@@ -1113,6 +1132,8 @@ Class: Serialization
     
     EquivalentTo:
         ontoiop-trm:OMSSerialization
+
+Class: ontoiop-trm:OMSLanguage
     
 Class: Language
 
@@ -1128,6 +1149,8 @@ Class: Language
     EquivalentTo:
         Annotations: rdfs:comment "LoLa does not define any type of language that's more general than an OMS language.  However, ontoiop-trm:Language is defined to be a general language."
         ontoiop-trm:OMSLanguage
+
+Class: ontoiop-trm:OMSMapping 
     
 Class: Mapping
 
