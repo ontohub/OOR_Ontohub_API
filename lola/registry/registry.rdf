@@ -3,6 +3,7 @@
 
 <rdf:RDF xmlns:dct="http://purl.org/dc/terms/"
     xmlns:dol="http://purl.net/dol/1.0/rdf#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
     xmlns:kind="http://purl.net/dol/symbolKinds/"
     xmlns:kindCL="http://purl.net/dol/symbolKinds/CL/"
     xmlns:kindOWL2="http://purl.net/dol/symbolKinds/OWL2/"
@@ -16,9 +17,9 @@
     xmlns:logOWL2="http://purl.net/dol/logics/OWL2/"
     xmlns:logRDF="http://purl.net/dol/logics/RDF/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:proj="http://purl.net/dol/projections/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:red="http://purl.net/dol/reduction/"
     xmlns:reg="http://purl.net/dol/registry"
     xmlns:ser="http://purl.net/dol/serializations/"
     xmlns:serCL="http://purl.net/dol/serializations/CommonLogic/"
@@ -28,9 +29,10 @@
     xmlns:stand="http://purl.net/dol/1.0/standardization#"
     xmlns:todo="http://example.org/todo#"
     xmlns:trans="http://purl.net/dol/translations/"
+    xmlns:void="http://rdfs.org/ns/void#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes#">
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/CASL">
+    <dol:Language rdf:about="http://purl.net/dol/languages/CASL">
         <todo:question rdf:parseType="Resource">
             <dct:creator>Christoph Lange</dct:creator>
             <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema-datatypes#date">2012-04-17</dct:date>
@@ -46,10 +48,10 @@
         <dct:source rdf:resource="http://www.informatik.uni-bremen.de/cofi/wiki/index.php/CASL"/>
         <rdfs:comment>Common Algebraic Specification Language</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>CASL</rdfs:label>
-    </dol:OntologyLanguage>
+        <skos:prefLabel>CASL</skos:prefLabel>
+    </dol:Language>
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/CommonLogic">
+    <dol:Language rdf:about="http://purl.net/dol/languages/CommonLogic">
         <dol:exactLogicalExpressivity rdf:resource="http://purl.net/dol/logics/CommonLogic"/>
         <dol:supportsLogic rdf:resource="http://purl.net/dol/logics/Propositional"/>
         <dol:supportsSerialization rdf:resource="http://purl.net/dol/serializations/CommonLogic/CGIF"/>
@@ -60,55 +62,55 @@
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#ISOStandard"/>
         <rdfs:comment>Common Logic (ISO/IEC 24707)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>Common Logic</rdfs:label>
-    </dol:OntologyLanguage>
+        <skos:prefLabel xml:lang="en">Common Logic</skos:prefLabel>
+    </dol:Language>
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/F-logic">
+    <dol:Language rdf:about="http://purl.net/dol/languages/F-logic">
         <dol:exactLogicalExpressivity rdf:resource="http://purl.net/dol/logics/F-logic"/>
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#AcademicLiterature"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>F-logic</rdfs:label>
-    </dol:OntologyLanguage>
+        <skos:prefLabel>F-logic</skos:prefLabel>
+    </dol:Language>
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/OBO/1.3">
+    <dol:Language rdf:about="http://purl.net/dol/languages/OBO/1.3">
         <dol:supportsLogic rdf:nodeID="b1"/>
         <dct:source rdf:resource="http://www.geneontology.org/GO.format.obo-1_3.shtml"/>
         <rdfs:comment>Open Biomedical Ontologies (OBO) 1.3</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OBO 1.3</rdfs:label>
-    </dol:OntologyLanguage>
+        <skos:prefLabel>OBO 1.3</skos:prefLabel>
+    </dol:Language>
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/OBO/1.4">
+    <dol:Language rdf:about="http://purl.net/dol/languages/OBO/1.4">
         <dol:supportsLogic rdf:nodeID="b2"/>
         <dct:source rdf:resource="http://www.geneontology.org/GO.format.obo-1_4.shtml"/>
         <rdfs:comment>Open Biomedical Ontologies (OBO) 1.4</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OBO 1.4</rdfs:label>
-    </dol:OntologyLanguage>
+        <skos:prefLabel>OBO 1.4</skos:prefLabel>
+    </dol:Language>
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/OWL2/DL">
+    <dol:Language rdf:about="http://purl.net/dol/languages/OWL2/DL">
         <dol:exactLogicalExpressivity rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <dol:profileOf rdf:resource="http://purl.net/dol/languages/OWL2/Full"/>
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#W3CRecommendation"/>
         <dct:source rdf:resource="http://www.w3.org/TR/2009/REC-owl2-overview-20091027/"/>
         <rdfs:comment>OWL 2 Web Ontology Language, Description Logic semantics (W3C Recommendation)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OWL 2 DL</rdfs:label>
         <owl:sameAs rdf:resource="http://latin.omdoc.org/logics/syntax?OWL2DL"/>
-    </dol:OntologyLanguage>
+        <skos:prefLabel>OWL 2 DL</skos:prefLabel>
+    </dol:Language>
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/OWL2/EL">
+    <dol:Language rdf:about="http://purl.net/dol/languages/OWL2/EL">
         <dol:exactLogicalExpressivity rdf:resource="http://purl.net/dol/logics/ELplusplus"/>
         <dol:profileOf rdf:resource="http://purl.net/dol/languages/OWL2/DL"/>
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#W3CRecommendation"/>
         <dct:source rdf:resource="http://www.w3.org/TR/2009/REC-owl2-profiles-20091027/#OWL_2_EL"/>
         <rdfs:comment>OWL 2 Web Ontology Language, EL Profile (W3C Recommendation)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OWL 2 EL</rdfs:label>
         <owl:sameAs rdf:resource="http://latin.omdoc.org/logics/syntax?OWL2EL"/>
-    </dol:OntologyLanguage>
+        <skos:prefLabel>OWL 2 EL</skos:prefLabel>
+    </dol:Language>
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/OWL2/Full">
+    <dol:Language rdf:about="http://purl.net/dol/languages/OWL2/Full">
         <dol:exactLogicalExpressivity rdf:resource="http://purl.net/dol/logics/OWL2/Full"/>
         <dol:supportsSerialization rdf:resource="http://purl.net/dol/serializations/OWL2/Manchester"/>
         <dol:supportsSerialization rdf:resource="http://purl.net/dol/serializations/OWL2/XML"/>
@@ -124,33 +126,33 @@
         <dct:source rdf:resource="http://www.w3.org/TR/owl2-rdf-based-semantics/"/>
         <rdfs:comment>OWL 2 Web Ontology Language, RDF semantics (W3C Recommendation)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OWL 2 Full</rdfs:label>
         <owl:sameAs rdf:resource="http://latin.omdoc.org/logics/syntax?OWL2Full"/>
-    </dol:OntologyLanguage>
+        <skos:prefLabel>OWL 2 Full</skos:prefLabel>
+    </dol:Language>
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/OWL2/QL">
+    <dol:Language rdf:about="http://purl.net/dol/languages/OWL2/QL">
         <dol:exactLogicalExpressivity rdf:resource="http://purl.net/dol/logics/DLLiteR"/>
         <dol:profileOf rdf:resource="http://purl.net/dol/languages/OWL2/DL"/>
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#W3CRecommendation"/>
         <dct:source rdf:resource="http://www.w3.org/TR/2009/REC-owl2-profiles-20091027/#OWL_2_QL"/>
         <rdfs:comment>OWL 2 Web Ontology Language, QL Profile (W3C Recommendation)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OWL 2 QL</rdfs:label>
         <owl:sameAs rdf:resource="http://latin.omdoc.org/logics/syntax?OWL2QL"/>
-    </dol:OntologyLanguage>
+        <skos:prefLabel>OWL 2 QL</skos:prefLabel>
+    </dol:Language>
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/OWL2/RL">
+    <dol:Language rdf:about="http://purl.net/dol/languages/OWL2/RL">
         <dol:exactLogicalExpressivity rdf:resource="http://purl.net/dol/logics/OWL2/RL"/>
         <dol:profileOf rdf:resource="http://purl.net/dol/languages/OWL2/DL"/>
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#W3CRecommendation"/>
         <dct:source rdf:resource="http://www.w3.org/TR/2009/REC-owl2-profiles-20091027/#OWL_2_RL"/>
         <rdfs:comment>OWL 2 Web Ontology Language, RL Profile (W3C Recommendation)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OWL 2 RL</rdfs:label>
         <owl:sameAs rdf:resource="http://latin.omdoc.org/logics/syntax?OWL2RL"/>
-    </dol:OntologyLanguage>
+        <skos:prefLabel>OWL 2 RL</skos:prefLabel>
+    </dol:Language>
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/RDF">
+    <dol:Language rdf:about="http://purl.net/dol/languages/RDF">
         <dol:exactLogicalExpressivity rdf:resource="http://purl.net/dol/logics/RDF"/>
         <dol:supportsSerialization rdf:resource="http://purl.net/dol/serializations/RDF/Turtle"/>
         <dol:supportsSerialization rdf:resource="http://purl.net/dol/serializations/RDF/XML"/>
@@ -158,17 +160,17 @@
         <dct:source rdf:resource="http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/"/>
         <rdfs:comment>Resource Description Framework (W3C Recommendation)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>RDF</rdfs:label>
-    </dol:OntologyLanguage>
+        <skos:prefLabel>RDF</skos:prefLabel>
+    </dol:Language>
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/SATLIB">
+    <dol:Language rdf:about="http://purl.net/dol/languages/SATLIB">
         <dol:exactLogicalExpressivity rdf:resource="http://purl.net/dol/logics/Propositional"/>
         <dct:source rdf:resource="http://www.satlib.org/"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SATLIB</rdfs:label>
-    </dol:OntologyLanguage>
+        <skos:prefLabel>SATLIB</skos:prefLabel>
+    </dol:Language>
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/THF0">
+    <dol:Language rdf:about="http://purl.net/dol/languages/THF0">
         <todo:question rdf:parseType="Resource">
             <dct:creator>Christoph Lange</dct:creator>
             <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema-datatypes#date">2012-04-27</dct:date>
@@ -176,21 +178,20 @@
         </todo:question>
         <dol:exactLogicalExpressivity rdf:resource="http://purl.net/dol/logics/ChurchSimpleTypeTheory"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>THF0</rdfs:label>
         <owl:sameAs rdf:resource="http://latin.omdoc.org/logics/tptp?THF0"/>
-    </dol:OntologyLanguage>
+        <skos:prefLabel>THF0</skos:prefLabel>
+    </dol:Language>
 
-    <dol:OntologyLanguage rdf:about="http://purl.net/dol/languages/TPTP">
+    <dol:Language rdf:about="http://purl.net/dol/languages/TPTP">
         <dol:exactLogicalExpressivity rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <dct:source rdf:resource="http://www.cs.miami.edu/~tptp/"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>TPTP</rdfs:label>
-    </dol:OntologyLanguage>
+        <skos:prefLabel>TPTP</skos:prefLabel>
+    </dol:Language>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/ChurchSimpleTypeTheory">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>Church Simple Type Theory</rdfs:label>
-        <owl:sameAs rdf:resource="http://latin.omdoc.org/logics/syntax?FOLEQ"/>
+        <skos:prefLabel xml:lang="en">Church Simple Type Theory</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/CommonLogic">
@@ -202,37 +203,36 @@
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#ISOStandard"/>
         <rdfs:comment>Common Logic (ISO/IEC 24707)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>Common Logic</rdfs:label>
         <owl:sameAs rdf:resource="http://latin.omdoc.org/logics/syntax?CL"/>
+        <skos:prefLabel xml:lang="en">Common Logic</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/CommonLogic/WithoutSequences">
         <rdfs:comment>Common Logic, restricted to sentences without sequence markers</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>CL⁻</rdfs:label>
         <skos:altLabel xml:lang="en">Common Logic without sequences</skos:altLabel>
         <skos:prefLabel xml:lang="en">CL⁻</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/DDLOWL">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>DDL^{OWL}</rdfs:label>
+        <skos:prefLabel>DDL^{OWL}</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/DLLiteR">
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#AcademicLiterature"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>DL-Lite_R</rdfs:label>
+        <skos:prefLabel>DL-Lite_R</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/ECoFOLeq">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>E-Connections^{FOLeq}</rdfs:label>
+        <skos:prefLabel>E-Connections^{FOLeq}</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/ECoOWL">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>E-Connections^{OWL}</rdfs:label>
+        <skos:prefLabel>E-Connections^{OWL}</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/ELplusplus">
@@ -241,13 +241,13 @@
         <dct:source rdf:resource="http://lat.inf.tu-dresden.de/research/papers/2005/BaaderBrandtLutz-IJCAI-05.pdf"/>
         <dct:source rdf:resource="http://www.webont.org/owled/2008dc/papers/owled2008dc_paper_3.pdf"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>EL⁺⁺</rdfs:label>
+        <skos:prefLabel>EL⁺⁺</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/F-logic">
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#AcademicLiterature"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>F-logic</rdfs:label>
+        <skos:prefLabel xml:lang="en">F-logic</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/FOL">
@@ -258,7 +258,6 @@
         </todo:question>
         <rdfs:comment>first-order logic (without equality)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>first-order logic</rdfs:label>
         <owl:sameAs rdf:resource="http://latin.omdoc.org/logics/syntax?FOLEQ"/>
         <skos:altLabel xml:lang="en">FOL</skos:altLabel>
         <skos:altLabel xml:lang="en">first-order logic (without equality)</skos:altLabel>
@@ -273,7 +272,6 @@
         </todo:question>
         <rdfs:comment>first-order logic with equality</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>first-order logic with equality</rdfs:label>
         <owl:sameAs rdf:resource="http://latin.omdoc.org/logics/syntax?FOLEQ"/>
         <skos:altLabel xml:lang="en">FOL⁼</skos:altLabel>
         <skos:prefLabel xml:lang="en">first-order logic with equality</skos:prefLabel>
@@ -291,7 +289,6 @@
             <rdf:value>Is latinSyntax:SFOLEQ the right thing to link to?</rdf:value>
         </todo:question>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>many-sorted first-order logic with equality</rdfs:label>
         <owl:sameAs rdf:resource="http://latin.omdoc.org/logics/syntax?SFOLEQ"/>
         <skos:altLabel xml:lang="en">many-sorted FOL with equality</skos:altLabel>
         <skos:prefLabel xml:lang="en">many-sorted first-order logic with equality</skos:prefLabel>
@@ -299,20 +296,20 @@
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/OBOOWL">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OBO^{OWL}</rdfs:label>
+        <skos:prefLabel>OBO^{OWL}</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/OWL2/Full">
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#W3CRecommendation"/>
         <dct:source rdf:resource="http://www.w3.org/TR/owl2-rdf-based-semantics/"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OWL 2 Full</rdfs:label>
+        <skos:prefLabel>OWL 2 Full</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/OWL2/RL">
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#W3CRecommendation"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OWL 2 RL</rdfs:label>
+        <skos:prefLabel>OWL 2 RL</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/Propositional">
@@ -327,15 +324,15 @@
             <rdf:value>Is latinSyntax:PL the right thing to link to?</rdf:value>
         </todo:question>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>propositional logic</rdfs:label>
         <owl:sameAs rdf:resource="http://latin.omdoc.org/logics/syntax?PL"/>
+        <skos:prefLabel xml:lang="en">propositional logic</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/RDF">
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#W3CRecommendation"/>
         <rdfs:comment>RDF Resource Description Framework (W3C Recommendation)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>RDF</rdfs:label>
+        <skos:prefLabel>RDF</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/RDF/Simple">
@@ -343,14 +340,14 @@
         <dct:source rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/#interp"/>
         <rdfs:comment>Simple interpretations of RDF graphs</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>simple RDF</rdfs:label>
+        <skos:prefLabel xml:lang="en">simple RDF</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/RDFS">
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#W3CRecommendation"/>
         <rdfs:comment>RDF Vocabulary Description Language (a.k.a. 'RDF Schema'; W3C Recommendation)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>RDFS</rdfs:label>
+        <skos:prefLabel>RDFS</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/RelationalSchema">
@@ -360,21 +357,21 @@
             <rdf:value>Maybe add some version of SQL as a language that supports this logic.</rdf:value>
         </todo:task>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>relational database schema</rdfs:label>
+        <skos:prefLabel xml:lang="en">relational database schema</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/SROIQ">
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#AcademicLiterature"/>
         <rdfs:comment>SROIQ, the logic of OWL 2 Web Ontology Language DL (W3C Recommendation)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SROIQ</rdfs:label>
+        <skos:prefLabel>SROIQ</skos:prefLabel>
     </dol:Logic>
 
     <dol:Logic rdf:about="http://purl.net/dol/logics/SubPCFOLeq">
         <todo:task rdf:parseType="Resource">
             <dct:creator>Christoph Lange</dct:creator>
-            <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema-datatypes#date">2012-04-17</dct:date>
-            <rdf:value>The rdfs:label may need improvement; the rdfs:comment needs to be written; what is the stand:standardizationStatus?</rdf:value>
+            <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema-datatypes#date">2014-10-05</dct:date>
+            <rdf:value>The skos:prefLabel may need improvement; the rdfs:comment needs to be written; what is the stand:standardizationStatus?</rdf:value>
         </todo:task>
         <todo:task rdf:parseType="Resource">
             <dct:creator>Christoph Lange</dct:creator>
@@ -383,75 +380,122 @@
         </todo:task>
         <rdfs:comment></rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SubPCFOL⁼</rdfs:label>
+        <skos:prefLabel xml:lang="en">SubPCFOL⁼</skos:prefLabel>
     </dol:Logic>
 
-    <rdf:Description rdf:about="http://purl.net/dol/projections/ChurchSimpleTypeTheoryToSubPCFOLeq">
+    <rdf:Description rdf:about="http://purl.net/dol/reduction/ChurchSimpleTypeTheoryToSubPCFOLeq">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>Church Simple Type Theory→SubPCFOL⁼ projection</rdfs:label>
+        <skos:prefLabel xml:lang="en">Church Simple Type Theory→SubPCFOL⁼ reduction</skos:prefLabel>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://purl.net/dol/projections/ECoFOLeqToECoOWL">
+    <rdf:Description rdf:about="http://purl.net/dol/reduction/ECoFOLeqToECoOWL">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>E-Connections^{FOL⁼}→E-Connections^{OWL} projection</rdfs:label>
+        <skos:prefLabel xml:lang="en">E-Connections^{FOL⁼}→E-Connections^{OWL} reduction</skos:prefLabel>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://purl.net/dol/projections/FOLeqToSROIQ">
+    <rdf:Description rdf:about="http://purl.net/dol/reduction/FOLeqToSROIQ">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>FOL⁼→SROIQ projection</rdfs:label>
+        <skos:prefLabel xml:lang="en">FOL⁼→SROIQ reduction</skos:prefLabel>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://purl.net/dol/projections/FOLeqmsToPropositional">
+    <rdf:Description rdf:about="http://purl.net/dol/reduction/FOLeqmsToPropositional">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>many-sorted FOL⁼→propositional logic projection</rdfs:label>
+        <skos:prefLabel xml:lang="en">many-sorted FOL⁼→propositional logic reduction</skos:prefLabel>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://purl.net/dol/projections/OWL2FullToRDFS">
+    <rdf:Description rdf:about="http://purl.net/dol/reduction/OWL2FullToRDFS">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OWL 2 Full→RDFS projection</rdfs:label>
+        <skos:prefLabel xml:lang="en">OWL 2 Full→RDFS reduction</skos:prefLabel>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://purl.net/dol/projections/RDFStoRDF">
+    <rdf:Description rdf:about="http://purl.net/dol/reduction/RDFStoRDF">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>RDFS→RDF projection</rdfs:label>
+        <skos:prefLabel xml:lang="en">RDFS→RDF reduction</skos:prefLabel>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://purl.net/dol/projections/RDFtoSimpleRDF">
+    <rdf:Description rdf:about="http://purl.net/dol/reduction/RDFtoSimpleRDF">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>RDF→simple RDF projection</rdfs:label>
+        <skos:prefLabel xml:lang="en">RDF→simple RDF reduction</skos:prefLabel>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://purl.net/dol/projections/SROIQtoDLLiteR">
+    <rdf:Description rdf:about="http://purl.net/dol/reduction/SROIQtoDLLiteR">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SROIQ→DL-Lite_R projection</rdfs:label>
+        <skos:prefLabel xml:lang="en">SROIQ→DL-Lite_R reduction</skos:prefLabel>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://purl.net/dol/projections/SROIQtoELplusplus">
+    <rdf:Description rdf:about="http://purl.net/dol/reduction/SROIQtoELplusplus">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SROIQ→EL⁺⁺ projection</rdfs:label>
+        <skos:prefLabel xml:lang="en">SROIQ→EL⁺⁺ reduction</skos:prefLabel>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://purl.net/dol/projections/SROIQtoOWL2RL">
+    <rdf:Description rdf:about="http://purl.net/dol/reduction/SROIQtoOWL2RL">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SROIQ→OWL 2 RL projection</rdfs:label>
+        <skos:prefLabel xml:lang="en">SROIQ→OWL 2 RL reduction</skos:prefLabel>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://purl.net/dol/projections/SubPCFOLeqToFOLeqms">
+    <rdf:Description rdf:about="http://purl.net/dol/reduction/SubPCFOLeqToFOLeqms">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SubPCFOL⁼→many-sorted FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">SubPCFOL⁼→many-sorted FOL⁼ translation</skos:prefLabel>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://purl.net/dol/registry">
-        <rdfs:comment>the registry of logics, ontology languages, serializations, translations, and projections that conform with the Distributed Ontology Language (DOL) specified in ISO WD 17347 OntoIOp (Ontology Integration and Interoperability)</rdfs:comment>
-        <rdfs:label>OntoIOp registry</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://ontolog.cim3.net/cgi-bin/wiki.pl?OntoIOp"/>
-    </rdf:Description>
+    <void:Dataset rdf:about="http://purl.net/dol/registry">
+        <todo:task rdf:parseType="Resource">
+            <dct:creator>Christoph Lange</dct:creator>
+            <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema-datatypes#date">2014-10-05</dct:date>
+            <rdf:value>add license</rdf:value>
+        </todo:task>
+        <todo:task rdf:parseType="Resource">
+            <dct:creator>Christoph Lange</dct:creator>
+            <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema-datatypes#date">2014-10-05</dct:date>
+            <rdf:value>consider adding void:feature</rdf:value>
+        </todo:task>
+        <todo:task rdf:parseType="Resource">
+            <dct:creator>Christoph Lange</dct:creator>
+            <dct:date rdf:datatype="http://www.w3.org/2001/XMLSchema-datatypes#date">2014-10-05</dct:date>
+            <rdf:value>consider making this more specific (void:uriRegexPattern that restricts to the namespaces actually allowed)</rdf:value>
+        </todo:task>
+        <dct:contributor rdf:parseType="Resource">
+            <foaf:name>Till Mossakowski</foaf:name>
+        </dct:contributor>
+        <dct:contributor rdf:parseType="Resource">
+            <foaf:name>Christoph Lange</foaf:name>
+        </dct:contributor>
+        <dct:contributor rdf:parseType="Resource">
+            <foaf:name>Oliver Kutz</foaf:name>
+        </dct:contributor>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema-datatypes#date">2014-10-05</dct:modified>
+        <dct:publisher>OntoIOp working group</dct:publisher>
+        <dct:subject rdf:resource="http://dbpedia.org/resurce/Ontology_language"/>
+        <void:classPartition rdf:parseType="Resource">
+            <void:class rdf:resource="http://purl.net/dol/1.0/rdf#Logic"/>
+        </void:classPartition>
+        <void:classPartition rdf:parseType="Resource">
+            <void:class rdf:resource="http://purl.net/dol/1.0/rdf#Translation"/>
+        </void:classPartition>
+        <void:classPartition rdf:parseType="Resource">
+            <void:class rdf:resource="http://purl.net/dol/1.0/rdf#Reduction"/>
+        </void:classPartition>
+        <void:classPartition rdf:parseType="Resource">
+            <void:class rdf:resource="http://purl.net/dol/1.0/rdf#Language"/>
+        </void:classPartition>
+        <void:classPartition rdf:parseType="Resource">
+            <void:class rdf:resource="http://purl.net/dol/1.0/rdf#Serialization"/>
+        </void:classPartition>
+        <void:dataDump rdf:resource="https://raw.githubusercontent.com/ontohub/OOR_Ontohub_API/master/lola/registry/registry-expanded.ntriples"/>
+        <void:dataDump rdf:resource="https://raw.githubusercontent.com/ontohub/OOR_Ontohub_API/master/lola/registry/registry-expanded.rdf"/>
+        <void:dataDump rdf:resource="https://raw.githubusercontent.com/ontohub/OOR_Ontohub_API/master/lola/registry/registry-expanded.turtle"/>
+        <void:exampleResource rdf:resource="http://purl.net/dol/logics/SROIQ"/>
+        <void:uriSpace>http://purl.net/dol/</void:uriSpace>
+        <void:vocabulary rdf:resource="http://purl.net/dol/1.0/rdf#"/>
+        <rdfs:comment>the registry of logics, ontology/model/specification languages, serializations and mappings that conform with the Distributed Ontology, Modeling and Specification Language (DOL) specified as a response to the OMG RFP “Ontology, Model and Specification Integration and Interoperability (OntoIOp)” (OMG document ad/2013-12-02)</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://ontoiop.org"/>
+        <skos:prefLabel xml:lang="en">OntoIOp registry</skos:prefLabel>
+    </void:Dataset>
 
     <dol:Serialization rdf:about="http://purl.net/dol/serializations/CommonLogic/CGIF">
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#ISOStandard"/>
         <rdfs:comment>dol:mediaType is being worked on; see https://github.com/gruninger/Common-Logic/issues/38</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>CGIF</rdfs:label>
         <owl:sameAs rdf:resource="http://purl.org/xcl/1.0/#dialect-cgif"/>
         <skos:altLabel xml:lang="en">Conceptual Graph Interchange Format</skos:altLabel>
         <skos:prefLabel xml:lang="en">CGIF</skos:prefLabel>
@@ -463,7 +507,6 @@
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#ISOStandard"/>
         <rdfs:comment>dol:mediaType is being worked on; see https://github.com/gruninger/Common-Logic/issues/38</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>CLIF</rdfs:label>
         <owl:sameAs rdf:resource="http://purl.org/xcl/1.0/#dialect-clif"/>
         <skos:altLabel xml:lang="en">Common Logic Interchange Format</skos:altLabel>
         <skos:prefLabel xml:lang="en">CLIF</skos:prefLabel>
@@ -474,7 +517,6 @@
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#ISOStandard"/>
         <rdfs:comment>dol:mediaType is being worked on; see https://github.com/gruninger/Common-Logic/issues/38</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>CLIF</rdfs:label>
         <owl:sameAs rdf:resource="http://purl.org/xcl/1.0/#dialect-xcl"/>
         <skos:altLabel xml:lang="en">Common Logic Interchange Format</skos:altLabel>
         <skos:prefLabel xml:lang="en">CLIF</skos:prefLabel>
@@ -486,7 +528,7 @@
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#W3CWorkingGroupNote"/>
         <dct:source rdf:resource="http://www.w3.org/TR/2009/NOTE-owl2-manchester-syntax-20091027/"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OWL Manchester Syntax</rdfs:label>
+        <skos:prefLabel>OWL Manchester Syntax</skos:prefLabel>
     </dol:Serialization>
 
     <dol:Serialization rdf:about="http://purl.net/dol/serializations/OWL2/XML">
@@ -495,7 +537,7 @@
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#W3CRecommendation"/>
         <dct:source rdf:resource="http://www.w3.org/TR/2009/REC-owl2-xml-serialization-20091027/"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OWL XML Serialization</rdfs:label>
+        <skos:prefLabel xml:lang="en">OWL XML Serialization</skos:prefLabel>
     </dol:Serialization>
 
     <dol:Serialization rdf:about="http://purl.net/dol/serializations/RDF/Turtle">
@@ -506,7 +548,7 @@
         <dct:source rdf:resource="http://www.w3.org/TeamSubmission/turtle/"/>
         <rdfs:comment>Terse RDF Triple Language</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>Turtle</rdfs:label>
+        <skos:prefLabel>Turtle</skos:prefLabel>
     </dol:Serialization>
 
     <dol:Serialization rdf:about="http://purl.net/dol/serializations/RDF/XML">
@@ -515,67 +557,67 @@
         <stand:standardizationStatus rdf:resource="http://purl.net/dol/1.0/standardization#W3CRecommendation"/>
         <dct:source rdf:resource="http://www.w3.org/TR/2004/REC-rdf-syntax-grammar-20040210/"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>RDF/XML Syntax</rdfs:label>
+        <skos:prefLabel xml:lang="en">RDF/XML Syntax</skos:prefLabel>
     </dol:Serialization>
 
     <rdf:Description rdf:about="http://purl.net/dol/symbolKinds/CL/Name">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>name</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Symbol"/>
+        <skos:prefLabel xml:lang="en">name</skos:prefLabel>
     </rdf:Description>
 
     <rdf:Description rdf:about="http://purl.net/dol/symbolKinds/CL/SequenceMarker">
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>sequence marker</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Symbol"/>
+        <skos:prefLabel xml:lang="en">sequence marker</skos:prefLabel>
     </rdf:Description>
 
     <rdf:Description rdf:about="http://purl.net/dol/symbolKinds/OWL2/AnnotationProperty">
         <dct:source rdf:resource="http://www.w3.org/TR/2009/REC-owl2-syntax-20091027/#Annotation_Properties"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>annotation property</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Symbol"/>
         <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+        <skos:prefLabel xml:lang="en">annotation property</skos:prefLabel>
     </rdf:Description>
 
     <rdf:Description rdf:about="http://purl.net/dol/symbolKinds/OWL2/Class">
         <dct:source rdf:resource="http://www.w3.org/TR/2009/REC-owl2-syntax-20091027/#Classes"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>class</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Symbol"/>
         <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <skos:prefLabel xml:lang="en">class</skos:prefLabel>
     </rdf:Description>
 
     <rdf:Description rdf:about="http://purl.net/dol/symbolKinds/OWL2/DataProperty">
         <dct:source rdf:resource="http://www.w3.org/TR/2009/REC-owl2-syntax-20091027/#Data_Properties"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>data property</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Symbol"/>
         <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <skos:prefLabel xml:lang="en">data property</skos:prefLabel>
     </rdf:Description>
 
     <rdf:Description rdf:about="http://purl.net/dol/symbolKinds/OWL2/Datatype">
         <dct:source rdf:resource="http://www.w3.org/TR/2009/REC-owl2-syntax-20091027/#Datatypes"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>annotation property</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Symbol"/>
         <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+        <skos:prefLabel xml:lang="en">annotation property</skos:prefLabel>
     </rdf:Description>
 
     <rdf:Description rdf:about="http://purl.net/dol/symbolKinds/OWL2/NamedIndividual">
         <dct:source rdf:resource="http://www.w3.org/TR/2009/REC-owl2-syntax-20091027/#Named_Individuals"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>named individual</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Symbol"/>
         <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <skos:prefLabel xml:lang="en">named individual</skos:prefLabel>
     </rdf:Description>
 
     <rdf:Description rdf:about="http://purl.net/dol/symbolKinds/OWL2/ObjectProperty">
         <dct:source rdf:resource="http://www.w3.org/TR/2009/REC-owl2-syntax-20091027/#Object_Properties"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>object property</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.net/dol/1.0/rdf#Symbol"/>
         <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <skos:prefLabel xml:lang="en">object property</skos:prefLabel>
     </rdf:Description>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/CLWithoutSequencesToCommonLogic">
@@ -584,7 +626,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/CommonLogic/WithoutSequences"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/CommonLogic"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>CL⁻→Common Logic translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">CL⁻→Common Logic translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/CLWithoutSequencesToFOLeq">
@@ -593,16 +635,16 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/CommonLogic/WithoutSequences"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>CL⁻→FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">CL⁻→FOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
-    <dol:OntologyLanguageMapping rdf:about="http://purl.net/dol/translations/CommonLogicToCASL">
+    <dol:LanguageMapping rdf:about="http://purl.net/dol/translations/CommonLogicToCASL">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#Translation"/>
         <dol:mapsFrom rdf:resource="http://purl.net/dol/languages/CommonLogic"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/languages/CASL"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>Common Logic→CASL</rdfs:label>
-    </dol:OntologyLanguageMapping>
+        <skos:prefLabel>Common Logic→CASL</skos:prefLabel>
+    </dol:LanguageMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/CommonLogicToSubPCFOLeq">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#SimpleTheoroidalMapping"/>
@@ -610,7 +652,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/CommonLogic"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/SubPCFOLeq"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>Common Logic→SubPCFOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Common Logic→SubPCFOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/DDLOWLtoECoOWL">
@@ -619,17 +661,17 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/DDLOWL"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/ECoOWL"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>DDL^{OWL}→E-Connections^{OWL} translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">DDL^{OWL}→E-Connections^{OWL} translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/DLLiteRtoSROIQ">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#PlainMapping"/>
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#SubLogic"/>
-        <dol:adjoint rdf:resource="http://purl.net/dol/projections/SROIQtoDLLiteR"/>
+        <dol:adjoint rdf:resource="http://purl.net/dol/reduction/SROIQtoDLLiteR"/>
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/DLLiteR"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>DL-Lite_R→SROIQ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">DL-Lite_R→SROIQ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/ECoFOLeqToFOLeqms">
@@ -638,17 +680,17 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/ECoFOLeq"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/FOLeqms"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>E-Connections^{FOL⁼}→many-sorted FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">E-Connections^{FOL⁼}→many-sorted FOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/ECoOWLtoECoFOLeq">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#PlainMapping"/>
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#SubLogic"/>
-        <dol:adjoint rdf:resource="http://purl.net/dol/projections/ECoFOLeqToECoOWL"/>
+        <dol:adjoint rdf:resource="http://purl.net/dol/reduction/ECoFOLeqToECoOWL"/>
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/ECoOWL"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/ECoFOLeq"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>E-Connections^{OWL}→E-Connections^{FOL⁼} translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">E-Connections^{OWL}→E-Connections^{FOL⁼} translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/ECoOWLtoSROIQ">
@@ -657,7 +699,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/ECoOWL"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>E-Connections^{OWL}→SROIQ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">E-Connections^{OWL}→SROIQ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/ELplusplusToOBOOWL">
@@ -672,17 +714,17 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/ELplusplus"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/OBOOWL"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>EL⁺⁺→OBO^{OWL} translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL⁺⁺→OBO^{OWL} translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/ELplusplusToSROIQ">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#PlainMapping"/>
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#SubLogic"/>
-        <dol:adjoint rdf:resource="http://purl.net/dol/projections/SROIQtoELplusplus"/>
+        <dol:adjoint rdf:resource="http://purl.net/dol/reduction/SROIQtoELplusplus"/>
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/ELplusplus"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>EL⁺⁺→SROIQ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">EL⁺⁺→SROIQ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/F-logicToFOLeq">
@@ -691,7 +733,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/F-logic"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>F-logic→FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">F-logic→FOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/FOLeqToCLWithoutSequences">
@@ -703,7 +745,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/CommonLogic/WithoutSequences"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>FOL⁼→CL⁻ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">FOL⁼→CL⁻ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/FOLeqToCommonLogic">
@@ -715,7 +757,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/CommonLogic"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>FOL⁼→Common Logic translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">FOL⁼→Common Logic translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/FOLeqToECoFOLeq">
@@ -724,7 +766,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/ECoFOLeq"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>FOL⁼→E-Connections^{FOL⁼} translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">FOL⁼→E-Connections^{FOL⁼} translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/FOLeqToF-logic">
@@ -733,7 +775,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/F-logic"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>FOL⁼→F-logic translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">FOL⁼→F-logic translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/FOLeqToFOLeqms">
@@ -742,7 +784,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/FOLeqms"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>FOL⁼→many-sorted FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">FOL⁼→many-sorted FOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/FOLeqmsToFOLeq">
@@ -751,17 +793,17 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/FOLeqms"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>FOL⁼→many-sorted FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">FOL⁼→many-sorted FOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/FOLeqmsToSubPCFOLeq">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#PlainMapping"/>
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#SubLogic"/>
-        <dol:adjoint rdf:resource="http://purl.net/dol/projections/SubPCFOLeqToFOLeqms"/>
+        <dol:adjoint rdf:resource="http://purl.net/dol/reduction/SubPCFOLeqToFOLeqms"/>
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/FOLeqms"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/SubPCFOLeq"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>many-sorted FOL⁼→SubPCFOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">many-sorted FOL⁼→SubPCFOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/OBOOWLtoSROIQ">
@@ -770,7 +812,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/OBOOWL"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OBO^{OWL}→SROIQ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">OBO^{OWL}→SROIQ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/OWL2FullToFOLeq">
@@ -779,17 +821,17 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/OWL2/Full"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OWL 2 Full→FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">OWL 2 Full→FOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/OWL2RLtoSROIQ">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#PlainMapping"/>
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#SubLogic"/>
-        <dol:adjoint rdf:resource="http://purl.net/dol/projections/SROIQtoOWL2RL"/>
+        <dol:adjoint rdf:resource="http://purl.net/dol/reduction/SROIQtoOWL2RL"/>
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/OWL2/RL"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OWL 2 RL→SROIQ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">OWL 2 RL→SROIQ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/PropositionalToCommonLogic">
@@ -801,7 +843,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/Propositional"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/CommonLogic"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>propositional logic→Common Logic translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">propositional logic→Common Logic translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/PropositionalToFOLeq">
@@ -818,17 +860,17 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/Propositional"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>propositional logic→FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">propositional logic→FOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/PropositionalToFOLeqms">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#PlainMapping"/>
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#SubLogic"/>
-        <dol:adjoint rdf:resource="http://purl.net/dol/projections/FOLeqmsToPropositional"/>
+        <dol:adjoint rdf:resource="http://purl.net/dol/reduction/FOLeqmsToPropositional"/>
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/Propositional"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/FOLeqms"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>propositional logic→many-sorted FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">propositional logic→many-sorted FOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/PropositionalToPropositionalCNF">
@@ -844,7 +886,7 @@
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/Propositional"/>
         <rdfs:comment>translation from propositional logic to propositional logic in Conjunctive Normal Form (CNF)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>propositional logic to CNF</rdfs:label>
+        <skos:prefLabel xml:lang="en">propositional logic to CNF</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:ExactMapping rdf:about="http://purl.net/dol/translations/PropositionalToSROIQ">
@@ -856,7 +898,7 @@
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <rdfs:comment>Note that this is not a default mapping; for details see: Till Mossakowski, Oliver Kutz, Christoph Lange. Three Semantics for the Core of the Distributed Ontology Language; in 7th International Conference on Formal Ontology in Information Systems (FOIS), 2012-07-24/2012-07-27 in Graz, Austria; 2012 (http://interop.cim3.net/file/pub/OntoIOp/Publications/FOIS_2012/paper.pdf).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>propositional logic→SROIQ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">propositional logic→SROIQ translation</skos:prefLabel>
     </dol:ExactMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/RDFStoFOLeq">
@@ -865,17 +907,17 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/RDFS"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>RDFS→FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">RDFS→FOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/RDFStoOWL2Full">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#PlainMapping"/>
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#SubLogic"/>
-        <dol:adjoint rdf:resource="http://purl.net/dol/projections/OWL2FullToRDFS"/>
+        <dol:adjoint rdf:resource="http://purl.net/dol/reduction/OWL2FullToRDFS"/>
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/RDFS"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/OWL2/Full"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>RDFS→OWL 2 Full translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">RDFS→OWL 2 Full translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/RDFtoFOLeq">
@@ -884,17 +926,17 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/RDF"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>RDF→FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">RDF→FOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/RDFtoRDFS">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#PlainMapping"/>
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#SubLogic"/>
-        <dol:adjoint rdf:resource="http://purl.net/dol/projections/RDFStoRDF"/>
+        <dol:adjoint rdf:resource="http://purl.net/dol/reduction/RDFStoRDF"/>
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/RDF"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/RDFS"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>RDF→RDFS translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">RDF→RDFS translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/RDFtoSROIQ">
@@ -906,7 +948,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/RDF"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>RDF→SROIQ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">RDF→SROIQ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/RelationalSchemaToFOLeqms">
@@ -915,16 +957,16 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/RelationalSchema"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/FOLeqms"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>relational database schema→many-sorted FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">relational database schema→many-sorted FOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
-    <dol:OntologyLanguageMapping rdf:about="http://purl.net/dol/translations/SATLIBtoCASL">
+    <dol:LanguageMapping rdf:about="http://purl.net/dol/translations/SATLIBtoCASL">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#Translation"/>
         <dol:mapsFrom rdf:resource="http://purl.net/dol/languages/SATLIB"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/languages/CASL"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SATLIB→CASL</rdfs:label>
-    </dol:OntologyLanguageMapping>
+        <skos:prefLabel>SATLIB→CASL</skos:prefLabel>
+    </dol:LanguageMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/SROIQtoCommonLogic">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#ExactMapping"/>
@@ -935,7 +977,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/CommonLogic"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SROIQ→Common Logic translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">SROIQ→Common Logic translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/SROIQtoDDLOWL">
@@ -944,7 +986,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/DDLOWL"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SROIQ→DDL^{OWL} translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">SROIQ→DDL^{OWL} translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/SROIQtoF-logic">
@@ -955,7 +997,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/F-logic"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SROIQ→F-logic translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">SROIQ→F-logic translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/SROIQtoFOLeq">
@@ -964,11 +1006,11 @@
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#ModelBijectiveMapping"/>
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#PlainMapping"/>
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#Translation"/>
-        <dol:adjoint rdf:resource="http://purl.net/dol/projections/FOLeqToSROIQ"/>
+        <dol:adjoint rdf:resource="http://purl.net/dol/reduction/FOLeqToSROIQ"/>
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SROIQ→FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">SROIQ→FOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/SROIQtoOWL2Full">
@@ -980,7 +1022,7 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/OWL2/Full"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SROIQ→OWL2Full translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">SROIQ→OWL2Full translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/SimpleRDFtoFOLeq">
@@ -989,17 +1031,17 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/RDF/Simple"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/FOLeq"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>simple RDF→FOL⁼ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">simple RDF→FOL⁼ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/SimpleRDFtoRDF">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#PlainMapping"/>
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#SubLogic"/>
-        <dol:adjoint rdf:resource="http://purl.net/dol/projections/RDFtoSimpleRDF"/>
+        <dol:adjoint rdf:resource="http://purl.net/dol/reduction/RDFtoSimpleRDF"/>
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/RDF/Simple"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/RDF"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>simple RDF→RDF translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">simple RDF→RDF translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/SimpleRDFtoSROIQ">
@@ -1011,17 +1053,17 @@
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/RDF/Simple"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/SROIQ"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>simple RDF→SROIQ translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">simple RDF→SROIQ translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <dol:DefaultMapping rdf:about="http://purl.net/dol/translations/SubPCFOLeqToChurchSimpleTypeTheory">
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#SimpleTheoroidalMapping"/>
         <rdf:type rdf:resource="http://purl.net/dol/1.0/rdf#SubLogic"/>
-        <dol:adjoint rdf:resource="http://purl.net/dol/projections/ChurchSimpleTypeTheoryToSubPCFOLeq"/>
+        <dol:adjoint rdf:resource="http://purl.net/dol/reduction/ChurchSimpleTypeTheoryToSubPCFOLeq"/>
         <dol:mapsFrom rdf:resource="http://purl.net/dol/logics/SubPCFOLeq"/>
         <dol:mapsTo rdf:resource="http://purl.net/dol/logics/ChurchSimpleTypeTheory"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>SubPCFOL⁼→Church Simple Type Theory translation</rdfs:label>
+        <skos:prefLabel xml:lang="en">SubPCFOL⁼→Church Simple Type Theory translation</skos:prefLabel>
     </dol:DefaultMapping>
 
     <rdf:Description>
@@ -1072,7 +1114,7 @@
         <dol:translatesFromLogic rdf:resource="http://purl.net/dol/logics/OBOOWL"/>
         <dol:translatesToLogic rdf:nodeID="b2"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.net/dol/registry"/>
-        <rdfs:label>OBO^{OWL}→the logic of OBO 1.4</rdfs:label>
+        <skos:prefLabel xml:lang="en">OBO^{OWL}→the logic of OBO 1.4</skos:prefLabel>
     </rdf:Description>
 
     <rdf:Description>
