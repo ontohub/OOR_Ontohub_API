@@ -1,28 +1,11 @@
 all: $(ALL)
-	$(MAKE_LATEX) all
 	@for dir in $(SYNCDIRS); do $(MAKE) -C $$dir all; done
 
-copy: $(WORK_SYNCFILES) $(PUB_SYNCFILES)
-	-$(MKDIR) $(WORK_DEST)
-	-$(MKDIR) $(PUB_DEST)
-ifneq ($(strip $(WORK_SYNCFILES)),)
-	$(CP) $(WORK_SYNCFILES) $(WORK_DEST)
-endif
-ifneq ($(strip $(PUB_SYNCFILES)),)
-	$(CP) $(PUB_SYNCFILES) $(PUB_DEST)
-endif
-	@for dir in $(SYNCDIRS); do $(MAKE) -C $$dir copy; done
-
-sync:
-	$(MAKE) copy
-	$(REPO_SYNC_CMD)
-
 clean:
-	rm -f *~
-	$(MAKE_LATEX) clean
+	rm -f *~ ; \
 	@for dir in $(SYNCDIRS); do $(MAKE) -C $$dir clean; done
 
-.PHONY : copy sync
+.PHONY : all clean
 
 # Local Variables:
 # mode: makefile-gmake

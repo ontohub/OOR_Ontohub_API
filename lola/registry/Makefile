@@ -7,9 +7,9 @@ DEPLOY_FILES         = registry.rdf registry-expanded.rdf $(DEPLOY_DIR)/logics/C
 EXPANDED_DATASET     = registry-expanded.ntriples
 DOL_INFERENCES       = $(LIB)/dol-inferences-beyond-owl.n3
 OWL_INFERENCES       = $(LIB)/some-owl-inferences.n3
-DOL_RDF_VOCAB	     = ../syntax/dol-rdf.owl
-STANDARD_VOCAB	     = ../syntax/standardization.owl
-TODO_VOCAB	     = ../syntax/todo.owl
+DOL_RDF_VOCAB	     = ../ontology/dol-rdf.owl
+STANDARD_VOCAB	     = ../ontology/standardization.owl
+TODO_VOCAB	     = ../ontology/todo.owl
 EYEBALL_FIXES	     = eyeball-fixes.rdf # some things eyeball reports missing, even though they actually exist
 REGISTRY_NS          = http://purl.net/dol/
 EYEBALL_DEFAULT_ARGS = -assume $(DOL_RDF_VOCAB) -assume $(STANDARD_VOCAB) -assume $(TODO_VOCAB) -assume $(DCTERMS) -assume $(SKOS) -assume $(OWL) -assume $(EYEBALL_FIXES)
@@ -17,7 +17,7 @@ EYEBALL_DEFAULT_ARGS = -assume $(DOL_RDF_VOCAB) -assume $(STANDARD_VOCAB) -assum
 include $(BASE)/Makefile.vars
 include $(BASE)/Makefile.in
 include Makefile.vars
-include ../syntax/Makefile.in
+include ../ontology/Makefile.in
 
 all: $(DEPLOY_FILES)
 
@@ -34,7 +34,7 @@ registry-with-tbox.rdf: registry-expanded.ntriples
 
 # 1. apply the N3 ruleset to expand the core dataset to the expanded dataset; in detail:
 #    cwm --n3 $<                      # parse the input as N3 (a superset of Turtle)
-#    --rdf $(BASE)/syntax/dol-rdf.owl # parse the ontology as RDF/XML
+#    --rdf $(BASE)/ontology/dol-rdf.owl # parse the ontology as RDF/XML
 #    --n3 $(DOL_INFERENCES)           # load DOL-specific inference rules (particularly those that can't be represented in OWL, but only in FOL)
 #    $(OWL_INFERENCES)                # load general OWL (and RDFS and RDF) inference rules (just a relevant subset of the actual rules, implemented ad hoc according to our needs)
 #    --think                          # apply the inference rules until they lead to no more expansions
@@ -45,7 +45,7 @@ registry-with-tbox.rdf: registry-expanded.ntriples
 # 4. filter out triples containing blank nodes in any component.  Many blank nodes are not relevant for the dataset (e.g. artifacts from the RDF serialization of the OWL ontology, editorial comments, etc.), and those, that are, are not supported by our approach.
 # 5. filter out triples with certain annotation properties (here: editorial comments)
 %-expanded.ntriples: %.turtle $(DOL_INFERENCES) $(OWL_INFERENCES)
-	cwm --n3 $< --rdf $(BASE)/syntax/dol-rdf.owl $(SKOS) --n3 $(DOL_INFERENCES) $(OWL_INFERENCES) $(OV) --think --ntriples $(CWM_DEFAULT_ARGS) \
+	cwm --n3 $< --rdf $(BASE)/ontology/dol-rdf.owl $(SKOS) --n3 $(DOL_INFERENCES) $(OWL_INFERENCES) $(OV) --think --ntriples $(CWM_DEFAULT_ARGS) \
 	| perl -pe 's/^[[:space:]]*//' \
         | grep '^<http://purl\.net/dol/' \
         | grep -v '^<http://purl\.net/dol/1\.0/rdf#' \
