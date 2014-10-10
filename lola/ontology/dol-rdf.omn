@@ -189,15 +189,6 @@ ObjectProperty: faithfullyMappableTo
     
 ObjectProperty: mappableToLogic
 
-
-    EquivalentTo:
-        ontoiop-trm:extends
-
-    EquivalentTo:
-        ontoiop-trm:extends
-
-    EquivalentTo:
-        ontoiop-trm:extends
     Annotations: 
         rdfs:comment "There is a mapping from the subject logic to the object logic."
     
@@ -217,17 +208,16 @@ ObjectProperty: extends
         
             Annotations: dct:creator "Christoph Lange", 
                          dct:date "2011-12-04"^^xsd:date
-        todo:question "While the abstract and text syntaxes of DOL attach the 'kind of extension' to _one_ ontology, the semantics (CASL reference section 5.2.5) rather suggests that this is a relation between _two_ ontologies (which may or may not be given explicitly in the syntax).  Is it, therefore, OK, to model it like this in RDF?  Maybe we should also provide a semantically equivalent alternative that is more intuitive wrt. the syntax?"
-
-    EquivalentTo:
-        ontoiop-trm:isSubLanguageOf
+        todo:question "While the abstract and text syntaxes of DOL attach the 'kind of extension' to _one_ ontology, the semantics (CASL reference section 5.2.5) rather suggests that this is a relation between _two_ OMS (which may or may not be given explicitly in the syntax).  Is it, therefore, OK, to model it like this in RDF?  Maybe we should also provide a semantically equivalent alternative that is more intuitive wrt. the syntax?"
+    
     Domain: 
         OMS
-
-    EquivalentTo:
-        ontoiop-trm:isSubLanguageOf
+    
     Range: 
         OMS
+
+    EquivalentTo:
+        ontoiop-trm:extends
     
     
 ObjectProperty: weaklyExactlyMappableTo
@@ -257,7 +247,9 @@ ObjectProperty: subLanguageOf
     
     Characteristics: 
         Transitive
-    
+
+    EquivalentTo:
+        ontoiop-trm:isSubLanguageOf
     
 ObjectProperty: specifiesSemanticsOf
 
@@ -420,6 +412,9 @@ ObjectProperty: serializes
 
     InverseOf: 
         supportsSerialization
+
+    EquivalentTo:
+        ontoiop-trm:serializes
     
     
 ObjectProperty: monomorphicallyExtends
@@ -474,14 +469,10 @@ ObjectProperty: modelTheoreticallyConservativelyExtends
     
     SubPropertyOf: 
         consequenceTheoreticallyConservativelyExtends
-
-    EquivalentTo:
-        ontoiop-trm:supportsLogic
+    
     EquivalentTo: 
         conservativelyExtends
-
-    EquivalentTo:
-        ontoiop-trm:supportsLogic
+    
     
 ObjectProperty: supportsLogic
 
@@ -508,7 +499,9 @@ ObjectProperty: supportsLogic
     
     InverseOf: 
         specifiesSemanticsOf
-    
+
+    EquivalentTo:
+        ontoiop-trm:supportsLogic
     
 ObjectProperty: mappableToLanguage
 
@@ -562,6 +555,9 @@ ObjectProperty: subLogicOf
     
     Characteristics: 
         Transitive
+
+    EquivalentTo:
+        ontoiop-trm:isSubLogicOf
     
     
 ObjectProperty: interpretationIn
@@ -634,13 +630,7 @@ ObjectProperty: modelExpansivelyMappableTo
     
     Characteristics: 
         Transitive
-
-    EquivalentTo:
-        Annotations:
-            Annotations: dct:creator "Christoph Lange", 
-                         dct:date "2014-10-10"^^xsd:date
-            todo:task "Might change to ontoiop-trm:isProfileOf" .
-        ontoiop-trm:profileOf
+    
     
 ObjectProperty: mappableFromLogic
 
@@ -664,7 +654,13 @@ ObjectProperty: profileOf
     
     SubPropertyOf: 
         subLanguageOf
-    
+
+    EquivalentTo:
+        Annotations:
+            Annotations: dct:creator "Christoph Lange", 
+                         dct:date "2014-10-10"^^xsd:date
+            todo:task "Might change to ontoiop-trm:isProfileOf" .
+        ontoiop-trm:profileOf
     
 ObjectProperty: mappableFromLanguage
 
@@ -910,9 +906,6 @@ Class: View
     
     SubClassOf: 
         Mapping
-
-    EquivalentTo:
-        ontoiop-trm:OMS
     
     
 Class: Embedding
@@ -931,6 +924,9 @@ Class: OMS
 
     Annotations: 
         rdfs:comment "a basic OMS or an OMS library"
+
+    EquivalentTo:
+        ontoiop-trm:OMS
     
 Class: Ontology
 
@@ -970,9 +966,6 @@ Class: LanguageMapping
 
     Annotations: 
         rdfs:comment "a mapping (translation or reduction) between two languages",
-
-    EquivalentTo:
-        ontoiop-trm:Logic
         propagatesToAdjoint "true"^^xsd:boolean
     
     SubClassOf: 
@@ -988,6 +981,9 @@ Class: Logic
 
     Annotations: 
         rdfs:comment "a logic that defines the semantics of an language"
+
+    EquivalentTo:
+        ontoiop-trm:Logic
     
     
 Class: SimpleTheoroidalMapping
@@ -1024,21 +1020,18 @@ Class: LogicMapping
     
     DisjointWith: 
         LanguageMapping
+
+    EquivalentTo:
+        ontoiop-trm:LogicMapping
     
-
-    EquivalentTo:
-        ontoiop-trm:Symbol
-
-    EquivalentTo:
-        ontoiop-trm:Symbol
-
-    EquivalentTo:
-        ontoiop-trm:Symbol
     
 Class: Symbol
 
     Annotations: 
         rdfs:comment "a symbol in an OMS"
+
+    EquivalentTo:
+        ontoiop-trm:Symbol
     
     
 Class: Reduction
@@ -1059,11 +1052,11 @@ Class: BasicOMS
     Annotations: 
         rdfs:comment "a basic OMS (in a single language, logic, and serialization)"
     
+    SubClassOf: 
+        OMS
 
     EquivalentTo:
         ontoiop-trm:BasicOMS
-    SubClassOf: 
-        OMS
     
     
 Class: FaithfulMapping
@@ -1118,9 +1111,9 @@ Class: Serialization
     Annotations: 
         rdfs:comment "a serialization of an language"
     
-    
     EquivalentTo:
         ontoiop-trm:OMSSerialization
+    
 Class: Language
 
     Annotations: 
@@ -1131,11 +1124,11 @@ Class: Language
          and (supportsSerialization some Serialization)
          and (supportsLogic only Logic)
          and (supportsSerialization only Serialization)
-    
 
     EquivalentTo:
         Annotations: rdfs:comment "LoLa does not define any type of language that's more general than an OMS language.  However, ontoiop-trm:Language is defined to be a general language."
         ontoiop-trm:OMSLanguage
+    
 Class: Mapping
 
     Annotations: 
@@ -1144,20 +1137,16 @@ Class: Mapping
     SubClassOf: 
         (source exactly 1 owl:Thing)
          and (target exactly 1 owl:Thing)
+
+    EquivalentTo:
+        Annotations: rdfs:comment "LoLa does not define any type of mapping that's more general than an OMS mapping.  However, ontoiop-trm:Mapping is defined to be a general mapping."
+        ontoiop-trm:OMSMapping 
     
     
 Class: ModelBijectiveMapping
 
-    EquivalentTo:
-        Annotations: rdfs:comment "LoLa does not define any type of mapping that's more general than an OMS mapping.  However, ontoiop-trm:Mapping is defined to be a general mapping."
-        ontoiop-trm:OMSMapping 
-
     Annotations: 
         reifies <http://purl.net/dol/1.0/rdf#modelBijectivelyMappableTo>,
-
-    EquivalentTo:
-        Annotations: rdfs:comment "LoLa does not define any type of mapping that's more general than an OMS mapping.  However, ontoiop-trm:Mapping is defined to be a general mapping."
-        ontoiop-trm:OMSMapping 
         propagatesToAdjoint "true"^^xsd:boolean
     
     SubClassOf: 
