@@ -24,6 +24,7 @@
 # Cross-linked datasets
 @prefix latinTPTP:   <http://latin.omdoc.org/logics/tptp?> .
 @prefix latinSyntax: <http://latin.omdoc.org/logics/syntax?> .
+@prefix omv:         <http://omv.ontoware.org/2005/05/ontology#> .
 
 # Other non-annotation namespaces
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -135,12 +136,14 @@ log:Propositional a dol:Logic ;
 log:RDF a dol:Logic ;
   skos:prefLabel "RDF" ;
   rdfs:comment "RDF Resource Description Framework (W3C Recommendation)" ;
+  dct:source <http://www.w3.org/TR/2014/REC-rdf11-mt-20140225/> ;
   stand:standardizationStatus stand:W3CRecommendation ;
   rdfs:isDefinedBy reg: .
 
 log:RDFS a dol:Logic ;
   skos:prefLabel "RDFS" ;
-  rdfs:comment "RDF Vocabulary Description Language (a.k.a. 'RDF Schema'; W3C Recommendation)" ;
+  rdfs:comment "RDF Schema (W3C Recommendation)" ;
+  dct:source <http://www.w3.org/TR/2014/REC-rdf11-mt-20140225/> ;
   stand:standardizationStatus stand:W3CRecommendation ;
   rdfs:isDefinedBy reg: .
 
@@ -708,7 +711,17 @@ lang:RDF a dol:Language ;
   rdfs:comment "Resource Description Framework (W3C Recommendation)" ;
   dol:exactLogicalExpressivity log:RDF ;
   dol:supportsSerialization serRDF:Turtle, serRDF:XML ;
-  dct:source <http://www.w3.org/TR/2004/REC-rdf-concepts-20040210/> ;
+  dct:source <http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/> ;
+  stand:standardizationStatus stand:W3CRecommendation ;
+  rdfs:isDefinedBy reg: .
+
+lang:RDFS a dol:Language ;
+  skos:prefLabel "RDFS" ;
+  rdfs:comment "RDF Schema (W3C Recommendation)" ;
+  dol:exactLogicalExpressivity log:RDFS ;
+  dol:supportsSerialization serRDF:Turtle, serRDF:XML ;
+  dct:source <http://www.w3.org/TR/2014/REC-rdf-schema-20140225/> ;
+  owl:sameAs omv:RDF-S ;
   stand:standardizationStatus stand:W3CRecommendation ;
   rdfs:isDefinedBy reg: .
 
